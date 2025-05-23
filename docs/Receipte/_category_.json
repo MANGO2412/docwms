@@ -1,0 +1,8 @@
+{
+  "label": "Receipte",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Se desglosa las acciones de cada modulo para  realizar el proceso de recibos(Receipte)"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Shipping",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Se desglosan los pasos y modulos a  utilizar para llevar a cabo el proceso de Shipping"
+  }
+}

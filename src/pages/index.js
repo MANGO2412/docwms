@@ -11,9 +11,6 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
 
 
-  const openAlerts=()=>{
-    alert("si funciona el javascript")
-  }
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -28,7 +25,6 @@ function HomepageHeader() {
             Docusaurus Tutorial - 5min ⏱️
           </Link>
         </div>
-       <button onClick={openAlerts}>Hacer click</button> 
       </div>
     </header>
   );
