@@ -10,6 +10,97 @@ media_folder: "static/img/upload" # Media files will be stored in the repo under
 public_folder: "/img/upload" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
+- name: Receipte
+  label: "Receipte"
+  folder: docs/Receipte
+  identifier_field: title
+  widget: "list"
+  create: true
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: Packing
+  label: "Packing"
+  folder: docs/Packing
+  identifier_field: title
+  widget: "list"
+  create: true
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: Picking
+  label: "Picking"
+  folder: docs/Picking
+  identifier_field: title
+  widget: "list"
+  create: true
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: Shipping
+  label: "Shipping"
+  folder: docs/Shipping
+  identifier_field: title
+  widget: "list"
+  create: true
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: WM
+  label: "Gestion de Almacen"
+  folder: docs/WM
+  identifier_field: title
+  widget: "list"
+  create: true
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+
 - name: blog
   label: "blog"
   folder: blog
