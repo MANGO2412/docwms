@@ -1,6 +1,6 @@
 {
   "label": "Picking",
-  "position": 3,
+  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Se desglosan los módulos a utilizar para llevar a cabo el proceso de packing en la aplicación WMS utilizando una  zebra"
