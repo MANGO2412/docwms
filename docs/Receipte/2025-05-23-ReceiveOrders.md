@@ -4,7 +4,7 @@ title: Receive orders
 ---
 # Receive orders
 
-Su función principal es registrar en el sistema WMS cada recepción de mercancía, asegurando un control preciso de los productos entrantes. A través de este módulo, se administra todo el proceso de ingreso de los paquetes al almacén, desde su recepción física hasta su validación y registro en la plataforma.
+Este módulo permite generar y gestionar las órdenes de recibo correspondientes a los paquetes enviados por el cliente. Su función principal es registrar en el sistema WMS cada recepción de mercancía, asegurando un control preciso de los productos entrantes. A través de este módulo, se administra todo el proceso de ingreso de los paquetes al almacén, desde su recepción física hasta su validación y registro en la plataforma.
 
 ## Generar Recibo
 
