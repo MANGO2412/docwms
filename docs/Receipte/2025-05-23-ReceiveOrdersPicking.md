@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+title: Receive orders Picking.
 ---
 # Receive orders Picking.
 
