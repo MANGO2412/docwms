@@ -10,6 +10,23 @@ media_folder: "static/img/upload" # Media files will be stored in the repo under
 public_folder: "/img/upload" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
+- name: general
+  label: "Recusros generales"
+  folder: docs/
+  identifier_field: title
+  widget: "list"
+  create: true
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
 - name: Receipte
   label: "Receipte"
   folder: docs/Receipte
@@ -27,7 +44,6 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
-
 - name: Packing
   label: "Packing"
   folder: docs/Packing
@@ -93,31 +109,6 @@ collections:
     - { name: body, label: Body, widget: markdown }
     - label: "Tags"
       name: "tags"
-      widget: "list"
-      fields:
-        - { name: name, label: Name, widget: string }
-        - { name: title, label: Title, widget: string }
-        - { name: url, label: URL, widget: string }
-        - { name: imageUrl, label: ImageURL, widget: string }
-
-
-- name: blog
-  label: "blog"
-  folder: blog
-  identifier_field: title
-  extension: md
-  widget: "list"
-  create: true
-  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - { name: slug, label: Slug, widget: string }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-    - label: "Authors"
-      name: "authors"
       widget: "list"
       fields:
         - { name: name, label: Name, widget: string }

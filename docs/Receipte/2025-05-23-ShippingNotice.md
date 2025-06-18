@@ -6,7 +6,7 @@ title: Shipping Notice
 # Shipping Notice
 
 El módulo Shipping Notice permite gestionar los Avisos de Embarque (ASN) enviados por los clientes. En este módulo se detalla la información relacionada con los artículos que serán recibidos, incluyendo su descripción, cantidad, país de origen y etc.
-Un ASN funciona como una validación y confirmación previa de los paquetes que se procesarán en el sistema, antes de generar una orden de recibo. Esta validación garantiza que la información del embarque esté completa y alineada con los registros del WMS.
+Un ASN funciona como una validación y confirmación previa de los paquetes que se procesarán en el sistema, antes de generar una orden de recibo. Esta validación garantiza que la información del embarque esté completa y alineada con las ordenes de recibo  del WMS.
 
 
 
@@ -20,7 +20,7 @@ Un ASN funciona como una validación y confirmación previa de los paquetes que 
 ![](/img/upload/SNp2-2025-13-16.png)
 
 :::note
-Los datos para llenar el formulario son proporcionados por el cliente a través de correo electrónico.
+Los datos para llenar el formulario son proporcionados por el cliente a través de un correo electrónico.
 :::
 
 - Posteriormente haz clic en  **ADD**.
