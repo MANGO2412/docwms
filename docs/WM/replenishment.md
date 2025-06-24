@@ -7,6 +7,8 @@ El módulo de replenishment sirve para abastecer el stock de locaciones con art�
 Este módulo crea una orden de replenishment, la cual puede ser posteriormente procesada en el propio de replenishment, en el cual se tendrán que insertar datos como el contenedor donde se encuentran los artículos, los artículos y la locación donde se hará el replenishment.
 En este módulo también se pueden borrar y atender las órdenes de replenishment abiertas.
 
+</hr>
+
 ### Vista útil general del módulo
 
 ![](/img/upload/screenshot-2025-06-05-100808.png)
@@ -17,6 +19,9 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 | 2   | Botón de importar CSV                       | Este botón sirve para importar replenishment como CSV                    |
 | 3   | Botón para crear replenishment              | Este botón sirve para iniciar el proceso de crear un nuevo replenishment |
 
+</hr>
+
+
 ### Detalles del módulo
 
 Las órdenes de replenishment cuentas con varios los estados o status los cuales reflejan el progreso actual de esa orden dichos estados se listan a continuación:
@@ -26,29 +31,12 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 3. (Completed) - Este estado representa que la orden ha sido completada.  
 4. (Cancelled) - este status representa que la orden ha sido cancelada.
 
-<hr/>
+</hr>
 
-### Contexto
-
-Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera.
-
-![logo](/img/upload/screenshot-2025-06-24-122218.png)
-
-Los **artículos** suelen venir en diferentes presentaciones pero una de las comunes son cajas más pequeñas.
-
-![](/img/upload/screenshot-2025-05-20-100053.png)
-
-La **ubicación** o **locación** es donde se pueden almacenar artículos para su uso en el proceso. Dicha locación es un espacio en un rack del almacén y se representa con una **etiqueta** con un **QR** la cual está colocada en dicho rack.
-
-![](/img/upload/screenshot-2025-06-05-120545.png)
-
-![](/img/upload/screenshot-2025-06-05-120624.png)
-
-<hr/>
 
 <table>
     <tr>
-        <th>Contexto</th>
+        <th><h3>Contexto</h3></th>
     </tr>
 
     <tr>
