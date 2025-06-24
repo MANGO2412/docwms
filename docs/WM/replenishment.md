@@ -3,6 +3,32 @@ title: Replenishment
 ---
 # Módulo de replenishment
 
+El módulo de replenishment sirve para abastecer el stock de locaciones con artículos que hagan falta.
+Este módulo crea una orden de replenishment, la cual puede ser posteriormente procesada en el propio de replenishment, en el cual se tendrán que insertar datos como el contenedor donde se encuentran los artículos, los artículos y la locación donde se hará el replenishment.
+En este módulo también se pueden borrar y atender las órdenes de replenishment abiertas.
+
+
+
+### Vista útil general del módulo
+
+![](/img/upload/screenshot-2025-06-05-100808.png)
+
+| No | Nombre | Descripción |
+| :---- | :---- | :---- |
+|1  | Cuadro de total de órdenes de replenishment | Este cuadro muestra el total de órdenes de replenishment |
+| 2 | Botón de importar CSV | Este botón sirve para importar replenishment como CSV |
+| 3 | Botón para crear replenishment | Este botón sirve para iniciar el proceso de crear un nuevo replenishment |
+
+### Detalles del módulo
+
+Las órdenes de replenishment cuentas con varios los estados o status los cuales reflejan el progreso actual de esa orden dichos estados se listan a continuación:
+
+1. (On Queue) \- Este estado representa que  la orden esta en fila.  
+2. (In Progress) \- Este estado representa que la orden esta en progreso.  
+3. (Completed) \- Este estado representa que la orden ha sido completada.  
+4. (Cancelled) \- este status representa que la orden ha sido cancelada.
+
+
 ## Tips y trucos de este módulo
 
 Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recargar en tu navegador.
@@ -39,8 +65,6 @@ La respuesta es no, las órdenes no se pueden borrar pero si se pueden **cancela
 
 ### Como puedo cancelar una orden de replenishment
 
-
 Para cancelar una orden se tiene que entrar a la orden y en la parte superior izquierda se encuentra un botón el cual dice **Cancelar orden.**
-
 
 ![](/img/upload/screenshot-2025-06-05-105728.png)
