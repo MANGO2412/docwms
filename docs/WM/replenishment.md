@@ -7,7 +7,9 @@ El módulo de replenishment sirve para abastecer el stock de locaciones con art�
 Este módulo crea una orden de replenishment, la cual puede ser posteriormente procesada en el propio de replenishment, en el cual se tendrán que insertar datos como el contenedor donde se encuentran los artículos, los artículos y la locación donde se hará el replenishment.
 En este módulo también se pueden borrar y atender las órdenes de replenishment abiertas.
 
+
 </hr>
+
 
 ### Vista útil general del módulo
 
@@ -19,7 +21,9 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 | 2   | Botón de importar CSV                       | Este botón sirve para importar replenishment como CSV                    |
 | 3   | Botón para crear replenishment              | Este botón sirve para iniciar el proceso de crear un nuevo replenishment |
 
+
 </hr>
+
 
 
 ### Detalles del módulo
@@ -30,6 +34,7 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 2. (In Progress) - Este estado representa que la orden esta en progreso.  
 3. (Completed) - Este estado representa que la orden ha sido completada.  
 4. (Cancelled) - este status representa que la orden ha sido cancelada.
+
 
 </hr>
 
