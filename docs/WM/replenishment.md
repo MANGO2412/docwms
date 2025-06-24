@@ -9,7 +9,7 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 
 ### Vista útil general del módulo
 
-![](/static/img/upload/screenshot-2025-06-05-100808.png)
+![](/img/upload/screenshot-2025-06-05-100808.png)
 
 | No  | Nombre                                      | Descripción                                                              |
 | --- | ------------------------------------------- | ------------------------------------------------------------------------ |
@@ -32,17 +32,17 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera.
 
-![logo](/static/img/upload/screenshot-2025-06-24-122218.png)
+![logo](/img/upload/screenshot-2025-06-24-122218.png)
 
 Los **artículos** suelen venir en diferentes presentaciones pero una de las comunes son cajas más pequeñas.
 
-![](/static/img/upload/screenshot-2025-05-20-100053.png)
+![](/img/upload/screenshot-2025-05-20-100053.png)
 
 La **ubicación** o **locación** es donde se pueden almacenar artículos para su uso en el proceso. Dicha locación es un espacio en un rack del almacén y se representa con una **etiqueta** con un **QR** la cual está colocada en dicho rack.
 
-![](/static/img/upload/screenshot-2025-06-05-120545.png)
+![](/img/upload/screenshot-2025-06-05-120545.png)
 
-![](/static/img/upload/screenshot-2025-06-05-120624.png)
+![](/img/upload/screenshot-2025-06-05-120624.png)
 
 <hr/>
 
@@ -55,17 +55,17 @@ La **ubicación** o **locación** es donde se pueden almacenar artículos para s
         <td>
             Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera.
 
-            ![logo](/static/img/upload/screenshot-2025-06-24-122218.png)
+            ![logo](/img/upload/screenshot-2025-06-24-122218.png)
 
             Los **artículos** suelen venir en diferentes presentaciones pero una de las comunes son cajas más pequeñas.
 
-            ![](/static/img/upload/screenshot-2025-05-20-100053.png)
+            ![](/img/upload/screenshot-2025-05-20-100053.png)
 
             La **ubicación** o **locación** es donde se pueden almacenar artículos para su uso en el proceso. Dicha locación es un espacio en un rack del almacén y se representa con una **etiqueta** con un **QR** la cual está colocada en dicho rack.
 
-            ![](/static/img/upload/screenshot-2025-06-05-120545.png)
+            ![](/img/upload/screenshot-2025-06-05-120545.png)
 
-            ![](/static/img/upload/screenshot-2025-06-05-120624.png)
+            ![](/img/upload/screenshot-2025-06-05-120624.png)
         </td>
     </tr>
     
