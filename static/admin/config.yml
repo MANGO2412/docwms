@@ -10,9 +10,26 @@ media_folder: "static/img/upload" # Media files will be stored in the repo under
 public_folder: "/img/upload" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
+- name: Client
+  label: "Portal cliente"
+  folder: docs/client/
+  identifier_field: title
+  widget: "list"
+  create: true
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - label: "Tags"
+      name: "tags"
+      widget: "list"
+      fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
 - name: general
-  label: "Recusros generales"
-  folder: docs/
+  label: "Recursos generales"
+  folder: docs/internal/
   identifier_field: title
   widget: "list"
   create: true
@@ -28,8 +45,8 @@ collections:
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
 - name: Receipte
-  label: "Receipte"
-  folder: docs/Receipte
+  label: "Receipte-Internal"
+  folder: docs/internal/Receipte
   identifier_field: title
   widget: "list"
   create: true
@@ -45,8 +62,8 @@ collections:
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
 - name: Packing
-  label: "Packing"
-  folder: docs/Packing
+  label: "Packing-Internal"
+  folder: docs/internal//Packing
   identifier_field: title
   widget: "list"
   create: true
@@ -63,8 +80,8 @@ collections:
         - { name: imageUrl, label: ImageURL, widget: string }
 
 - name: Picking
-  label: "Picking"
-  folder: docs/Picking
+  label: "Picking-Internal"
+  folder: docs/internal//Picking
   identifier_field: title
   widget: "list"
   create: true
@@ -81,8 +98,8 @@ collections:
         - { name: imageUrl, label: ImageURL, widget: string }
 
 - name: Shipping
-  label: "Shipping"
-  folder: docs/Shipping
+  label: "Shipping-Internal"
+  folder: docs/internal//Shipping
   identifier_field: title
   widget: "list"
   create: true
@@ -100,7 +117,7 @@ collections:
 
 - name: WM
   label: "Gestion de Almacen"
-  folder: docs/WM
+  folder: docs/internal//WM
   identifier_field: title
   widget: "list"
   create: true
