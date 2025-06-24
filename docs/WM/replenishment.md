@@ -30,7 +30,7 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 | Contexto                                                                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera. <br> ![logo](/img/upload/screenshot-2025-06-24-122218.png)|
+| Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera. <br/> ![logo](/img/upload/screenshot-2025-06-24-122218.png)|
 
 ## Tips y trucos de este módulo
 
