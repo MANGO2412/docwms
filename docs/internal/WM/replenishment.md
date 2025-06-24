@@ -72,4 +72,4 @@ Para cancelar una orden se tiene que entrar a la orden y en la parte superior iz
 
 ![](/img/upload/screenshot-2025-06-05-105728.png)
 
-![]()
+
