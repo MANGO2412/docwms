@@ -34,25 +34,15 @@ Lo primero que se agrega al usar replenishment es el container que es la caja do
 
 ![logo](/img/upload/screenshot-2025-06-24-122218.png)
 
-
 Los **artículos** suelen venir en diferentes presentaciones pero una de las comunes son cajas más pequeñas.
-
-
 
 ![](/img/upload/screenshot-2025-05-20-100053.png)
 
-
-
-
 La **ubicación** o **locación** es donde se pueden almacenar artículos para su uso en el proceso. Dicha locación es un espacio en un rack del almacén y se representa con una **etiqueta** con un **QR** la cual está colocada en dicho rack.
-
-
 
 ![](/img/upload/screenshot-2025-06-05-120545.png)
 
 ![](/img/upload/screenshot-2025-06-05-120624.png)
-
-
 
 <hr/>
 
@@ -95,5 +85,3 @@ La respuesta es no, las órdenes no se pueden borrar pero si se pueden **cancela
 Para cancelar una orden se tiene que entrar a la orden y en la parte superior izquierda se encuentra un botón el cual dice **Cancelar orden.**
 
 ![](/img/upload/screenshot-2025-06-05-105728.png)
-
-![]()
