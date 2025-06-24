@@ -99,7 +99,7 @@ collections:
 
 - name: Shipping
   label: "Shipping-Internal"
-  folder: docs/internal//Shipping
+  folder: docs/internal/Shipping
   identifier_field: title
   widget: "list"
   create: true
@@ -117,7 +117,7 @@ collections:
 
 - name: WM
   label: "Gestion de Almacen"
-  folder: docs/internal//WM
+  folder: docs/internal/WM
   identifier_field: title
   widget: "list"
   create: true
