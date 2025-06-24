@@ -1,4 +1,46 @@
 ---
 title: Replenishment
 ---
-Una prueba para la documentacion de replenishment
+# Módulo de replenishment
+
+## Tips y trucos de este módulo
+
+Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recargar en tu navegador.
+
+Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + **R** esto reiniciará la caché del sitio, **cuidado** si dejas un formulario con datos sin enviar la información **podría borrarse.**
+
+## Problemas frecuentes
+
+### No detecta los ítems a mover
+
+Cuando pasa esto normalmente es porque no se siguió el flujo del módulo el cual es: Asignar el tipo de replenishment el cual es por SKU o por BOX (Container) y este es asignado mediante un **botón** en la tabla del procesamiento de la orden se encuentra en el campo **tipo de movimiento** (Movement Type) , para cambiar de **sku** a **box** solo se necesita hacer un **click** sobre el **botón**.
+
+![Replenishment table](/img/upload/screenshot-2025-06-05-103956.png "Tipo de movimiento")
+
+**Box** es por si se quieren mover contenedores a esa ubicación.
+
+![](/img/upload/screenshot-2025-06-05-104005.png)
+
+Mientras que **Sku** es si se quieren mover los **items (artículos)** directamente a la ubicación.
+
+### No detecta un ítem o artículo cuando lo inserto
+
+Si esto pasa puede ser por las siguientes razones:
+
+1. **No** has **escaneado** el contenedor de **origen** como **primer** paso
+2. Estas **ingresando** un **sku** o código **incorrecto** de artículo, por favor **verifica** que el **número** esté correcto.
+3. El **artículo** que ingresas ya tenga **stock completo** o ya **no existe**.
+
+## Preguntas frecuentes
+
+### Puedo borrar las órdenes de replenishment desde la tabla de ordenes?
+
+La respuesta es no, las órdenes no se pueden borrar pero si se pueden **cancelar.** Para cancelar una orden se tiene que entrar a la orden y en la parte superior izquierda se encuentra un botón el cual dice **Cancelar orden.**
+
+### Como puedo cancelar una orden de replenishment
+
+
+Para cancelar una orden se tiene que entrar a la orden y en la parte superior izquierda se encuentra un botón el cual dice **Cancelar orden.**
+
+
+![](/img/upload/screenshot-2025-06-05-105728.png)
