@@ -74,6 +74,11 @@ Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recarga
 
 Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + **R** esto reiniciará la caché del sitio, **cuidado** si dejas un formulario con datos sin enviar la información **podría borrarse.**
 
+
+<hr/>
+
+
+
 ## Problemas frecuentes
 
 ### No detecta los ítems a mover
@@ -95,6 +100,10 @@ Si esto pasa puede ser por las siguientes razones:
 1. **No** has **escaneado** el contenedor de **origen** como **primer** paso
 2. Estas **ingresando** un **sku** o código **incorrecto** de artículo, por favor **verifica** que el **número** esté correcto.
 3. El **artículo** que ingresas ya tenga **stock completo** o ya **no existe**.
+
+
+<hr/>
+
 
 ## Preguntas frecuentes
 
