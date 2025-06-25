@@ -87,6 +87,13 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
              ![](/img/upload/Screenshot-2025-06-05-102011.png)
 
              Después click en **ADD** y entonces la **orden** de replenishment estará **creada**. Lo cual se verá representado de la siguiente forma.
+            
+            <!-- ![](/img/upload/###) -->
+            
+            ![](/img/upload/Screenshot-2025-06-05-102231.png)
+
+            Aquí se puede observar cómo se **creó** la **orden** y se **enlistó**. Estando creada la orden ya está lista para ser procesada.
+
 
         </td>
     </tr>
