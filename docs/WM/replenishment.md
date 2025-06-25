@@ -80,7 +80,7 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
         <td>
             Selecciona el <b>3</b> de la interfaz principal para iniciar con el proceso de crear un nuevo replenishment. y aparecerá una interfaz en la cual se creará la orden.
             
-             ![](/img/upload/Screenshot 2025-06-05 101708.png)
+             ![](/img/upload/Screenshot-2025-06-05-101708.png)
 
         </td>
     </tr>
