@@ -110,7 +110,8 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
     </tr>
 
     <tr>
-        <td>            <!-- ![](/img/upload/###) -->
+        <td>
+        
             Lo primero será dar **doble click** a una **orden** recién **creada** de replenishment y por lo tanto su estado sea (OnQueue).
             ![](/img/upload/Screenshot-2025-06-05-102231.png)
 
@@ -168,9 +169,6 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
             Este estatus también es **reflejado** en la **tabla** de **ordenes** de **replenishment**.
             ![](/img/upload/Screenshot-2025-06-05-121530.png)
             
-            
-
-
         </td>
     </tr>
 </table>
