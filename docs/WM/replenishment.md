@@ -30,6 +30,7 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 
 Las órdenes de replenishment cuentas con varios los estados o status los cuales reflejan el progreso actual de esa orden dichos estados se listan a continuación:
 
+
 <ol>
   <li><mark style={{backgroundColor: 'blue', color: 'white'}}>(On Queue)</mark> - Este estado representa que la orden está en fila.</li>
   <li><mark style={{backgroundColor: 'yellow'}}>(In Progress)</mark> - Este estado representa que la orden está en progreso.</li>
@@ -65,6 +66,26 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
     </tr>
     
 </table>
+
+
+### Crear replenishment
+
+
+<table>
+    <tr>
+        <th><b>Pasos</b></th>
+    </tr>
+
+    <tr>
+        <td>
+            Selecciona el <b>3</b> de la interfaz principal para iniciar con el proceso de crear un nuevo replenishment. y aparecerá una interfaz en la cual se creará la orden.
+            
+             ![](/img/upload/Screenshot 2025-06-05 101708.png)
+
+        </td>
+    </tr>
+</table>
+
 
 
 <hr/>
