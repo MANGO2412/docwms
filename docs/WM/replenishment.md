@@ -11,7 +11,7 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 <hr/>
 
 
-### Vista útil general del módulo
+## Vista útil general del módulo
 
 ![](/img/upload/screenshot-2025-06-05-100808.png)
 
@@ -26,7 +26,7 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 
 
 
-### Detalles del módulo
+## Detalles del módulo
 
 Las órdenes de replenishment cuentas con varios los estados o status los cuales reflejan el progreso actual de esa orden dichos estados se listan a continuación:
 
