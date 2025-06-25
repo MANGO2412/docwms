@@ -192,15 +192,6 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 <hr/>
 
-### Tips y trucos de este módulo
-
-Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recargar en tu navegador.
-
-Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + **R** esto reiniciará la caché del sitio, **cuidado** si dejas un formulario con datos sin enviar la información **podría borrarse.**
-
-
-<hr/>
-
 
 ### Cancelar replenishment
 
@@ -236,6 +227,15 @@ Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + 
 
 <hr/>
 
+
+## Tips y trucos de este módulo
+
+Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recargar en tu navegador.
+
+Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + **R** esto reiniciará la caché del sitio, **cuidado** si dejas un formulario con datos sin enviar la información **podría borrarse.**
+
+
+<hr/>
 
 ## Problemas frecuentes
 
