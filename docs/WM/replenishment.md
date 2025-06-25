@@ -37,9 +37,10 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 
 <ol>
-   <li style={{backgroundColor:'blue'}}>(On Queue) - Este estado representa que  la orden esta en fila.</li>
-   <li>(In Progress) - Este estado representa que la orden esta en progreso.</li>
-   <li>(Completed) - Este estado representa que la orden ha sido completada.</li>
+   <li style={{backgroundColor:'blue', color:'white'}}>(On Queue) - Este estado representa que  la orden esta en fila.</li>
+   <li style={{backgroundColor:'yellow'}}>(In Progress) - Este estado representa que la orden esta en progreso.</li>
+   <li style={{backgroundColor:'green'}}>(Completed) - Este estado representa que la orden ha sido completada.</li>
+   <li style={{backgroundColor:'red', color:'white'}}>(Cancelled) - este status representa que la orden ha sido cancelada.</li>
 </ol>
 
 
