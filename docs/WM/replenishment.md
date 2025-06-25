@@ -102,7 +102,7 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 <hr/>
 
 
-## Procesar orden de replenishment
+### Procesar orden de replenishment
 
 <table>
     <tr>
@@ -192,7 +192,7 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 <hr/>
 
-## Tips y trucos de este módulo
+### Tips y trucos de este módulo
 
 Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recargar en tu navegador.
 
@@ -202,7 +202,7 @@ Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + 
 <hr/>
 
 
-## Cancelar replenishment
+### Cancelar replenishment
 
 <table>
     <tr>
