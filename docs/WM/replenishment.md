@@ -8,7 +8,7 @@ Este módulo crea una orden de replenishment, la cual puede ser posteriormente p
 En este módulo también se pueden borrar y atender las órdenes de replenishment abiertas.
 
 
-</hr>
+<hr/>
 
 
 ### Vista útil general del módulo
@@ -22,7 +22,7 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 | 3   | Botón para crear replenishment              | Este botón sirve para iniciar el proceso de crear un nuevo replenishment |
 
 
-</hr>
+<hr/>
 
 
 
@@ -36,7 +36,7 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 4. (Cancelled) - este status representa que la orden ha sido cancelada.
 
 
-</hr>
+<hr/>
 
 
 <table>
@@ -63,6 +63,10 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
     </tr>
     
 </table>
+
+
+<hr/>
+
 
 ## Tips y trucos de este módulo
 
