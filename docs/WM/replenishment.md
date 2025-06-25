@@ -202,6 +202,40 @@ Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + 
 <hr/>
 
 
+## Cancelar replenishment
+
+<table>
+    <tr>
+        <th><b>Pasos</b></th>
+    </tr>
+
+    <tr>
+        <td>
+            Lo primero es seleccionar una orden de replenishment la cual su estatus no sea **cancelado** ni **completado.** Los cuales son órdenes con estatus de **EnQueue** o **InProgress.**
+
+            Se entra a la **sección** de **proceso** de una orden con **doble click**
+
+            ![](/img/upload/Screenshot-2025-06-05-121812.png)
+
+            Dentro de esta sección se puede observar en la parte superior izquierda el botón de **Cancel order** (Cancelar orden), **Da click** en este botón **si estás seguro de cancelar** la orden ya que se cancelara de un solo movimiento.
+
+            ![](/img/upload/Screenshot-2025-06-05-121950.png)
+
+            El estatus de la orden cambia inmediatamente a Cancelled (Cancelado).
+
+            ![](/img/upload/Screenshot-2025-06-05-122311.png)
+
+            También se ve reflejado en la tabla de las órdenes de replenishment.
+
+            ![](/img/upload/Screenshot-2025-06-05-122406.png)
+
+        </td>
+    </tr>
+</table>
+
+
+<hr/>
+
 
 ## Problemas frecuentes
 
