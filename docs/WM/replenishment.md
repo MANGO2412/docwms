@@ -82,6 +82,12 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
             
              ![](/img/upload/Screenshot-2025-06-05-101708.png)
 
+             En esta **interfaz** se presenta dos formas de crear un Replenishment al seleccionar el campo de **type**, como la más **común** seleccionaremos **Manual** por lo tanto planning queda **vacío** por default.
+
+             ![](/img/upload/Screenshot-2025-06-05-102011.png)
+
+             Después click en **ADD** y entonces la **orden** de replenishment estará **creada**. Lo cual se verá representado de la siguiente forma.
+
         </td>
     </tr>
 </table>
