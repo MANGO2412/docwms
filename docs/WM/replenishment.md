@@ -99,10 +99,83 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
     </tr>
 </table>
 
-
-
 <hr/>
 
+
+## Procesar orden de replenishment
+
+<table>
+    <tr>
+        <th><b>Pasos</b></th>
+    </tr>
+
+    <tr>
+        <td>            <!-- ![](/img/upload/###) -->
+            Lo primero será dar **doble click** a una **orden** recién **creada** de replenishment y por lo tanto su estado sea (OnQueue).
+            ![](/img/upload/Screenshot-2025-06-05-102231.png)
+
+            Después se desplegará la página donde se procesa la orden. 
+            ![](/img/upload/Screenshot-2025-06-05-112457.png)
+
+            Primero se debe de crear una **pending task** o **tarea** para indicar el artículo que se va a mover. **Click** en Pending **tasks.** Se encuentra en la esquina superior izquierda como primer botón.
+            ![](/img/upload/Screenshot-2025-06-05-112714.png)
+
+            Al hacer **click** aparecerá un **formulario** en cual se **indicará** el **artículo** a mover la **cantidad** y la **zona**. La **zona** donde se encuentra el artículo, se ingresa solo cuando sea solicitada explícitamente, de lo contrario se puede dejar vacía.
+            ![](/img/upload/Screenshot-2025-06-05-113023.png)
+
+            Al ingresar **SKU** del artículo **asegúrate** de **seleccionar** el sku desde la **lista** de resultados, de lo **contrario no** se **podrá** realizar la operación.
+            ![](/img/upload/Screenshot-2025-06-05-125002.png)
+
+            Una vez terminada la task click en **assign tasks** (asignar tarea).
+            ![](/img/upload/Screenshot-2025-06-05-113101.png)
+
+            Esta task será reflejada en la tabla en la parte inferior.
+            ![](/img/upload/Screenshot-2025-06-05-113243.png)
+            
+            Cada vez que creas o asignas una task este tipo de movimiento se ve reflejado en el historial de la orden de replenishment, dicho **historial** se encuentra **ubicado** en la **parte inferior** de la interfaz de procesamiento de la orden.
+            ![](/img/upload/Screenshot-2025-06-05-115920.png)
+
+            Una vez hecho esto, selecciona el **tipo de movimiento.** Sea **SKU** para registrar articulos o **Box** para mover un container, al ser un botón se da click sobre el botón. El que muestra es el tipo de movimiento. Este botón se ubica en la tabla de arriba en la celda de **Movement Type.**
+            ![](/img/upload/Screenshot-2025-06-05-113351.png)
+
+            En este caso seleccionemos **SKU**, si seleccionaste **Box** puedes saltarte el paso de escanear los artículos del replenishment por sku.
+
+            Como primer paso se **escanea** la **PPL** o **Contenedor** donde se ubican los artículos que se necesitan para el replenishment. Al hacer esto se verá reflejado en la barra de progreso con un círculo relleno y con una palomita.
+            ![](/img/upload/Screenshot-2025-06-05-114351.png)
+
+            También se observa en la parte superior de la pantalla un mensaje de éxito
+            ![](/img/upload/Screenshot-2025-06-05-114433.png)
+
+            Posteriormente se **escanea** el **QR** de los **artículos** los cuales se **moverán** de **locación**. Si tienes 4 artículos a mover tienes que escanear los 4 artículos.
+
+            Una vez escaneados se notará el progreso cuando el registro de la tabla cambia a verde, asegurate de que hayan sido escaneado la misma cantidad de artículos a mover descrita en la orden. Esto puede comprobarse en las columnas de **Quantity to be replenished** (Cantidad a ser reabastecida) y en la columna de **Scanned Quantity** (Cantidad escaneada).
+            ![](/img/upload/Screenshot-2025-06-05-115027.png)
+
+            Una vez escaneados todos los artículos se tiene que dar click en el menú que se encuentra en la parte inferior derecha de la pantalla el cual es un círculo azul. Este círculo azul tiene 3 opciones de las cuales la última es una flecha la cual dice **Next** (siguiente) dar click ahí para ir al siguiente paso.
+            ![](/img/upload/Screenshot-2025-06-05-115605.png)
+
+            Una vez hecho esto el **progreso** se verá **reflejado** en la **barra de progreso** marcando que ya han sido **escaneados** los **artículos** y **procediendo** al siguiente paso de la **ubicación** de los artículos.
+            ![](/img/upload/Screenshot-2025-06-05-120021.png)
+
+            Ahora escanea la **locación** de los artículos para completar este paso. Entonces aparecerá un anuncio de **orden exitoso** en la parte superior de la pantalla.
+
+            Ahora para **concluir** una **orden** de replenishment se tiene que dar **click** en el **botón** de **order completed** (Orden completada).
+            ![](/img/upload/Screenshot-2025-06-05-121020.png)
+
+            Al hacer esto la orden cambia de estatus a **Completed** (completada), debido a que la orden será inmodificable.
+            ![](/img/upload/Screenshot-2025-06-05-121324.png)
+
+            Este estatus también es **reflejado** en la **tabla** de **ordenes** de **replenishment**.
+            ![](/img/upload/Screenshot-2025-06-05-121530.png)
+            
+            
+
+
+        </td>
+    </tr>
+</table>
+
+<hr/>
 
 ## Tips y trucos de este módulo
 
