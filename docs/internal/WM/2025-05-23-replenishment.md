@@ -7,7 +7,11 @@ El módulo de replenishment sirve para abastecer el stock de locaciones con art�
 Este módulo crea una orden de replenishment, la cual puede ser posteriormente procesada en el propio de replenishment, en el cual se tendrán que insertar datos como el contenedor donde se encuentran los artículos, los artículos y la locación donde se hará el replenishment.
 En este módulo también se pueden borrar y atender las órdenes de replenishment abiertas.
 
-### Vista útil general del módulo
+
+<hr/>
+
+
+## Vista útil general del módulo
 
 ![](/img/upload/screenshot-2025-06-05-100808.png)
 
@@ -17,26 +21,220 @@ En este módulo también se pueden borrar y atender las órdenes de replenishmen
 | 2   | Botón de importar CSV                       | Este botón sirve para importar replenishment como CSV                    |
 | 3   | Botón para crear replenishment              | Este botón sirve para iniciar el proceso de crear un nuevo replenishment |
 
-### Detalles del módulo
+
+<hr/>
+
+
+## Detalles del módulo
 
 Las órdenes de replenishment cuentas con varios los estados o status los cuales reflejan el progreso actual de esa orden dichos estados se listan a continuación:
 
-1. (On Queue) - Este estado representa que  la orden esta en fila.  
-2. (In Progress) - Este estado representa que la orden esta en progreso.  
-3. (Completed) - Este estado representa que la orden ha sido completada.  
-4. (Cancelled) - este status representa que la orden ha sido cancelada.
 
-![logo](/img/upload/screenshot-2025-06-24-122218.png)
+<ol>
+  <li><mark style={{backgroundColor: 'blue', color: 'white'}}>(On Queue)</mark> - Este estado representa que la orden está en fila.</li>
+  <li><mark style={{backgroundColor: 'yellow'}}>(In Progress)</mark> - Este estado representa que la orden está en progreso.</li>
+  <li><mark style={{backgroundColor: 'green'}}>(Completed)</mark> - Este estado representa que la orden ha sido completada.</li>
+  <li><mark style={{backgroundColor: 'red', color: 'white'}}>(Cancelled)</mark> - Este estado representa que la orden ha sido cancelada.</li>
+</ol>
 
-| Contexto                                                                                                                                                                         |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera. <br/> ![logo](/img/upload/screenshot-2025-06-24-122218.png)|
+
+<hr/>
+
+
+<table>
+    <tr>
+        <th><h3>Contexto</h3></th>
+    </tr>
+
+    <tr>
+        <td>
+            Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera.
+
+            ![logo](/img/upload/screenshot-2025-06-24-122218.png)
+
+            Los **artículos** suelen venir en diferentes presentaciones pero una de las comunes son cajas más pequeñas.
+
+            ![](/img/upload/screenshot-2025-05-20-100053.png)
+
+            La **ubicación** o **locación** es donde se pueden almacenar artículos para su uso en el proceso. Dicha locación es un espacio en un rack del almacén y se representa con una **etiqueta** con un **QR** la cual está colocada en dicho rack.
+
+            ![](/img/upload/screenshot-2025-06-05-120545.png)
+
+            ![](/img/upload/screenshot-2025-06-05-120624.png)
+        </td>
+    </tr>
+    
+</table>
+
+
+### Crear replenishment
+
+
+<table>
+    <tr>
+        <th><b>Pasos</b></th>
+    </tr>
+
+    <tr>
+        <td>
+            Selecciona el <b>3</b> de la interfaz principal para iniciar con el proceso de crear un nuevo replenishment. y aparecerá una interfaz en la cual se creará la orden.
+            
+             ![](/img/upload/Screenshot-2025-06-05-101708.png)
+
+             En esta **interfaz** se presenta dos formas de crear un Replenishment al seleccionar el campo de **type**, como la más **común** seleccionaremos **Manual** por lo tanto planning queda **vacío** por default.
+
+             ![](/img/upload/Screenshot-2025-06-05-102011.png)
+
+             Después click en **ADD** y entonces la **orden** de replenishment estará **creada**. Lo cual se verá representado de la siguiente forma.
+            
+            <!-- ![](/img/upload/###) -->
+            
+            ![](/img/upload/Screenshot-2025-06-05-102231.png)
+
+            Aquí se puede observar cómo se **creó** la **orden** y se **enlistó**. Estando creada la orden ya está lista para ser procesada.
+
+
+        </td>
+    </tr>
+</table>
+
+<hr/>
+
+
+### Procesar orden de replenishment
+
+<table>
+    <tr>
+        <th><b>Pasos</b></th>
+    </tr>
+
+    <tr>
+        <td>
+
+            Lo primero será dar **doble click** a una **orden** recién **creada** de replenishment y por lo tanto su estado sea (OnQueue).
+
+            ![](/img/upload/Screenshot-2025-06-05-102231.png)
+
+            Después se desplegará la página donde se procesa la orden. 
+
+            ![](/img/upload/Screenshot-2025-06-05-112457.png)
+
+            Primero se debe de crear una **pending task** o **tarea** para indicar el artículo que se va a mover. **Click** en Pending **tasks.** Se encuentra en la esquina superior izquierda como primer botón.
+
+            ![](/img/upload/Screenshot-2025-06-05-112714.png)
+
+            Al hacer **click** aparecerá un **formulario** en cual se **indicará** el **artículo** a mover la **cantidad** y la **zona**. La **zona** donde se encuentra el artículo, se ingresa solo cuando sea solicitada explícitamente, de lo contrario se puede dejar vacía.
+            
+            ![](/img/upload/Screenshot-2025-06-05-113023.png)
+
+            Al ingresar **SKU** del artículo **asegúrate** de **seleccionar** el sku desde la **lista** de resultados, de lo **contrario no** se **podrá** realizar la operación.
+            
+            ![](/img/upload/Screenshot-2025-06-05-125002.png)
+
+            Una vez terminada la task click en **assign tasks** (asignar tarea).
+            
+            ![](/img/upload/Screenshot-2025-06-05-113101.png)
+
+            Esta task será reflejada en la tabla en la parte inferior.
+            
+            ![](/img/upload/Screenshot-2025-06-05-113243.png)
+            
+            Cada vez que creas o asignas una task este tipo de movimiento se ve reflejado en el historial de la orden de replenishment, dicho **historial** se encuentra **ubicado** en la **parte inferior** de la interfaz de procesamiento de la orden.
+            
+            ![](/img/upload/Screenshot-2025-06-05-115920.png)
+
+            Una vez hecho esto, selecciona el **tipo de movimiento.** Sea **SKU** para registrar articulos o **Box** para mover un container, al ser un botón se da click sobre el botón. El que muestra es el tipo de movimiento. Este botón se ubica en la tabla de arriba en la celda de **Movement Type.**
+            
+            ![](/img/upload/Screenshot-2025-06-05-113351.png)
+
+            En este caso seleccionemos **SKU**, si seleccionaste **Box** puedes saltarte el paso de escanear los artículos del replenishment por sku.
+
+            Como primer paso se **escanea** la **PPL** o **Contenedor** donde se ubican los artículos que se necesitan para el replenishment. Al hacer esto se verá reflejado en la barra de progreso con un círculo relleno y con una palomita.
+            
+            ![](/img/upload/Screenshot-2025-06-05-114351.png)
+
+            También se observa en la parte superior de la pantalla un mensaje de éxito
+            
+            ![](/img/upload/Screenshot-2025-06-05-114433.png)
+
+            Posteriormente se **escanea** el **QR** de los **artículos** los cuales se **moverán** de **locación**. Si tienes 4 artículos a mover tienes que escanear los 4 artículos.
+
+            Una vez escaneados se notará el progreso cuando el registro de la tabla cambia a verde, asegurate de que hayan sido escaneado la misma cantidad de artículos a mover descrita en la orden. Esto puede comprobarse en las columnas de **Quantity to be replenished** (Cantidad a ser reabastecida) y en la columna de **Scanned Quantity** (Cantidad escaneada).
+            
+            ![](/img/upload/Screenshot-2025-06-05-115027.png)
+
+            Una vez escaneados todos los artículos se tiene que dar click en el menú que se encuentra en la parte inferior derecha de la pantalla el cual es un círculo azul. Este círculo azul tiene 3 opciones de las cuales la última es una flecha la cual dice **Next** (siguiente) dar click ahí para ir al siguiente paso.
+            
+            ![](/img/upload/Screenshot-2025-06-05-115605.png)
+
+            Una vez hecho esto el **progreso** se verá **reflejado** en la **barra de progreso** marcando que ya han sido **escaneados** los **artículos** y **procediendo** al siguiente paso de la **ubicación** de los artículos.
+            
+            ![](/img/upload/Screenshot-2025-06-05-120021.png)
+
+            Ahora escanea la **locación** de los artículos para completar este paso. Entonces aparecerá un anuncio de **orden exitoso** en la parte superior de la pantalla.
+
+            Ahora para **concluir** una **orden** de replenishment se tiene que dar **click** en el **botón** de **order completed** (Orden completada).
+            
+            ![](/img/upload/Screenshot-2025-06-05-121020.png)
+
+            Al hacer esto la orden cambia de estatus a **Completed** (completada), debido a que la orden será inmodificable.
+            
+            ![](/img/upload/Screenshot-2025-06-05-121324.png)
+
+            Este estatus también es **reflejado** en la **tabla** de **ordenes** de **replenishment**.
+            
+            ![](/img/upload/Screenshot-2025-06-05-121530.png)
+            
+        </td>
+    </tr>
+</table>
+
+<hr/>
+
+
+### Cancelar replenishment
+
+<table>
+    <tr>
+        <th><b>Pasos</b></th>
+    </tr>
+
+    <tr>
+        <td>
+            Lo primero es seleccionar una orden de replenishment la cual su estatus no sea **cancelado** ni **completado.** Los cuales son órdenes con estatus de **EnQueue** o **InProgress.**
+
+            Se entra a la **sección** de **proceso** de una orden con **doble click**
+
+            ![](/img/upload/Screenshot-2025-06-05-121812.png)
+
+            Dentro de esta sección se puede observar en la parte superior izquierda el botón de **Cancel order** (Cancelar orden), **Da click** en este botón **si estás seguro de cancelar** la orden ya que se cancelara de un solo movimiento.
+
+            ![](/img/upload/Screenshot-2025-06-05-121950.png)
+
+            El estatus de la orden cambia inmediatamente a Cancelled (Cancelado).
+
+            ![](/img/upload/Screenshot-2025-06-05-122311.png)
+
+            También se ve reflejado en la tabla de las órdenes de replenishment.
+
+            ![](/img/upload/Screenshot-2025-06-05-122406.png)
+
+        </td>
+    </tr>
+</table>
+
+
+<hr/>
+
 
 ## Tips y trucos de este módulo
 
 Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recargar en tu navegador.
 
 Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + **R** esto reiniciará la caché del sitio, **cuidado** si dejas un formulario con datos sin enviar la información **podría borrarse.**
+
+
+<hr/>
 
 ## Problemas frecuentes
 
@@ -60,6 +258,10 @@ Si esto pasa puede ser por las siguientes razones:
 2. Estas **ingresando** un **sku** o código **incorrecto** de artículo, por favor **verifica** que el **número** esté correcto.
 3. El **artículo** que ingresas ya tenga **stock completo** o ya **no existe**.
 
+
+<hr/>
+
+
 ## Preguntas frecuentes
 
 ### Puedo borrar las órdenes de replenishment desde la tabla de ordenes?
@@ -71,5 +273,3 @@ La respuesta es no, las órdenes no se pueden borrar pero si se pueden **cancela
 Para cancelar una orden se tiene que entrar a la orden y en la parte superior izquierda se encuentra un botón el cual dice **Cancelar orden.**
 
 ![](/img/upload/screenshot-2025-06-05-105728.png)
-
-
