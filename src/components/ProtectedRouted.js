@@ -10,9 +10,11 @@ export default function ProtectedRoute({children}){
 
     useEffect(()=>{
         if(!isAuthenticated){
-            history.push('/login')
+            console.log(isAuthenticated)
+            console.log("si pasa")
+            // history.push('/login')
         }
-    },[isAuthenticated,history])
+    },[])
 
     if(!isAuthenticated) return null;
 

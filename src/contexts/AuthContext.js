@@ -1,9 +1,9 @@
 import React,{createContext,useContext,useState} from 'react'
 
-const AuthContext=createContext(undefined);
+const AuthContext=createContext();
 
-export function AuthProvider({children}){
-  isAuthenticated 
+export default function AuthProvider({children}){
+
     const [isAuthenticated,setIsAuthenticated]=useState(false);
     const login=()=>setIsAuthenticated(true);
     const logout=()=> setIsAuthenticated(false);
@@ -15,5 +15,6 @@ export function AuthProvider({children}){
 
 export function useAuth(){
      const context = useContext(AuthContext);
+     console.log(AuthContext)
     return context
 }
