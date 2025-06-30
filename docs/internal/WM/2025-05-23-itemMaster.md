@@ -10,15 +10,15 @@ Este módulo permite gestionar los artículos de los clientes en el WMS, detalla
 
 - **Click** en el botón **CREATE ITEM**:
 
-![](/img/upload/itemMasterp1-2025-13-16.png)
+![](/img/upload/ItemMasterp1-2025-13-16.png)
 
 - Se desglosa un formulario solicitando los siguientes  datos  para llevar a cabo el proceso del registro.
 
-![](/img/upload/itemMasterp2-2025-13-16.png)
+![](/img/upload/ItemMasterp2-2025-13-16.png)
 
 - Los campos requeridos para  realizar el registro, son los siguientes:
 
-![](/img/upload/itemMasterp3-2025-13-16.png)
+![](/img/upload/ItemMasterp3-2025-13-16.png)
 
 
 | No del campo | Nombre del campo                          | Descripción                                                                                     |
@@ -33,7 +33,7 @@ Este módulo permite gestionar los artículos de los clientes en el WMS, detalla
 
 - Los campos opcionales se pueden dejar vacío o  son para proporcionar más información detallada del productos y son los siguientes:
 
-![](/img/upload/itemMasterp4-2025-13-16.png)
+![](/img/upload/ItemMasterp4-2025-13-16.png)
 
 | No del campo | Nombre del campo    | Descripción                                                                                                                                                                                   |
 | :----------- | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,19 +55,19 @@ Este módulo permite gestionar los artículos de los clientes en el WMS, detalla
 
 - Para proporcionar más características del producto como **color**, **tamaño** o **la estrategia del picking**, se pueden llenar algunos de estos campos como se muestra en la siguiente imagen.
 
-![](/img/upload/itemMasterp5-2025-13-16.png)
+![](/img/upload/ItemMasterp5-2025-13-16.png)
 
 - El formulario de registro cuenta con **casillas de verificación**, por defecto se puede dejar deshabilitado pero si deseamos activar alguna opción relacionado al producto , simplemente haz clic algunas de las casillas para habilitar. 
 
-![](/img/upload/itemMasterp6-2025-13-16.png)
+![](/img/upload/ItemMasterp6-2025-13-16.png)
 
 - Verifica que los datos sean correctos, haz clic en el botón **SAVE** para guardar el producto.
 
-![](/img/upload/itemMasterp7-2025-13-16.png)
+![](/img/upload/ItemMasterp7-2025-13-16.png)
 
 - Si todo es correcto, se desglosa un **mensaje color verde** indicando que el registro es exitoso.
 
-![](/img/upload/itemMasterp8-2025-13-16.png)
+![](/img/upload/ItemMasterp8-2025-13-16.png)
 
 
 ## Crear kits
@@ -75,64 +75,64 @@ Este módulo permite gestionar los artículos de los clientes en el WMS, detalla
 - Haz clic en la opción Bundle kit.
 
 
-![](/img/upload/itemMasterp9-2025-13-16.png)
+![](/img/upload/ItemMasterp9-2025-13-16.png)
 
 - Se abrirá un formulario donde deberás seleccionar el SKU padre, que representará el artículo compuesto o kit principal. Luego, selecciona los SKU hijos, que son los productos individuales que conformarán dicho kit.
 
 
-![](/img/upload/itemMasterp10-2025-13-16.png)
+![](/img/upload/ItemMasterp10-2025-13-16.png)
 
 - Después de seleccionar los SKU hijos, se habilitarán campos adicionales para que indiques la cantidad requerida de cada uno para conformar el SKU padre.
 
-![](/img/upload/itemMasterp11-2025-13-16.png)
+![](/img/upload/ItemMasterp11-2025-13-16.png)
 
 - Una vez completada la información, haz clic en la opción **SAVE** para guardar los cambios.
 
-![](/img/upload/itemMasterp12-2025-13-16.png)
+![](/img/upload/ItemMasterp12-2025-13-16.png)
 
 - A continuación, el sistema mostrará un mensaje en color verde confirmando que el proceso se realizó con éxito.
 
-![](/img/upload/itemMasterp13-2025-13-16.png)
+![](/img/upload/ItemMasterp13-2025-13-16.png)
 
 
 - Para verificar que el kit fue creado correctamente, accede al módulo Stock, filtra por el SKU padre y, al hacer doble clic sobre el registro en la tabla, el sistema desplegará los SKU hijos que forman parte del artículo compuesto.
 
-![](/img/upload/itemMasterp14-2025-13-16.png)
+![](/img/upload/ItemMasterp14-2025-13-16.png)
 
-![](/img/upload/itemMasterp15-2025-13-16.png)
+![](/img/upload/ItemMasterp15-2025-13-16.png)
 
 ## Actualizar un Item Master
 
 - Click en el botón de lapiz para editar el producto:
 
-![](/img/upload/itemMasterp16-2025-13-16.png)
+![](/img/upload/ItemMasterp16-2025-13-16.png)
 
 - Se desplegará un formulario con campos de  datos que se desea modificar.
 
-![](/img/upload/itemMasterp17-2025-13-16.png)
+![](/img/upload/ItemMasterp17-2025-13-16.png)
 
-![](/img/upload/itemMasterp18-2025-13-16.png)
+![](/img/upload/ItemMasterp18-2025-13-16.png)
 
 - haz clic en el botón **SAVE** para guardar los cambios:
 
-![](/img/upload/itemMasterp19-2025-13-16.png)
+![](/img/upload/ItemMasterp19-2025-13-16.png)
 
 
 - Se actualizará la tabla  con un mensaje de color verde indicando el item que se actualizo, como se muestra en la siguiente imagen.
 
-![](/img/upload/itemMasterp20-2025-13-16.png)
+![](/img/upload/ItemMasterp20-2025-13-16.png)
 
 ## Eliminar Item Master
 
 - Click en el botón 🗑 para eliminar el producto:
 
-![](/img/upload/itemMasterp21-2025-13-16.png)
+![](/img/upload/ItemMasterp21-2025-13-16.png)
 
 - Se desplegará un mensaje de confirmación antes de eliminar, para eliminar haz clic **OK**.
 
-![](/img/upload/itemMasterp22-2025-13-16.png)
+![](/img/upload/ItemMasterp22-2025-13-16.png)
 
 
 - Se actualizará la  tabla automáticamente, eliminando el ítem desplegando un mensaje de color verder indicando que la operacion ha sido exitosamente, como se muestra en la siguiente imagen: 
 
-![](/img/upload/itemMasterp23-2025-13-16.png)
+![](/img/upload/ItemMasterp23-2025-13-16.png)
