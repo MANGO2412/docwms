@@ -1,0 +1,118 @@
+---
+title: Cycle Counting App
+---
+
+Este módulo sirve para hacer conteos o inventario del stock de artículos en locaciones, estos conteos están en un ciclo de 3 vueltas, si el primer conteo no cuadra con las cantidades en el sistema se realiza un segundo conteo para verificar el primero y si no cuadra se realiza en tercer y  último conteo.
+
+Este conteo cíclico se pueda realizar a locaciones de over storage como para ubicaciones de picking.
+
+## Vista util general del modulo
+
+![](/img/upload/Screenshot-2025-06-13-094113.png)
+
+<table>
+    <tr>
+        <th>**No**</th>
+        <th>**Nombre**</th>
+        <th>**Descripcion**</th>
+    </tr>
+    <tr>
+        <th>**1**</th>
+        <th>Botón de menú de conteos cíclicos</th>
+        <th>Da acceso a las funciones de conteos cíclicos</th>
+    </tr>
+    <tr>
+        <th>**2**</th>
+        <th>Botón para realizar los conteos ciclicos de ubicaciones de picking</th>
+        <th>Si hay un conteo cíclico pendiente despliega el flujo de conteo cíclico de locaciones de picking.</th>
+    </tr>
+    <tr>
+        <th>**3**</th>
+        <th>Botón para realizar los conteos ciclicos de ubicaciones de over storage</th>
+        <th>Si hay un conteo cíclico pendiente despliega el flujo de conteo cíclico de locaciones de over storage.</th>
+    </tr>
+    <tr>
+        <th>**4**</th>
+        <th>Contador de conteos ciclicos pendientes</th>
+        <th>Representa los conteos cíclicos pendientes o en cola.</th>
+    </tr>
+</table>
+
+### Atender un conteo ciclico de over storage
+
+<table>
+    <tr>
+        <th><h3>Pasos</h3></th>
+    </tr>
+    <tr>
+        <td>
+            **Click** en el **1** de la **interfaz general** para entrar a la sección de conteos cíclicos.
+
+            Para iniciar un conteo tienen que **haber conteos pendiente** o en cola para eso se tiene que revisar la cantidad que hay en **4** el **contador**. Si el contador tiene **al menos un** conteo pendiente, se procede a hacer **click** en el **botón** de
+            **3** **over storage.**
+
+            Empezando el **proceso** de **conteo** cíclico se despliega el paso **1.Locación** donde se **escanea** una **locación** a contar. 2 pasos se repiten por cada locación programada registrada previamente en el conteo cíclico en WMS.
+
+            ![](/img/upload/Screenshot-2025-06-13-115951.png)
+
+            Después de escanear la locación se procede a **agregar** los **contenedores** que se encuentran en las **locaciones**.
+
+            ![](/img/upload/Screenshot-2025-06-13-120101.png)
+
+            Para **agregar** los **contenedores** se tienen que **escanear** las **PPL** de los contenedores que se **encuentra** en la **locación** asignada.
+
+            ![](/img/upload/Screenshot-2025-06-13-120246.png)
+
+            Al finalizar el conteo de la locación tab en **Finalizar conteo.** y posteriormente se confirmara la acción de los conteos.
+
+            ![](/img/upload/Screenshot-2025-06-13-120359.png)
+
+            Después **finalmente** se **finaliza** el conteo y  se **cierra**.
+
+            ![](/img/upload/Screenshot-2025-06-13-120509.png)
+
+        </td>
+    </tr>
+</table>
+
+
+
+### Atender un conteo ciclico de picking
+
+<table>
+    <tr>
+        <th><h3>Pasos</h3></th>
+    </tr>
+    <tr>
+        <td>
+            **Click** en el **1** de la **interfaz general** para entrar a la sección de conteos cíclicos.
+
+            Para iniciar un conteo tienen que **haber conteos pendiente** o en cola para eso se tiene que revisar la cantidad que hay en
+            **4** el **contador**. Si el contador tiene **al menos un** conteo pendiente, se procede a hacer **click** en el **botón** de
+            **2**  picking. Empezando el proceso de conteo cíclico se despliega el paso 1.Locación donde se escanea una locación a contar.
+            3 pasos se repiten por cada locación programada registrada previamente en el conteo cíclico en WMS.
+
+            ![](/img/upload/Screenshot-2025-06-13-095331.png)
+
+            Después de **escanear** la **locación** se procede al paso **2.Contenedor** el cual se **autocompleta** solo al ser zona de picking se **asigna** el correspondiente **contenedor dinámico**. Por lo tanto, guiando al siguiente paso.
+
+            En el paso **3.item** se escanean los ítems de la locación
+
+            ![](/img/upload/Screenshot-2025-06-30-111307.png)
+
+            Se pueden escanear más de un artículo diferente que se encuentre en la locación para el conteo de la locación.
+
+            ![](/img/upload/Screenshot-2025-06-13-103312.png)
+            
+            Después de **terminar** el conteo de los artículos click en **Finalizar conteo**.
+
+            ![](/img/upload/Screenshot-2025-06-13-103445.png)
+
+            Al terminar el conteo de esa locación se verifica la precisión del conteo de estar seguro tab en **sí ,estoy seguro.**
+
+            ![](/img/upload/Screenshot-2025-06-13-103626.png)
+
+            Para terminar el conteo tab en **finalizar conteo** de esta manera se finalizó el conteo.
+        </td>
+    </tr>
+</table>
