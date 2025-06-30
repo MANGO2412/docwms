@@ -1,10 +1,10 @@
 import React,{createContext,useContext,useState} from 'react'
 
-const AuthContext=createContext();
+const AuthContext=createContext(false);
 
 export default function AuthProvider({children}){
 
-    const [isAuthenticated,setIsAuthenticated]=useState(false);
+    const [isAuthenticated,setIsAuthenticated]=useState(true);
     const login=()=>setIsAuthenticated(true);
     const logout=()=> setIsAuthenticated(false);
 
@@ -14,7 +14,6 @@ export default function AuthProvider({children}){
 }
 
 export function useAuth(){
-     const context = useContext(AuthContext);
-     console.log(AuthContext)
+    const context = useContext(AuthContext);
     return context
 }
