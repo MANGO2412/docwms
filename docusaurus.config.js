@@ -69,6 +69,19 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      algolia:{
+      appId: 'J0LTVUIX2S',
+      apiKey: 'd9d2f7791156cdb0ce7c16c5bc3ba11d',
+      indexName: 'wmsnetlify',
+      contextualSearch: true,
+      externalUrlRegex: 'external\\.com|domain\\.com',
+
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
+
+    }
     }),
 };
 
