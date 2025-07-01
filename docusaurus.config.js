@@ -77,7 +77,7 @@ const config = {
       externalUrlRegex: 'external\\.com|domain\\.com',
 
       replaceSearchResultPathname: {
-        from: '/docs/', // or as RegExp: /\/docs\//
+        from: '/docs/internal', // or as RegExp: /\/docs\//
         to: '/',
       },
 
