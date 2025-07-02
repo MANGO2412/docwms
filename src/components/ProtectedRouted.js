@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from '@docusaurus/router';
+import {useAuth} from '../contexts/AuthContext'
 
 export default function ProtectedRoute({ children }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(null);
+  const {isAuthenticated}=useAuth()
   const history = useHistory();
 
   useEffect(() => {
-    const auth = localStorage.getItem('isAuthenticated');
-    if (auth !== 'true') {
+    if (!isAuthenticated) {
       history.push('/login');
-    } else {
-      setIsAuthenticated(true);
     }
   }, []);
 
