@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Se describen  el proceso del packing en los modulos correspondientes a sistema slam de G global"
+    "description": "En esta sección se detallan los módulos necesarios para cubrir las funcionalidades que ofrece WMS en el entorno Internal, destinado al equipo de operaciones. Aquí se describen los pasos requeridos para realizar el recibo de paquetes, la gestión de clientes, el control de inventarios y el monitoreo de las órdenes generadas por los clientes, entre otras funciones.  Si cuentas con acceso a la versión interna de WMS, continúa leyendo para conocer los módulos disponibles y descubrir cómo este sistema ayuda a agilizar y automatizar los procesos operativos."
   }
 }

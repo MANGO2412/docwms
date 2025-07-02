@@ -5,7 +5,7 @@ title: Introduccion
 
 # Introduccion
 
-La sección **Receipte** es una parte fundamental del sistema WMS, ya que concentra todo el proceso de recepción de paquetes enviados por los clientes hacia el almacén. En esta sección se encuentran los módulos clave que permiten gestionar cada etapa del recibo, desde la notificación previa hasta la validación final de los artículos.
+La sección **Receipt** es una parte fundamental del sistema WMS, ya que concentra todo el proceso de recepción de paquetes enviados por los clientes hacia el almacén. En esta sección se encuentran los módulos clave que permiten gestionar cada etapa del recibo, desde la notificación previa hasta la validación final de los artículos.
 
 Los módulos que la componen son:
 - **Shipping Notice**: permite generar y gestionar los ASN (Avisos de Embarque Avanzado), donde se detalla la información de los artículos que serán recibidos.

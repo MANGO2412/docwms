@@ -4,11 +4,11 @@ title: Receive orders Picking.
 ---
 # Receive orders Picking.
 
-En este módulo se realiza el escaneo de los **PLL (Packing List Labels)** generados previamente en el módulo [Receive Orders](./2025-05-23-ReceiveOrders.md). Su objetivo es validar la información de los artículos recibidos dentro de los paquetes, asegurando que coincidan con los datos registrados y facilitando el control de recepción en el sistema WMS.
+En este módulo se realiza el escaneo de los **PLL (Packing List Labels)** generados previamente en el módulo [Receive Orders](./2025-05-23-ReceiveOrders.md#imprimir-etiquetas-ppl). Su objetivo es validar la información de los artículos recibidos dentro de los paquetes, asegurando que coincidan con los datos registrados y facilitando el control de recepción en el sistema WMS.
 
 ## Escanear los PPL.
 
-- Después de generar e imprimir los PPL en el módulo [Receive Orders](./2025-05-23-ReceiveOrders.md), como se muestra en la siguiente imagen, asegúrate de tener todos los documentos listos para el escaneo.
+- Después de generar e imprimir los PPL en el módulo [Receive Orders](./2025-05-23-ReceiveOrders.md#imprimir-etiquetas-ppl), como se muestra en la siguiente imagen, asegúrate de tener todos los documentos listos para el escaneo.
 
 ![](/img/upload/receiveOrdersPickingp1-205-13-16.png)
 
