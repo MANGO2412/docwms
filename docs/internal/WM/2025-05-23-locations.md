@@ -34,7 +34,12 @@ Primero debes asignar un nombre, seleccionar el tipo de locación e indicar si e
 :::
 
 
-En esta sección debes configurar los parámetros de la ubicación. Ingresa la cantidad mínima y máxima de paquetes o artículos que pueden contener la ubicación en los campos **Minimum** y **Maximum**, respectivamente. En el campo **SKU Accepted**, especifica la cantidad de SKUs distintos permitidos, siempre que la opción **MultipleSKU** esté habilitada. Si deseas permitir múltiples SKUs en una misma ubicación, activa el interruptor **MultipleSKU**. Por otro lado, si necesitas bloquear la ubicación para evitar que reciba artículos o paquetes desde la aplicación móvil del WMS durante movimientos por ubicación, activa el interruptor **Block Location**.
+En esta sección debes realizar las siguientes configuraciones para la locación:
+
+- Los campos **Minimum** y **Maximum** definen la cantidad mínima y máxima de SKUs que puede contener una locación.
+- El campo **SKU Accepted** especifica la cantidad de SKUs distintos permitidos en la locación, siempre y cuando la opción Multiple SKU esté habilitada.
+- La casilla de verificación **Multiple SKU** permite almacenar múltiples SKUs en una misma locación. Actívala si es necesario.
+- La casilla de verificación **Block Location** bloquea la locación para evitar el ingreso de más artículos. Si esta opción está activada, aún se pueden retirar productos, pero no se permite ingresar nuevos.
 
 
 ![](/img/upload/Locationsp3-2025-13-16.png)
@@ -157,6 +162,10 @@ El campo **Select Country of Origin** puede modificarse dependiendo de la config
 ![](/img/upload/Locationsp23-2025-13-16.png)
 
 Por ejemplo, si la compañía a la que está asignada la ubicación tiene habilitada la opción **Always update COO**, esto significa que puedes actualizar el país de origen sin restricciones. En cambio, si está activada la opción **Only update if location has no COO**, solo podrás asignar el país de origen si la ubicación no tiene uno previamente registrado. Una vez asignado, ya no será posible modificarlo nuevamente, ya que se aplica la restricción de no permitir actualizaciones posteriores.
+:::
+
+:::warning
+Antes de realizar el cambio de COO de una locación debes verificar que la locación a la que deseas cambiar el COO (país de origen) no contenga ningún SKU. En caso de que tenga artículos almacenados, deberás vaciar la locación, ya que el sistema no permitirá realizar el cambio mientras haya inventario presente.
 :::
 
 - Después de haber realizado los cambios necesarios haz clic en **EDIT LOCATION** para guardar la actualización.
