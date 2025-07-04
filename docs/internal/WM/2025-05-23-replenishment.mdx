@@ -101,7 +101,7 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 ### Procesar orden de replenishment
 
-:::info
+:::note
     Recientemente fue agregado configuracion al uso de COO si buscas una configuracion con COO ve a [Configuracion](./2025-05-23-clients.md).
 
     Si buscas replenishment con COO ve a [Replenishment con COO](#procesar-orden-de-replenishment-con-coo)
@@ -198,9 +198,45 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 ### Procesar orden de replenishment con COO
 
-:::info
+:::note
     Recientemente fue agregado configuracion al uso de COO si buscas una configuracion con COO ve a [Configuracion](./2025-05-23-clients.md).
 
+:::
+
+:::info[Extra Info]
+    Para usar replenishment con COO se tiene que entender lo siguiente acerca de como COO impacta en replenishment.
+
+    El COO en replenishment agrega lo siguiente:
+    [](/img/upload/Screenshot-2025-07-04-124249.png)
+
+    <table>
+    <tr>
+        <th>**No**</th>
+        <th>**Nombre**</th>
+        <th>**Descripcion**</th>
+    </tr>
+    <tr>
+        <th>**1**</th>
+        <th>Prioridad de origen por pais</th>
+        <th>Este recuadro indica si la prioridad por COO esta activada para la compania y por lo tanto repercute en todos los replenishment y otros procesos dependientes.</th>
+    </tr>
+    <tr>
+        <th>**2**</th>
+        <th>Paises configurados</th>
+        <th>Si COO esta activado, tiene una lista de paises en orden de preoridad la cual es enumerada, de 1 a n.
+        Teniendo como 1 la maxima preoridad, lo cual hace que los articulos con COO en el 1 sean usados primero.</th>
+    </tr>
+    <tr>
+        <th>**3**</th>
+        <th>Un solo pais por operacion</th>
+        <th>Este apartado si la configuracion es activada significa que solo se manejara un COO por orden de replenishmente, lo que significa que solo abra un COO a la vez en las pick locations.</th>
+    </tr>
+    <tr>
+        <th>**4**</th>
+        <th>Resumen de configuracion</th>
+        <th>En el cual se pueden observar las configuracion de una forma mas simple de todos los cuadros anteriores.</th>
+    </tr>
+</table>
 :::
 
 <table>
