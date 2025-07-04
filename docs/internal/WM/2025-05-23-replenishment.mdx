@@ -87,8 +87,6 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
              Después click en **ADD** y entonces la **orden** de replenishment estará **creada**. Lo cual se verá representado de la siguiente forma.
             
-            <!-- ![](/img/upload/###) -->
-            
             ![](/img/upload/Screenshot-2025-06-05-102231.png)
 
             Aquí se puede observar cómo se **creó** la **orden** y se **enlistó**. Estando creada la orden ya está lista para ser procesada.
@@ -102,6 +100,13 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
 
 ### Procesar orden de replenishment
+
+:::note
+    Recientemente fue agregado configuracion al uso de COO si buscas una configuracion con COO ve a [Configuracion](./2025-05-23-clients.md).
+
+    Si buscas replenishment con COO ve a [Replenishment con COO](#procesar-orden-de-replenishment-con-coo)
+    
+:::
 
 <table>
     <tr>
@@ -117,11 +122,11 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
             Después se desplegará la página donde se procesa la orden. 
 
-            ![](/img/upload/Screenshot-2025-06-05-112457.png)
+            ![](/img/upload/Screenshot-2025-07-04-115612.png)
 
             Primero se debe de crear una **pending task** o **tarea** para indicar el artículo que se va a mover. **Click** en Pending **tasks.** Se encuentra en la esquina superior izquierda como primer botón.
 
-            ![](/img/upload/Screenshot-2025-06-05-112714.png)
+            ![](/img/upload/Screenshot-2025-07-04-115914.png)
 
             Al hacer **click** aparecerá un **formulario** en cual se **indicará** el **artículo** a mover la **cantidad** y la **zona**. La **zona** donde se encuentra el artículo, se ingresa solo cuando sea solicitada explícitamente, de lo contrario se puede dejar vacía.
             
@@ -145,7 +150,138 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
 
             Una vez hecho esto, selecciona el **tipo de movimiento.** Sea **SKU** para registrar articulos o **Box** para mover un container, al ser un botón se da click sobre el botón. El que muestra es el tipo de movimiento. Este botón se ubica en la tabla de arriba en la celda de **Movement Type.**
             
-            ![](/img/upload/Screenshot-2025-06-05-113351.png)
+            ![](/img/upload/Screenshot-2025-07-04-120041.png)
+
+            En este caso seleccionemos **SKU**, si seleccionaste **Box** puedes saltarte el paso de escanear los artículos del replenishment por sku.
+
+            Como primer paso se **escanea** la **PPL** o **Contenedor** donde se ubican los artículos que se necesitan para el replenishment. Al hacer esto se verá reflejado en la barra de progreso con un círculo relleno y con una palomita.
+            
+            ![](/img/upload/Screenshot-2025-06-05-114351.png)
+
+            También se observa en la parte superior de la pantalla un mensaje de éxito
+            
+            ![](/img/upload/Screenshot-2025-06-05-114433.png)
+
+            Posteriormente se **escanea** el **QR** de los **artículos** los cuales se **moverán** de **locación**. Si tienes 4 artículos a mover tienes que escanear los 4 artículos.
+
+            Una vez escaneados se notará el progreso cuando el registro de la tabla cambia a verde, asegurate de que hayan sido escaneado la misma cantidad de artículos a mover descrita en la orden. Esto puede comprobarse en las columnas de **Quantity to be replenished** (Cantidad a ser reabastecida) y en la columna de **Scanned Quantity** (Cantidad escaneada).
+            
+            ![](/img/upload/Screenshot-2025-06-05-115027.png)
+
+            Una vez escaneados todos los artículos se tiene que dar click en el menú que se encuentra en la parte inferior derecha de la pantalla el cual es un círculo azul. Este círculo azul tiene 3 opciones de las cuales la última es una flecha la cual dice **Next** (siguiente) dar click ahí para ir al siguiente paso.
+            
+            ![](/img/upload/Screenshot-2025-06-05-115605.png)
+
+            Una vez hecho esto el **progreso** se verá **reflejado** en la **barra de progreso** marcando que ya han sido **escaneados** los **artículos** y **procediendo** al siguiente paso de la **ubicación** de los artículos.
+            
+            ![](/img/upload/Screenshot-2025-06-05-120021.png)
+
+            Ahora escanea la **locación** de los artículos para completar este paso. Entonces aparecerá un anuncio de **orden exitoso** en la parte superior de la pantalla.
+
+            Ahora para **concluir** una **orden** de replenishment se tiene que dar **click** en el **botón** de **order completed** (Orden completada).
+            
+            ![](/img/upload/Screenshot-2025-06-05-121020.png)
+
+            Al hacer esto la orden cambia de estatus a **Completed** (completada), debido a que la orden será inmodificable.
+            
+            ![](/img/upload/Screenshot-2025-06-05-121324.png)
+
+            Este estatus también es **reflejado** en la **tabla** de **ordenes** de **replenishment**.
+            
+            ![](/img/upload/Screenshot-2025-06-05-121530.png)
+            
+        </td>
+    </tr>
+</table>
+
+<hr/>
+
+### Procesar orden de replenishment con COO
+
+:::note
+    Recientemente fue agregado configuracion al uso de COO si buscas una configuracion con COO ve a [Configuracion](./2025-05-23-clients.md).
+
+:::
+
+:::info[Extra Info]
+    Para usar replenishment con COO se tiene que entender lo siguiente acerca de como COO impacta en replenishment.
+
+    El COO en replenishment agrega lo siguiente:
+    ![](/img/upload/Screenshot-2025-07-04-124249.png)
+
+    <table style={{backgroundColor: 'white'}}>
+    <tr>
+        <th>**No**</th>
+        <th>**Nombre**</th>
+        <th>**Descripcion**</th>
+    </tr>
+    <tr>
+        <th>**1**</th>
+        <th>Prioridad de origen por pais</th>
+        <th>Este recuadro indica si la prioridad por COO esta activada para la compania y por lo tanto repercute en todos los replenishment y otros procesos dependientes.</th>
+    </tr>
+    <tr>
+        <th>**2**</th>
+        <th>Paises configurados</th>
+        <th>Si COO esta activado, tiene una lista de paises en orden de preoridad la cual es enumerada, de 1 a n.
+        Teniendo como 1 la maxima preoridad, lo cual hace que los articulos con COO en el 1 sean usados primero.</th>
+    </tr>
+    <tr>
+        <th>**3**</th>
+        <th>Un solo pais por operacion</th>
+        <th>Este apartado si la configuracion es activada significa que solo se manejara un COO por orden de replenishmente, lo que significa que solo abra un COO a la vez en las pick locations.</th>
+    </tr>
+    <tr>
+        <th>**4**</th>
+        <th>Resumen de configuracion</th>
+        <th>En el cual se pueden observar las configuracion de una forma mas simple de todos los cuadros anteriores.</th>
+    </tr>
+</table>
+:::
+
+<table >
+    <tr>
+        <th><b>Pasos</b></th>
+    </tr>
+
+    <tr>
+        <td>
+
+            Lo primero será dar **doble click** a una **orden** recién **creada** de replenishment y por lo tanto su estado sea (OnQueue).
+
+            ![](/img/upload/Screenshot-2025-06-05-102231.png)
+
+            Después se desplegará la página donde se procesa la orden. 
+
+            ![](/img/upload/Screenshot-2025-07-04-115612.png)
+
+            Primero se debe de crear una **pending task** o **tarea** para indicar el artículo que se va a mover. **Click** en Pending **tasks.** Se encuentra en la esquina superior izquierda como primer botón.
+
+            ![](/img/upload/Screenshot-2025-07-04-115914.png)
+
+            Al hacer **click** aparecerá un **formulario** en cual se **indicará** el **artículo** a mover la **cantidad** y la **zona**. La **zona** donde se encuentra el artículo, se ingresa solo cuando sea solicitada explícitamente, de lo contrario se puede dejar vacía.
+            
+            ![](/img/upload/Screenshot-2025-06-05-113023.png)
+
+            Al ingresar **SKU** del artículo **asegúrate** de **seleccionar** el sku desde la **lista** de resultados, de lo **contrario no** se **podrá** realizar la operación.
+            
+            ![](/img/upload/Screenshot-2025-06-05-125002.png)
+
+            Una vez terminada la task click en **assign tasks** (asignar tarea).
+            
+            ![](/img/upload/Screenshot-2025-06-05-113101.png)
+
+            Esta task será reflejada en la tabla en la parte inferior.
+            
+            ![](/img/upload/Screenshot-2025-06-05-113243.png)
+            
+            Cada vez que creas o asignas una task este tipo de movimiento se ve reflejado en el historial de la orden de replenishment, dicho **historial** se encuentra **ubicado** en la **parte inferior** de la interfaz de procesamiento de la orden.
+            
+            ![](/img/upload/Screenshot-2025-06-05-115920.png)
+
+            Una vez hecho esto, selecciona el **tipo de movimiento.** Sea **SKU** para registrar articulos o **Box** para mover un container, al ser un botón se da click sobre el botón. El que muestra es el tipo de movimiento. Este botón se ubica en la tabla de arriba en la celda de **Movement Type.**
+            
+            ![](/img/upload/Screenshot-2025-07-04-120041.png)
 
             En este caso seleccionemos **SKU**, si seleccionaste **Box** puedes saltarte el paso de escanear los artículos del replenishment por sku.
 
