@@ -5,26 +5,23 @@ title: Configuraciones de compañia
 
 
 <details >
-  <summary>Configuracion del perfil</summary>
-
-  En WMS, 3rd Party Billing significa que la factura se genera para una tercera entidad, diferente al cliente o proveedor logístico.
+  <summary>Configuración del perfil</summary>
 </details>
 
 
 <details >
-  <summary>Configuracion del Tema</summary>
-
-  En WMS, 3rd Party Billing significa que la factura se genera para una tercera entidad, diferente al cliente o proveedor logístico.
+  <summary>Configuración del Tema</summary>
 </details>
 
 <details >
-  <summary>Configuracion del Inventario</summary>
+
+  <summary>Configuración del Inventario</summary>
 
   En esta sección podrás establecer configuraciones clave para el comportamiento del inventario, específicamente relacionadas con el manejo de **múltiples SKUs por ubicación**, **reglas de cambio de país de origen (COO, por sus siglas en inglés)** y **prioridades de reabastecimiento(Replenishment)**.
 
  🔍 **¿Cómo acceder?**
 1. Ingresa al portal web de WMS.
-2. Asegúrate de tener acceso al módulo Companies.
+2. Asegúrate de tener acceso al módulo **Companies**.
 3. Una vez dentro del módulo, selecciona un cliente haciendo doble clic sobre su registro en la tabla.
 4. Haz clic en la pestaña Inventory para desplegar las opciones disponibles.
 
@@ -71,6 +68,9 @@ Permite establecer un orden de prioridad para el reabastecimiento de inventario 
     Ordena los países según el nivel de prioridad deseado para la reposición de stock. El sistema intentará primero con el país que esté más arriba en la lista.
 
     ![](/img/upload/Clientsp5-2025-13-16.png)
+  :::tip
+   Puedes ordenar la lista con solo arrastrar y soltar los elementos de la lista, esto dependera de las necesidades del cliente.
+  :::
 
 - **One COO at a time at Pick Locations**
     Si se activa esta opción, cada ubicación de picking podrá contener productos de un solo COO a la vez, evitando combinaciones no permitidas que puedan afectar la trazabilidad o cumplimiento.
@@ -79,9 +79,62 @@ Permite establecer un orden de prioridad para el reabastecimiento de inventario 
 </details>
 
 <details >
-  <summary>Configuracion del Picker</summary>
+  <summary>Configuración del Picker</summary>
 
-  En WMS, 3rd Party Billing significa que la factura se genera para una tercera entidad, diferente al cliente o proveedor logístico.
+  En este apartado permite personalizar la visibilidad y el comportamiento de la aplicación móvil **Picker App** para un cliente específico. Aquí puedes definir que información mostrar al picker, qué tipos de totes se pueden asignar, qué validciones aplicar y el porcentaje de muestreo AQL(Acceptable Quality Limit).
+
+  
+<h2>🔍 ¿Cómo acceder?</h2> 
+1. Ingresa al portal web de WMS.
+2. Asegúrate de tener acceso al módulo **Companies**.
+3. Una vez dentro del módulo, selecciona un cliente haciendo doble clic sobre su registro en la tabla.
+4. Haz clic en la pestaña **picker** para desplegar las opciones disponibles.
+
+  ![](/img/upload/Clientsp7-2025-13-16.png)
+
+<h2>🔸Show in Picker APP</h2>
+
+Define qué informacion  serán visibles para el operador en la aplicación móvil del picker. Puedes activar o desactivar los siguientes elementos según las necesidades del cliente:
+
+- **SKU**: Muestra el código de identificación del articulo.
+- **UPC**: Muestra el código universal de producto.
+- **Código de barras alternativo**: Activa la visualización de un código adicional si aplica.
+- **Descripción**: Muestra la descripción del artículo.
+- **Imagen**: Muestra la imagen asociada al producto.
+- **Country of Origin**: Muestra el país de origen del artículo.
+- **Lot number**: Muestra el número de lote, útil para trazabilidad y control.
+
+![](/img/upload/Clientsp8-2025-13-16.png)
+
+<h2>🔸Totes</h2>
+
+Selecciona los tipos de totes (contenedores) que el picker puede utilizar durante la operación:
+
+- **Normal**: Totes regulares disponibles para picking.
+- **Preconfigured**: Totes con configuraciones predefinidas.
+
+![](/img/upload/Clientsp9-2025-13-16.png)
+
+<h2>🔸Configurations</h2> 
+
+Aquí defines reglas adicionales para controlar el comportamiento de la app:
+
+- **By UPC**: Habilita la validación o búsqueda por código UPC.
+- **Show Locations**: Muestra las ubicaciones disponibles en el almacén.
+- **By COO**: Permite asignar ubicaciones de picking según el país de origen (COO) del producto, siguiendo el orden de prioridad configurado previamente en la sección **Configuración de Inventario**.
+- **Verificación de Lote**: Obliga a verificar el número de lote durante el proceso de picking.
+
+![](/img/upload/Clientsp10-2025-13-16.png)
+
+🔸 **AQL Sampling**
+
+Este control deslizante permite configurar el porcentaje de artículos que deben ser validados mediante muestreo AQL (Acceptable Quality Limit).
+
+![](/img/upload/Clientsp11-2025-13-16.png)
+
+:::note
+Por ejemplo, si se define un valor del 50%, el sistema solicitará validar la mitad de los artículos escaneados por el picker.
+:::
 </details>
 
 
