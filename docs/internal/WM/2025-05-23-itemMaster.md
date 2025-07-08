@@ -57,7 +57,13 @@ Este módulo permite gestionar los artículos de los clientes en el WMS, detalla
 
 ![](/img/upload/ItemMasterp5-2025-13-16.png)
 
-- El formulario de registro cuenta con **casillas de verificación**, por defecto se puede dejar deshabilitado pero si deseamos activar alguna opción relacionado al producto , simplemente haz clic algunas de las casillas para habilitar. 
+- El formulario de registro incluye algunas configuraciones opcionales en forma de casillas de verificación. Estas opciones están deshabilitadas por defecto, pero si se desea activar alguna funcionalidad relacionada con el producto, basta con marcar la casilla correspondiente. A continuación se describen las opciones disponibles que pueden configurarse para cada producto:
+
+    - **Self Expeditable**: Permite que el artículo sea ingresado directamente y pase la validación inicial sin necesidad de escanear primero la caja.
+    - **Filling**: Impide que el artículo pueda ser pickeado o escaneado automáticamente en SLAM si no cuenta con un código UPC. En estos casos, se deberá ingresar el código manualmente.
+    - **Lot Validation**: Activa la validación del número de lote dentro de la aplicación SLAM.
+    - **Show Lot in SLAM**: Habilita la visualización del número de lote del artículo durante el proceso en SLAM.
+    - **Activable**: Añade una validación adicional en SLAM. Al activar esta opción, el formulario solicitará un código de verificación. Esta validación se ejecuta cuando se escanea el UPC del artículo.
 
 ![](/img/upload/ItemMasterp6-2025-13-16.png)
 
