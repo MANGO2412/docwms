@@ -8,7 +8,7 @@ title: Locations
 Este módulo permite gestionar las ubicaciones asignadas a los clientes dentro de cada almacén en el sistema WMS. Entre las acciones básicas que se pueden realizar se incluyen: registrar nuevas ubicaciones, visualizarlas y eliminarlas según sea necesario.
 
 
-## Generar una ubicación.
+## Generar una locación.
 
 - Haz clic en la opción **Create Location**.
 
@@ -70,7 +70,7 @@ Por último debe  configurar las dimensiones físicas y la estructura del layout
 ![](/img/upload/Locationsp7-2025-13-16.png)
 
 
-## Generar una ubicación importada en un  archivo CSV. 
+## Crea una locación a travéz de un archivo .CSV. 
 
 - Haz clic en la opción **Download Layout** para descargar una plantilla en formato CSV.
 
@@ -146,7 +146,7 @@ Las columnas marcadas como opcionales (optional) pueden completarse con datos si
 ![](/img/upload/Locationsp19-2025-13-16.png)
 
 
-## Editar una ubicación.
+## Editar una locación en el portal.
 
 - Haz clic en la opción **Editar** en la columna **Actions** de la ubicación que deseas modificar.
 ![](/img/upload/Locationsp20-2025-13-16.png)
@@ -174,10 +174,75 @@ Antes de realizar el cambio de COO de una locación debes verificar que la locac
 
 - Al finalizar, el sistema mostrará un mensaje en color verde confirmando que la ubicación fue actualizada correctamente. Además, se desplegará un **modal** con el nombre de la **ubicación** y su **código QR**.
 
-
 ![](/img/upload/Locationsp25-2025-13-16.png)
 
-## Visualizar información de una ubicación. 
+## Editar una locación  a través de un archivo .CSV
+
+Otra opción que ofrece el sistema para editar una locación, es importando un archivo  .csv, lo cual representa una alternativa más simple y eficiente, especialmente útil en ciertos casos.
+Por ejemplo, si previamente generaste locaciones mediante la importación de un archivo .csv, puedes reutilizar ese mismo archivo para modificar la información que necesites actualizar o generar uno para una locación, de acuerdo con los cambios requeridos.
+
+A continuación se desglosan lo pasos requeridos para aplicar esta funcionalidad.
+- Haz clic en la opción **Download Layout** para descargar una plantilla en formato CSV.
+
+![](/img/upload/Locationsp8-2025-13-16.png).
+
+
+
+
+- Se descargará un archivo llamado **locations-layout.csv**. Una vez completada la descarga, ábrelo con Excel.
+
+<img src="/img/upload/Locationsp9-2025-13-16.png" alt="Descripción" width="400"  />
+
+:::tip
+ Si tienes alguna archivo .csv con datos  generados porque has importado para crear locaciones, utilizando la plantilla, puedes utilizarlo para agilizar mas el proceso.
+:::
+
+- Abre la plantilla previamente descargada y edita únicamente los datos que deseas modificar. Asegúrate también de ingrsar la informacion de los campos ya registrados en el sistema que no deseas cambiar, para evitar que se sobrescriba información al momento de importar. Si deseas entender cómo editar correctamente la plantilla, consulta el apartado [crea una locacion a travez de un archivo-csv](#crea-una-locacion-a-travez-de-un-archivo-csv) archivo CSV, donde se explica el proceso con mayor detalle.
+
+- Despues editar, tu arhivo deberia  ser aglo semiliar como se observa en la imagen:
+
+![](/img/upload/Locationsp33-2025-13-16.png)
+
+![](/img/upload/Locationsp34-2025-13-16.png)
+
+:::warning
+En la columna **"Name"** de la plantilla, el nombre que ingreses debe coincidir exactamente con el de la locación ya registrada en el sistema que deseas editar.
+En caso de ingresar un nombre distinto, el sistema lo interpretará como una **nueva locación**, ya que no existe ningún registro con ese nombre, y procederá a crearla como un nuevo registro.
+:::
+
+- Luego, en el sistema haz clic  en la opción **Import csv**.
+
+![](/img/upload/Locationsp16-2025-13-16.png)
+
+- Selecciona el archivo previamente modificado. A continuación, el sistema mostrará un mensaje en color verde indicando que el proceso de importación se realizó con éxito.
+
+![](/img/upload/Locationsp36-2025-13-16.png)
+
+A continuación, se muestra evidencia de la información que contenía la locación antes de ser modificada:
+
+ - **Antes**
+
+![](/img/upload/Locationsp35-2025-13-16.png)
+
+ - **Despues**
+
+![](/img/upload/Locationsp37-2025-13-16.png)
+
+
+:::info
+Al editar locaciones mediante un archivo **.CSV**, si la locación es de tipo Over Storage o Pick Location, es posible modificar su **COO (Country of Origin)**.
+No obstante, deben cumplirse las siguientes condiciones para evitar errores durante la importación:
+
+- La compañía debe tener habilitada la opción **Always update COO**, que permite cambiar el COO.
+
+- O bien, la locación no debe tener un COO asignado y no debe contener artículos con un COO distinto al que se desea asignar.
+
+Si no se cumple alguna de estas condiciones y la locación contiene inventario, el sistema mostrará un mensaje de error al intentar actualizar el COO.
+:::
+
+
+
+## Visualizar información de una locación. 
 
 - Haz doble clic a la ubicación  de la información que deseas visualizar.
 
@@ -185,7 +250,7 @@ Antes de realizar el cambio de COO de una locación debes verificar que la locac
 
 ![](/img/upload/Locationsp32-2025-13-16.png)
 
-## Eliminar Ubicación 
+## Eliminar una locación 
 
 - Haz clic en la opción **Eliminar** en la columna **Actions** de la ubicación que deseas eliminar.
 
@@ -204,7 +269,7 @@ Antes de realizar el cambio de COO de una locación debes verificar que la locac
 Si intentas eliminar una ubicación que contiene inventario, el sistema no permitirá continuar con el proceso. En su lugar, mostrará un mensaje en color rojo indicando que la ubicación no tiene contenedores vacíos.
 :::
 
-## Imprimir Etiquetas de la locación.
+## Imprimir Etiquetas de una locación.
 
 - Ubicado en el módulo **Location**, haz clic en la opción **View** dentro de la columna **Action** correspondiente a la ubicación que deseas consultar.
 
