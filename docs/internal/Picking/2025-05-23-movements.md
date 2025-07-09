@@ -151,6 +151,30 @@ En caso de realizar un movimiento de piezas  a una ubicación con COO diferentes
 ![](/img/upload/Movep22-2025-13-16.png)
 :::
 
+:::danger
+### Error por mezcla de lotes al mover artículos
+
+Al realizar un movimiento por caja, si se despliega el siguiente error:
+
+<img src="/img/upload/Movep32-2025-13-16.png" width="550px"/>
+
+Esto ocurre porque algunos clientes, como Tumble, prefieren organizar su inventario en locaciones separadas por número de lote.
+Por esa razón, no se permite mezclar artículos con diferentes lotes mediante movimientos por caja desde el módulo de picking en la aplicación.
+
+⚠️ Esta validación aplica únicamente en los módulos de Consolidaciones y Movimiento por pieza.
+En esos casos, el sistema sí verifica que los artículos coincidan por lote antes de permitir el movimiento.
+
+<h2>Recomendación</h2>
+
+Antes de realizar el escaneo de una locación destino, asegúrate de que:
+
+- La locación esté vacía
+- Todos los artículos en ella tengan el mismo lote que los que estás moviendo.
+
+Esto evitará interrupciones en el flujo de picking o consolidación y mantendrá la integridad del inventario.
+:::
+
+
 ## Consolidaciones
 
 Permite  realizar Movimientos  articulos de pick location hacia una caja o ubicaciones de tipo multi sku.
@@ -202,3 +226,13 @@ si Escaneas una locación que no sea de tipo pick location, el sistema no dejar�
 - Finalmente, se visualizará un mensaje indicando que el proceso fue exitoso, junto con la opción de **realizar otro movimiento**.
 
 ![](/img/upload/Movep31-2025-13-16.png)
+
+:::danger
+ Si se presenta el siguiente error:
+ <img src="/img/upload/Movep32-2025-13-16.png" width="550px"/>
+
+Consulta el apartado [Error por mezcla de lotes al mover artículos](#error-por-mezcla-de-lotes-al-mover-artículos) para conocer las causas y condiciones que pueden generarlo.
+
+Este error suele estar relacionado con restricciones configuradas por la compañía sobre el manejo de lotes en los movimientos de inventario.
+
+:::
