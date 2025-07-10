@@ -197,7 +197,7 @@ A continuación se desglosan lo pasos requeridos para aplicar esta funcionalidad
  Si tienes alguna archivo .csv con datos  generados porque has importado para crear locaciones, utilizando la plantilla, puedes utilizarlo para agilizar mas el proceso.
 :::
 
-- Abre la plantilla previamente descargada y edita únicamente los datos que deseas modificar. Asegúrate también de ingrsar la informacion de los campos ya registrados en el sistema que no deseas cambiar, para evitar que se sobrescriba información al momento de importar. Si deseas entender cómo editar correctamente la plantilla, consulta el apartado [crea una locacion a travéz de un archivo-csv](#crea-una-locación-a-travéz-de-un-archivo-csv) archivo CSV, donde se explica el proceso con mayor detalle.
+- Abre la plantilla previamente descargada y edita únicamente los datos que deseas modificar. Asegúrate también de ingrsar la informacion de los campos ya registrados en el sistema que no deseas cambiar, para evitar que se sobrescriba información al momento de importar. Si deseas entender cómo editar correctamente la plantilla, consulta el apartado [crea una locacion a travez de un archivo-csv](#crea-una-locación-a-travéz-de-un-archivo-csv) archivo CSV, donde se explica el proceso con mayor detalle.
 
 - Despues editar, tu arhivo deberia  ser aglo semiliar como se observa en la imagen:
 

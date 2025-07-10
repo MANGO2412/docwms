@@ -4,7 +4,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'WMSDOCS',
-  tagline: '¿Como te podemos ayudar?',
   favicon: 'img/favicon.ico',
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',
@@ -14,7 +13,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'es',
-    locales: ['es'],
+    locales: ['es','en'],
   },
   presets: [
     [
@@ -48,7 +47,11 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Manual de Usuario',
-          }
+          },
+               {
+          type: 'localeDropdown',
+          position: 'left',
+        },
         ],
       },
       footer: {

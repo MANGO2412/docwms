@@ -1,0 +1,8 @@
+{
+  "label": "Gestion de Almacen",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Se presentan los módulos necesarios para gestionar elementos fundamentales en flujos como 3PL o Fulfillment dentro de cada almacén de G Global, tales como la administración de almacenes, trays, totes, entre otros. Si deseas conocer más en profundidad cómo se realiza esta gestión, continúa leyendo para descubrir qué módulos intervienen y cómo se utilizan en la operación diaria de un almacén."
+  }
+}

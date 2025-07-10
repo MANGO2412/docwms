@@ -1,0 +1,79 @@
+---
+title: Picking
+---
+
+import Admonition from '@theme/Admonition';
+
+
+## Módulo de Picking
+
+### Vista general del módulo
+
+![](/img/upload/Screenshot-2025-05-23-094117.png)
+
+| No | Nombre            | Descripción                                                   |
+|----|-------------------|---------------------------------------------------------------|
+| 1  | Botón de Picking  | Al tocar este botón se accede al apartado de picking.         |
+
+
+
+## ¿Como atender las ordenes de pedido a traves del modulo Picking?
+
+<table>
+    <tr>
+        <th><h3>🧾 Contexto </h3></th>
+    </tr>
+    <tr>
+        <td>
+           Los **totes** o carritos contienen **trays** (charolas), que a su vez almacenan los artículos que deben ser empacados.
+
+          ![](/img/upload/Screenshot-2025-06-26-132818.png)
+
+           Las **trays** son unidades individuales que contienen artículos. Cada tray tiene un código que debe ser escaneado para iniciar el proceso en el módulo **Validator**.
+
+           ![](/img/upload/Screenshot-2025-06-03-114352.png)
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th><h3>✅ Pasos</h3></th>
+    </tr>
+
+    <tr>
+        <td>
+            1.Toca el botón **Picking (1)** e **escanea un tote** utilizando el escáner Zebra para comenzar a trabajar con órdenes.
+            2.**Escanea las trays** para asignarlas al tote que se utilizará en el proceso de picking.
+
+            ![](/img/upload/Screenshot-2025-06-27-113905.png)
+
+            3. A continuación, el sistema solicitará **escanear la ubicación** donde se encuentran los artículos. El código de la locación aparecerá en letras **negras** con la leyenda "**MULTI**".
+
+            ![](/img/upload/Screenshot-2025-06-27-113917.png)
+
+            4. Se mostrará una **interfaz** con el artículo y la cantidad que debe tomarse de la locación.Para proceder, **escanea los artículos** uno por uno.
+
+            ![](/img/upload/Screenshot-2025-06-27-113431.png)
+
+
+            <Admonition type="info" icon="🛠" title="Configuración de Visualización en Picker App">
+                Dependiendo de las necesidades del cliente, la vista mostrada anteriormente puede verse modificada por configuraciones específicas definidas en el apartado  **[Configuraciones de compañia](../WM/2025-05-23-Configuraciones_de_compañia)**.
+                Desde esa sección, es posible habilitar o deshabilitar distintos elementos que determinan qué información será visible en la aplicación del picker.
+                Estas opciones suelen adaptarse a requerimientos particulares de cada cliente —por ejemplo, compañías como Tumble— y permiten controlar detalles como si se muestran el país de origen (COO), el número de lote, el UPC, la descripción o la imagen del producto, entre otros como se observa en la siguiente imagen.
+                <img src="/img/upload/Pickingp1-2025-13-16.png" width="300px"/>
+
+                Ademas si el cliente  tiene habilitada la visualización de COO y/o número de lote, la aplicación mostrará esa información solo si existe en los datos del artículo
+            </Admonition>
+
+            5. Una vez escaneados **todos los artículos** de la orden, **escanea nuevamente la tray** donde se almacenarán temporalmente.
+
+            ![](/img/upload/Screenshot-2025-06-27-113536.png)
+
+            6. Finalmente, la orden se marcará como **completada**. Las trays con los artículos deben ser **entregadas al área de packing**.
+
+            ![](/img/upload/Screenshot-2025-06-27-113629.png)
+        </td>
+    </tr>
+</table>
+

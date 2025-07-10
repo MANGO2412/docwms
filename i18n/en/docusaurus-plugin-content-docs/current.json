@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Portal del cliente": {
+    "message": "Portal del cliente",
+    "description": "The label for category Portal del cliente in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Portal del cliente.link.generated-index.description": {
+    "message": "Se describen  el proceso del packing en los modulos correspondientes a sistema slam de G global",
+    "description": "The generated-index page description for category Portal del cliente in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Internal": {
+    "message": "Internal",
+    "description": "The label for category Internal in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Internal.link.generated-index.description": {
+    "message": "En esta sección se detallan los módulos necesarios para cubrir las funcionalidades que ofrece WMS en el entorno Internal, destinado al equipo de operaciones. Aquí se describen los pasos requeridos para realizar el recibo de paquetes, la gestión de clientes, el control de inventarios y el monitoreo de las órdenes generadas por los clientes, entre otras funciones.  Si cuentas con acceso a la versión interna de WMS, continúa leyendo para conocer los módulos disponibles y descubrir cómo este sistema ayuda a agilizar y automatizar los procesos operativos.",
+    "description": "The generated-index page description for category Internal in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Receipt": {
+    "message": "Receipt",
+    "description": "The label for category Receipt in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Picking": {
+    "message": "Picking",
+    "description": "The label for category Picking in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Packing": {
+    "message": "Packing",
+    "description": "The label for category Packing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Shipping": {
+    "message": "Shipping",
+    "description": "The label for category Shipping in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Gestion de Almacen": {
+    "message": "Gestion de Almacen",
+    "description": "The label for category Gestion de Almacen in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Gestion de Almacen.link.generated-index.description": {
+    "message": "Se presentan los módulos necesarios para gestionar elementos fundamentales en flujos como 3PL o Fulfillment dentro de cada almacén de G Global, tales como la administración de almacenes, trays, totes, entre otros. Si deseas conocer más en profundidad cómo se realiza esta gestión, continúa leyendo para descubrir qué módulos intervienen y cómo se utilizan en la operación diaria de un almacén.",
+    "description": "The generated-index page description for category Gestion de Almacen in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.WM": {
+    "message": "WM",
+    "description": "The label for category WM in sidebar tutorialSidebar"
+  }
+}

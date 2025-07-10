@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "G-WMS DOCS",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "G-WNS DOCS",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Manual de Usuario": {
+    "message": "User Manual",
+    "description": "Navbar item with label Manual de Usuario"
+  }
+}
