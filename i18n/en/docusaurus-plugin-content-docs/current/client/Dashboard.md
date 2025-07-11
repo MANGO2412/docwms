@@ -5,36 +5,33 @@ title: Dashboard
 
 # Dashboard
 
-Si deseas obtener una vista resumida y en tiempo real del estado de tus órdenes dentro del proceso de fulfillment, este dashboard es ideal para ti. Aquí se desglosan métricas que indican la cantidad de órdenes en cada etapa del flujo de fulfillment, acompañadas de gráficas que ofrecen una representación visual del progreso de procesamiento, entre otros datos relevantes.
+If you want a summarized, real-time view of the status of your orders within the fulfillment process, this dashboard is ideal for you. It breaks down key metrics showing the number of orders at each stage of the fulfillment flow, accompanied by graphs that provide a visual representation of the processing progress and other relevant data.
 
-Al acceder a esta interfaz haciendo clic en Dashboard desde  menu lateral, se deglosara los siguiente elementos como se observa en la siguiente imagen:
+To access this interface, click on **Dashboard** from the sidebar menu. The following elements will be displayed, as shown in the image below:
 
 ![](/img/upload/Dashboardp1-2025-13-16.png)
 
-## Comprendiendo las metricas
+## Understanding the Metrics
 
-Las métricas se presentan en forma de tarjetas ubicadas en la parte superior de la vista. Esta sección muestra la cantidad de eventos según su estatus dentro del flujo de fulfillment, con el objetivo de brindarte una visión clara y concisa sobre cómo se están procesando tus órdenes y en qué etapa del fulfillment se encuentran.
+The metrics are presented as cards located at the top of the view. This section shows the number of events by their status within the fulfillment flow, offering a clear and concise view of how your orders are being processed and in which stage they are.
 
 ![](/img/upload/Dashboardp2-2025-13-16.png)
 
-
 :::tip
-Si haces clic en las tarjetas con las etiquetas On Queue, In process, Ready to Load, In Transit, te redireccionara a Orders Monitor  aplicando    filtro  por  eventos de cada orden con  su correspondiente estado.
+If you click on the cards labeled **On Queue**, **In Process**, **Ready to Load**, or **In Transit**, you will be redirected to the **Orders Monitor**, where a filter will be applied showing orders in the corresponding status.
 :::
 
-si haces clic en la tarjeta **Fulfillments Events On Hold** desglosa una modal con varias opciones.
+If you click on the **Fulfillment Events On Hold** card, a modal with several options will appear:
 
 ![](/img/upload/Dashboardp3-2025-13-16.png)
 
 ![](/img/upload/Dashboardp4-2025-13-16.png)
 
+By selecting one of those options, a filter will be applied in the **Orders Monitor**.
 
-Al seleccionar uno de esa opciones aplicaras un filtro a Orders Monitor.
+## Understanding the Charts
 
-
-## Comprendiendo las Graficas
-
-Al hacer scroll en la parte inferior de la vista, se encuentra graficas que nos brinda como se esta distribuyendo el proceso de los eventos fulfillment  como se observa en la siguiente imagen
+By scrolling down to the bottom of the view, you will find charts showing how fulfillment events are distributed, as seen in the following images:
 
 ![](/img/upload/Dashboardp6-2025-13-16.png)
 
@@ -42,67 +39,63 @@ Al hacer scroll en la parte inferior de la vista, se encuentra graficas que nos 
 
 ![](/img/upload/Dashboardp8-2025-13-16.png)
 
-**En la primera grafica** se desglosa informacion sobre las **Shipped Orders(Ordenenes enviadas)**   que se refiere a la cantidad de paquetes  enviadas, etiquetas generadas y  paquetes recibidos por dia.
+**The first chart** displays data about **Shipped Orders**, including the number of packages shipped, labels generated, and packages received per day.
 
 ![](/img/upload/Dashboardp5-2025-13-16.png)
 
-
-**En la segunda grafica de barras**  desglosa la cantidad  de  eventos por el estatus como en Backorder, Cancelled, In process, In Review, On Queue, Shipped and Cancelled semanalmente.  
+**The second bar chart** shows the number of events by status—Backorder, Cancelled, In Process, In Review, On Queue, Shipped, and Cancelled—grouped by week.
 
 ![](/img/upload/Dashboardp10-2025-13-16.png)
 
-El dashboard también incluye **gráficas de pastel** que presentan el porcentaje de distribución de los eventos fulfillment:
+The dashboard also includes **pie charts** showing the percentage distribution of fulfillment events:
 
-
-- La **primera gráfica de pastel** segmenta los eventos por tipo de prioridad, diferenciando entre eventos prioritarios y eventos normales.
+- The **first pie chart** segments events by priority type, differentiating between priority and regular events.
 
 ![](/img/upload/Dashboardp11-2025-13-16.png)
 
-
-- La **segunda gráfica de pastel** muestra la distribución porcentual de los eventos fulfillment que aún no han sido enviados, organizados según su estatus.
+- The **second pie chart** displays the percentage distribution of pending fulfillment events, grouped by status.
 
 ![](/img/upload/Dashboardp12-2025-13-16.png)
 
+## Configuration Panel
 
-## Panel de configuraciones 
+The view also includes a configuration panel whose main function is to enable or disable the display of charts, metrics, and filters. This panel allows you to customize what information you want to analyze in the dashboard according to your needs.
 
-La vista también incluye un panel de configuración, cuya función principal es habilitar o deshabilitar la visualización de gráficas, métricas y filtros. Este panel permite personalizar la información que se desea analizar en el dashboard, según los requerimientos del usuario.
-
-Para acceder al panel de configuración, haz clic en el siguiente botón emergente:
+To access the configuration panel, click on the floating button:
 
 ![](/img/upload/Dashboardp13-2025-13-16.png)
 
-A continuación, se mostrará un ícono con la etiqueta Dashboard configuration. Haz clic sobre él para continuar.
+Then, a button labeled **Dashboard configuration** will appear. Click on it to continue.
 
 ![](/img/upload/Dashboardp14-2025-13-16.png)
 
-Después, se desplegará el panel de configuraciones con sus respectivas secciones y opciones, como se observa en la siguiente imagen:
+After that, the configuration panel with its corresponding sections and options will appear, as shown in the image:
 
 ![](/img/upload/Dashboardp15-2025-13-16.png)
 
+- **Date Filters**  
+  In this first section, you can apply filters related to inventory receiving and shipping dates.
 
-- **Filtro por fechas**
-    En esta primera sección, puedes aplicar filtros relacionados con fechas de recibo y envío de inventario.
 ![](/img/upload/Dashboardp16-2025-13-16.png)
 
-- **Configuración de gráficas**
-    Esta sección permite habilitar o deshabilitar la visualización de las gráficas que deseas mostrar en el dashboard.
+- **Chart Settings**  
+  This section allows you to enable or disable specific charts you want to view on the dashboard.
 
 ![](/img/upload/Dashboardp17-2025-13-16.png)
 
-- **Filtros adicionales**
-    Aquí encontrarás filtros adicionales que permiten refinar la información mostrada en el dashboard:
+- **Additional Filters**  
+  Here you’ll find additional filters to refine the information displayed on the dashboard:
 
-    ![](/img/upload/Dashboardp18-2025-13-16.png)
+![](/img/upload/Dashboardp18-2025-13-16.png)
 
-    - **Country Process**: Permite segmentar los datos según el país donde se realiza el proceso (México o Estados Unidos).
+  - **Country Process**: Segments data by the country where the fulfillment process occurs (Mexico or the United States).
 
-    ![](/img/upload/Dashboardp19-2025-13-16.png)
+![](/img/upload/Dashboardp19-2025-13-16.png)
 
-    - **Business Model**: Filtra la información según el modelo de negocio: B2B, B2C o ninguno.
+  - **Business Model**: Filters the information based on business model: B2B, B2C, or none.
 
-    ![](/img/upload/Dashboardp20-2025-13-16.png)
+![](/img/upload/Dashboardp20-2025-13-16.png)
 
-    - **Campaign**: Aplica un filtro para visualizar únicamente los datos relacionados con una campaña específica.
+  - **Campaign**: Applies a filter to view only the data related to a specific campaign.
 
-    ![](/img/upload/Dashboardp21-2025-13-16.png)
+![](/img/upload/Dashboardp21-2025-13-16.png)
