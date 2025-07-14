@@ -1,48 +1,46 @@
 ---
 sidebar_position: 1
-title: Introducion
+title: Introducción
 ---
 
-# Introduccion
+# Introducción
 
-Let's discover **Docusaurus in less than 5 minutes**.
+El comercio electrónico ha experimentado un crecimiento acelerado desde 2019, según reportes de plataformas como SAP. Este auge ha puesto una fuerte presión sobre los proveedores de logística tercerizados (3PL) y transportistas, quienes deben entregar pedidos de forma rápida y eficiente, siguiendo estándares similares a los de empresas líderes como Amazon.
 
-## Getting Started
+En este contexto, los sistemas WMS (Warehouse Management System) se han vuelto esenciales. Estas soluciones permiten optimizar todos los procesos dentro de un almacén: desde la recepción y ubicación (*put away*), hasta el retiro, embalaje, envío, seguimiento y reposición del inventario. Todo esto es gestionado desde una única interfaz centralizada, lo que mejora la eficiencia operativa y el control logístico.
 
-Get started by **creating a new site**.
+## ¿Qué es un WMS y cómo funciona?
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Un WMS (Warehouse Management System) es una solución de software diseñada para gestionar y controlar los movimientos de mercancías dentro de un almacén. Su objetivo principal es optimizar el ciclo de cumplimiento de órdenes (*fulfillment*), garantizando que los productos ingresen y salgan del almacén de manera organizada y eficiente.
 
-### What you'll need
+El proceso comienza cuando un cliente genera una orden de *fulfillment*. El sistema verifica automáticamente si hay disponibilidad en el inventario. Si no hay stock, se genera una solicitud para abastecer la demanda.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Una vez que el proveedor envía los productos a los almacenes de G Global, el sistema detecta los paquetes, los registra y los prepara para ser utilizados en las órdenes. Luego, estas órdenes pasan por flujos internos como **picking** y **packing**. Cuando dichos flujos son completados, el sistema valida que los productos están listos para su envío.
 
-## Generate a new site
+Finalmente, se despachan los pedidos, cerrando el ciclo de *fulfillment*. Este flujo se repite cada vez que se genera una nueva orden.
 
-Generate a new Docusaurus site using the **classic template**.
+## Plataforma WMS de G Global: Entorno Cliente y Entorno Interno
 
-The classic template will automatically be added to your project after you run the command:
+El WMS de **G Global** está estructurado en dos entornos independientes, diseñados para atender distintas necesidades:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- **Entorno Cliente (Portal WMS):** Orientado a proveedores y clientes. Desde este portal se puede:
+  - Visualizar el inventario en tiempo real.
+  - Generar y dar seguimiento a órdenes de *fulfillment*.
+  - Consultar reportes logísticos.
+  - Registrar devoluciones e incidencias.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- **Entorno Interno (Operación WMS):** Usado por el personal logístico de G Global para gestionar los procesos operativos del almacén, como:
+  - Recepción de mercancía (*Receiving*).
+  - Almacenamiento (*Put Away*).
+  - Preparación de pedidos (*Picking*).
+  - Empaque (*Packing*).
+  - Envío (*Shipping*).
+  - Auditoría y control de calidad.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Esta división asegura que los clientes tengan visibilidad y control sobre sus operaciones, mientras que G Global garantiza un flujo operativo ágil, organizado y con trazabilidad en tiempo real.
 
-## Start your site
+## ¿Por qué este manual?
 
-Run the development server:
+G-WMS está en constante evolución, adaptándose a las necesidades de sus clientes y optimizando la operación interna. Por esta razón, se ha desarrollado este **manual de usuario**, con el fin de explicar todas las funcionalidades que ofrece el sistema y ayudarte a aprovecharlo al máximo en ambos entornos.
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Si deseas aprender a usar WMS de forma eficiente, continúa leyendo y descubre todo lo que esta herramienta en la parte operativa si eres del equipo de G global o en el portal de cliente si eres uno de nuestros cliente para tener mayor control de tu inventario.
