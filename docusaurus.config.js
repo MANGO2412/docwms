@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'WMSDOCS',
   favicon: 'img/favicon.ico',
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://wmsdocs.netlify.app',
   baseUrl: '/',
   organizationName: 'G-global', 
   projectName: 'wms', 
@@ -89,6 +89,17 @@ const config = {
       apiKey: 'd9d2f7791156cdb0ce7c16c5bc3ba11d',
       indexName: 'wmsnetlify',
       contextualSearch: true,
+      searchParameters:{
+        facetFilters: [
+                 "language:es",
+                 [
+                   "docusaurus_tag:default",
+                   "docusaurus_tag:docs-default-3.2.1",
+                   "docusaurus_tag:docs-community-current",
+                   "docusaurus_tag:docs-docs-tests-current"
+                 ]
+         ]
+      },
       externalUrlRegex: 'external\\.com|domain\\.com',
 
       replaceSearchResultPathname: {
