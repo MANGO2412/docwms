@@ -37,10 +37,26 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* css cards light */
+/* css component TiltedCard*/
 .creative-cards{
     padding: 120px 0;
     position: relative;
+}
+
+.creative-cards .creative-cards__header{
+    border-bottom: 2px solid black;
+    margin-right: .75rem;
+    margin-left: .75rem;
+    margin-bottom: 60px;
+    width: 90%;
+}
+
+.creative-cards .creative-cards__header_dark{
+    border-bottom: 2px solid #fff;
+}
+
+.creative-cards .creative-cards__header h3{
+    line-height: .1;
 }
 .creative-cards .container {
     max-width: 1320px;
@@ -85,8 +101,7 @@
     background: #393939;
 }
 .card-details:hover:before{
-    /* background-color: rgb(104, 159, 241); */
-       background-color: #74a6f1;
+    background-color: #74a6f1;
 }
 .card-icons {
     width: 140px;
@@ -174,13 +189,13 @@
 /* ============= Responsive Ipad ==================== */
 @media (max-width: 992px) {
  .creative-cards .container .row .card-column {
-    flex: 0 0 auto;
-    width: 50%;
+    flex: 0 auto auto;
+    width: 80%;
     margin-bottom: 40px;
 }
 }
 
-/* ============= Responsive Iphone ==================== */
+/* ============= Responsive Phone ==================== */
 @media (max-width: 480px) {
  .creative-cards .container .row .card-column {
     flex: 0 0 auto;
@@ -191,39 +206,110 @@
     width: 100%;
 }
 .read-more-btn{
-        transform: translateX(0px);
+   transform: translateX(0px);
     opacity: 1;
     visibility: visible;
 }
+
+.card-details h3{
+    white-space: wrap;
 }
-/* ====================== Buy Me A Coffee =============================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-    .coffee-button {
-      position: fixed;
-      z-index:9;
-      top: 20px;
-      right: 20px;
-      background-color: #FFC107;
-      color: #333;
-      padding: 8px 16px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-family: "Dancing Script", cursive;
-      font-weight: 600;
-      font-size: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.3s;
-    }
-
-    .coffee-button:hover {
-      background-color: #FFD54F;
-    }
-
-    .coffee-icon {
-      font-size: 24px;
-      line-height: 1;
 }
+
+
+/* css component basic card */
+.basic-card {
+    width: 300px;
+    position: relative;
+    margin: auto;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.basic-card .card-content {
+    padding: 30px;
+    height: 400px;
+}
+
+.basic-card .card-title{
+    font-size: 25px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    
+}
+
+.basic-card .card-text{
+    line-height: 1.6;
+}
+
+.basic-card .card-link {
+            padding: 25px;
+            width: -webkit-fill-available;
+}
+
+.basic-card .card-link a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.basic-card .card-link a:after {
+    top: 30px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.basic-card .card-link a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/* light mode */
+.basic-card-light .card-title, .basic-card-light .card-link a {
+  color: #636363;
+}
+        
+.basic-card-light .card-text {
+  color: #7b7b7b;
+}
+
+.basic-card-light .card-link {
+  border-top: 1px solid #eee;
+}
+
+.basic-card-light .card-link a:after {
+  background:#636363;
+}
+
+/* dark mode */
+.basic-card-dark {
+  background-image: linear-gradient(to bottom right, #252525, #4a4a4a);
+}
+
+.basic-card-dark .card-title, .basic-card-dark .card-link a {
+    color:#eee;
+}
+
+.basic-card-dark .card-text {
+    color: #dcdcdcdd;
+}
+
+.basic-card-dark .card-link {
+    border-top: 1px solid #636363;
+}
+
+.basic-card-dark .card-link a:after {
+    background:#eee;
+}
+    

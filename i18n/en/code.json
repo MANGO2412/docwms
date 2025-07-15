@@ -7,6 +7,65 @@
     "message":"Learn to use WMS",
     "description":"This is a subtitle to main page"
   },
+  "simpleCard.btn":{
+    "message":"Learn more",
+    "description":"This is btn from article in main page "
+  },
+  "InternalArticle.description.receipt":{
+     "message":"The Receipt section is a fundamental part of the WMS system, as it concentrates the entire process of receiving packages sent by customers to the warehouse. In this section you will find the key modules that allow you to manage each stage of the receipt, from pre-notification to final validation of the items.",
+     "description":"This is a description about the article receipt in internal  "
+  },
+  "InternalArticle.description.OM":{
+    "message":"This module generates the purchase orders and displays the fulfillment flow contained in each of the orders, as well as a history of movements made to each event of the order.",
+    "description":"This is a description about the  orders monitor  article in internal"
+  },
+  "InternalArticle.description.Shipping":{
+    "message":"The Shipping section represents the last phase within the WMS system. In this stage the packages, grouped in pallets, are prepared from the orders generated in the Order Monitor module, in order to be dispatched and delivered to the customers.",
+    "description":"This is a description about the  shipping article in internal"
+  },
+
+  "ClientArticle.description.Dashboard":{
+    "message":"If you want to get a summary and real-time view of the status of your orders within the fulfillment process, this dashboard is ideal for you. It breaks down metrics that indicate the number of orders at each stage of the fulfillment flow, accompanied by graphs that offer a visual representation of the processing progress, among other relevant data.",
+    "description":"This discription is about article Dashboard in client"
+  },
+  "ClientArticle.description.OM":{
+    "message":"The Order Monitor module is a key section within the WMS system, which allows to visualize, manage and monitor the status of the orders to be handled in the warehouse. Its main function is to provide real-time control over each phase of the logistics process, from order creation to completion.",
+    "description":"This discription is about article Order Monitor in client"
+  },
+  "ClientArticle.description.SN":{
+     "message":"This module allows you to manage your ASN (Advanced Shipping Notices) efficiently. The customer portal provides this tool so that you can notify G Global's warehouses in advance of incoming packages.",
+     "description":"This discription is about article Shipping Notice  in client"
+  },
+  "FeatureList.card1.title":{
+    "message":"Real-time visibility",
+    "description":"this is a title"
+  },
+  "FeatureList.card2.title":{
+    "message":"Integrated WM",
+    "description":"this is a title"
+  },
+  "FeatureList.card3.title":{
+    "message":"Dual environment (customer and internal)",
+    "description":"this is a title"
+  },
+  "FeatureList.card1,description":{
+    "message":"G-WMS provides your customers and logistics operators with a clear and up-to-date view of inventory and order status at every stage of the fulfillment process. This allows you to make informed decisions quickly and accurately.",
+    "description":"this description is used to card"
+  },
+   "FeatureList.card2,description":{
+    "message":"From goods receipt to final shipment, G-WMS centralizes all logistics flows (receiving, put away, picking, packing and shipping), optimizing resources, reducing operational errors and automating processes.",
+    "description":"this description is used to card"
+  },
+   "FeatureList.card3,description":{
+    "message":"G-WMS is divided into two environments: one for customers and one internal. The customer portal is used to manage orders, monitor inventory and consult reports. The internal environment is used by the operational team to execute logistics processes.",
+    "description":"this description is used to card"
+  },
+  "Client.header":{
+     "message":"Client Portal"
+  },
+  "Internal.header":{
+     "message":"Internal Portal"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
