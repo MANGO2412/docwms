@@ -88,24 +88,8 @@ const config = {
       appId: 'J0LTVUIX2S',
       apiKey: 'd9d2f7791156cdb0ce7c16c5bc3ba11d',
       indexName: 'wmsnetlify',
-      contextualSearch: true,
-      searchParameters:{
-        facetFilters: [
-                 "language:es",
-                 [
-                   "docusaurus_tag:default",
-                   "docusaurus_tag:docs-default-3.2.1",
-                   "docusaurus_tag:docs-community-current",
-                   "docusaurus_tag:docs-docs-tests-current"
-                 ]
-         ]
-      },
-      externalUrlRegex: 'external\\.com|domain\\.com',
-
-      replaceSearchResultPathname: {
-        from: '/docs/internal', // or as RegExp: /\/docs\//
-        to: '/',
-      },
+      contextualSearch: false,
+      searchParameters:{},
 
     }
     }),
