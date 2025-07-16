@@ -5,7 +5,7 @@ title: Order Monitors
 
 
 
-# Order Monitors
+# Order Monitors(Internal)
 
 En este módulo se generan las órdenes de pedido, además  se visualiza el flujo fulfillment que contiene cada una de las  órdenes, así como un historial de movimientos realizados a cada evento de la orden.
 
@@ -47,7 +47,7 @@ En este módulo se generan las órdenes de pedido, además  se visualiza el fluj
     ![](/img/upload/OMp7-2025-13-16.png)
     ![](/img/upload/OMp8-2025-13-16.png)
 
-## Generar una orden.
+## ¿Como generar una orden en Orders Monitor?.
 
 - Haz clic en la opción **CREATE**.
   
@@ -97,7 +97,7 @@ Para añadir más artículos a la orden, simplemente haz clic nuevamente en el b
 
 ![](/img/upload/OMp18-2025-13-16.png)
 
-## Visualizando detalle de la orden
+## ¿Como visualizar el detalle de la orden en Orders Monitor?
 
 * Para visualizar el detalle completo de una orden de pedido, haz doble clic sobre la fila correspondiente en la tabla. 
 
@@ -596,7 +596,7 @@ Esta acción permite revertir el estado de un evento de **Packed** a **Picked**.
 
 Cuando un evento de una orden se encuentra en estado **Problem Solving**, significa que el picker ha reportado un problema relacionado con el artículo escaneado. Para resolver este tipo de eventos, es necesario que el usuario tenga el rol de **Problem Solving**.
 
-### Resolviendo una orden en estatus de  problem solving.
+### ¿Como resover una orden en Probleming Solving?.
 
 - Accede al módulo **Orders Monitor** y utiliza los filtros para localizar los eventos en estado **Problem Solving**.
 

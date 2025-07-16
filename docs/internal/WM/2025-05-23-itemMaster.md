@@ -128,7 +128,7 @@ Este módulo permite gestionar los artículos de los clientes en el WMS, detalla
 
 ![](/img/upload/ItemMasterp20-2025-13-16.png)
 
-## Eliminar Item Master
+## Eliminar un  Item Master
 
 - Click en el botón 🗑 para eliminar el producto:
 

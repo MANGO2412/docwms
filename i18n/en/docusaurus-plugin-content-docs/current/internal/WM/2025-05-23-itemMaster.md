@@ -1,144 +1,146 @@
 ---
-title: Item master
+title: Item Master
 ---
 
-# Item master
+# Item Master
 
-Este módulo permite gestionar los artículos de los clientes en el WMS, detallando las acciones necesarias para registrar un producto, así como para actualizar o eliminar su información en el sistema. Se considera uno de los módulos más importantes, ya que la información que se genera es relevante para otros módulos dentro del WMS.
+This module allows you to manage client items in the WMS, detailing the necessary actions to register a product, as well as to update or delete its information in the system. It's considered one of the most important modules, as the information generated here is relevant for other modules within the WMS.
 
-## Crear un Item Master.
+***
 
-- **Click** en el botón **CREATE ITEM**:
+## Create an Item Master
+
+- **Click** the **CREATE ITEM** button:
 
 ![](/img/upload/ItemMasterp1-2025-13-16.png)
 
-- Se desglosa un formulario solicitando los siguientes  datos  para llevar a cabo el proceso del registro.
+- A form will appear requesting the following data to carry out the registration process.
 
 ![](/img/upload/ItemMasterp2-2025-13-16.png)
 
-- Los campos requeridos para  realizar el registro, son los siguientes:
+- The required fields to complete the registration are as follows:
 
 ![](/img/upload/ItemMasterp3-2025-13-16.png)
 
 
-| No del campo | Nombre del campo                          | Descripción                                                                                     |
-| :----------- | :---------------------------------------- | :---------------------------------------------------------------------------------------------- |
-| 1            | SKU                                       | Número de referencia del producto.                                                              |
-| 2            | UPC Code(códigos de producto universales) | Son los códigos de barras que se utilizan para el comercio minorista y el comercio electrónico. |
-| 3            | Hts Code                                  | Código de 10 dígitos para identificar la tarifa  arancelaria de importación en Estados Unidos.  |
-| 4            | Cost                                      | Costo de fabricación del producto.                                                              |
-| 5            | Sales price                               | El precio en el que se vende el producto a los clientes.                                        |
-| 6            | Weight in Grams                           | Es el peso del producto en unidades gramos                                                      |
-| 7            | Country of Manufacture                    | El país de fabricación en dos dígitos                                                           |
+| Field No. | Field Name | Description |
+| :--- | :--- | :--- |
+| 1 | SKU | Product reference number. |
+| 2 | UPC Code (Universal Product Codes) | These are the barcodes used for retail and e-commerce. |
+| 3 | HTS Code | 10-digit code to identify the import tariff rate in the United States. |
+| 4 | Cost | The manufacturing cost of the product. |
+| 5 | Sales Price | The price at which the product is sold to customers. |
+| 6 | Weight in Grams | The weight of the product in grams. |
+| 7 | Country of Manufacture | The two-digit code for the country of manufacture. |
 
-- Los campos opcionales se pueden dejar vacío o  son para proporcionar más información detallada del productos y son los siguientes:
+- The optional fields can be left empty or used to provide more detailed product information. They are as follows:
 
 ![](/img/upload/ItemMasterp4-2025-13-16.png)
 
-| No del campo | Nombre del campo    | Descripción                                                                                                                                                                                   |
-| :----------- | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1            | Type                | Se define el tipo de producto por ejemplo calzado o textil                                                                                                                                    |
-| 2            | Description         | Descripción breve del producto                                                                                                                                                                |
-| 3            | Description A24     | Descripción breve del producto  en es español.                                                                                                                                                |
-| 4            | Supplier            | Nombre del proveedor                                                                                                                                                                          |
-| 5            | Country Process     | Lugar donde se procesa el producto. Si el pedido se procesa en Tijuana, este campo debe tener el valor de  MEX. Si el pedido se procesa en San Diego, este campo debe tener el valor de  USA. |
-| 6            | UM Tariff           | Unidad de Medida                                                                                                                                                                              |
-| 7            | Duty HTS            | Porcentaje de Duty Participation, 2 enteros y 2 decimales e.g. 33.33.                                                                                                                         |
-| 8            | Alternate Bar Code  | Código de barras alternativo para un medio secundario de referencia de identificación del dato                                                                                                |
-| 9            | PGA                 | Condición esencial                                                                                                                                                                            |
-| 10           | Spanish description | Descripción del producto en español                                                                                                                                                           |
-| 11           | SKU A24             | código interno SKU del producto                                                                                                                                                               |
-| 12           | Harmonized Code     | Fracción arancelaria mexicana de 8 a 10 dígitos.                                                                                                                                              |
-| 13           | Cost Currency       | Indica el tipo de moneda USD, MXN. en que se expresa el costo del producto.                                                                                                                   |
-| 14           | UM COMMERCIAL       | Unidad de Medida comercial                                                                                                                                                                    |
-| 15           | DUTY COUNTRY ORIGIN | porcentaje de País de origen, 2 enteros y 2 decimales e.g. 22.22.                                                                                                                             |
+| Field No. | Field Name | Description |
+| :--- | :--- | :--- |
+| 1 | Type | Defines the product type, for example, footwear or textile. |
+| 2 | Description | A brief description of the product. |
+| 3 | Description A24 | A brief description of the product in Spanish. |
+| 4 | Supplier | The name of the supplier. |
+| 5 | Country Process | The location where the product is processed. If the order is processed in Tijuana, this field should be MEX. If the order is processed in San Diego, this field should be USA. |
+| 6 | UM Tariff | Unit of Measure for tariffs. |
+| 7 | Duty HTS | Duty Participation percentage, 2 integers and 2 decimals, e.g., 33.33. |
+| 8 | Alternate Bar Code | An alternative barcode for a secondary means of data identification. |
+| 9 | PGA | Essential condition. |
+| 10 | Spanish description | Product description in Spanish. |
+| 11 | SKU A24 | Internal product SKU code. |
+| 12 | Harmonized Code | Mexican tariff code of 8 to 10 digits. |
+| 13 | Cost Currency | Indicates the currency type (USD, MXN) in which the product cost is expressed. |
+| 14 | UM COMMERCIAL | Commercial Unit of Measure. |
+| 15 | DUTY COUNTRY ORIGIN | Country of origin percentage, 2 integers and 2 decimals, e.g., 22.22. |
 
-- Para proporcionar más características del producto como **color**, **tamaño** o **la estrategia del picking**, se pueden llenar algunos de estos campos como se muestra en la siguiente imagen.
+- To provide more product characteristics like **color**, **size**, or **picking strategy**, you can fill in some of these fields as shown in the following image.
 
 ![](/img/upload/ItemMasterp5-2025-13-16.png)
 
-- El formulario de registro incluye algunas configuraciones opcionales en forma de casillas de verificación. Estas opciones están deshabilitadas por defecto, pero si se desea activar alguna funcionalidad relacionada con el producto, basta con marcar la casilla correspondiente. A continuación se describen las opciones disponibles que pueden configurarse para cada producto:
+- The registration form includes some optional settings in the form of checkboxes. These options are disabled by default, but if you want to activate any functionality related to the product, simply check the corresponding box. Below are the available options that can be configured for each product:
 
-    - **Self Expeditable**: Permite que el artículo sea ingresado directamente y pase la validación inicial sin necesidad de escanear primero la caja.
-    - **Filling**: Impide que el artículo pueda ser pickeado o escaneado automáticamente en SLAM si no cuenta con un código UPC. En estos casos, se deberá ingresar el código manualmente.
-    - **Lot Validation**: Activa la validación del número de lote dentro de la aplicación SLAM.
-    - **Show Lot in SLAM**: Habilita la visualización del número de lote del artículo durante el proceso en SLAM.
-    - **Activable**: Añade una validación adicional en SLAM. Al activar esta opción, el formulario solicitará un código de verificación. Esta validación se ejecuta cuando se escanea el UPC del artículo.
+    - **Self Expeditable**: Allows the item to be entered directly and pass the initial validation without needing to scan the box first.
+    - **Filling**: Prevents the item from being picked or automatically scanned in SLAM if it does not have a UPC code. In these cases, the code must be entered manually.
+    - **Lot Validation**: Activates lot number validation within the SLAM application.
+    - **Show Lot in SLAM**: Enables the display of the item's lot number during the SLAM process.
+    - **Activable**: Adds an additional validation in SLAM. When this option is activated, the form will request a verification code. This validation is executed when the item's UPC is scanned.
 
 ![](/img/upload/ItemMasterp6-2025-13-16.png)
 
-- Verifica que los datos sean correctos, haz clic en el botón **SAVE** para guardar el producto.
+- Verify that the data is correct and click the **SAVE** button to save the product.
 
 ![](/img/upload/ItemMasterp7-2025-13-16.png)
 
-- Si todo es correcto, se desglosa un **mensaje color verde** indicando que el registro es exitoso.
+- If everything is correct, a **green message** will appear indicating that the registration was successful.
 
 ![](/img/upload/ItemMasterp8-2025-13-16.png)
 
+***
 
-## Crear kits
+## Create Kits
 
-- Haz clic en la opción Bundle kit.
-
+- Click the **Bundle kit** option.
 
 ![](/img/upload/ItemMasterp9-2025-13-16.png)
 
-- Se abrirá un formulario donde deberás seleccionar el SKU padre, que representará el artículo compuesto o kit principal. Luego, selecciona los SKU hijos, que son los productos individuales que conformarán dicho kit.
-
+- A form will open where you must select the parent SKU, which will represent the composite item or main kit. Then, select the child SKUs, which are the individual products that will make up the kit.
 
 ![](/img/upload/ItemMasterp10-2025-13-16.png)
 
-- Después de seleccionar los SKU hijos, se habilitarán campos adicionales para que indiques la cantidad requerida de cada uno para conformar el SKU padre.
+- After selecting the child SKUs, additional fields will be enabled for you to indicate the required quantity of each to form the parent SKU.
 
 ![](/img/upload/ItemMasterp11-2025-13-16.png)
 
-- Una vez completada la información, haz clic en la opción **SAVE** para guardar los cambios.
+- Once the information is complete, click the **SAVE** option to save the changes.
 
 ![](/img/upload/ItemMasterp12-2025-13-16.png)
 
-- A continuación, el sistema mostrará un mensaje en color verde confirmando que el proceso se realizó con éxito.
+- The system will then display a green message confirming that the process was completed successfully.
 
 ![](/img/upload/ItemMasterp13-2025-13-16.png)
 
-
-- Para verificar que el kit fue creado correctamente, accede al módulo Stock, filtra por el SKU padre y, al hacer doble clic sobre el registro en la tabla, el sistema desplegará los SKU hijos que forman parte del artículo compuesto.
+- To verify that the kit was created correctly, go to the **Stock** module, filter by the parent SKU, and by double-clicking on the record in the table, the system will display the child SKUs that are part of the composite item.
 
 ![](/img/upload/ItemMasterp14-2025-13-16.png)
 
 ![](/img/upload/ItemMasterp15-2025-13-16.png)
 
-## Actualizar un Item Master
+***
 
-- Click en el botón de lapiz para editar el producto:
+## Update an Item Master
+
+- Click the pencil button to edit the product:
 
 ![](/img/upload/ItemMasterp16-2025-13-16.png)
 
-- Se desplegará un formulario con campos de  datos que se desea modificar.
+- A form will be displayed with the data fields you wish to modify.
 
 ![](/img/upload/ItemMasterp17-2025-13-16.png)
 
 ![](/img/upload/ItemMasterp18-2025-13-16.png)
 
-- haz clic en el botón **SAVE** para guardar los cambios:
+- Click the **SAVE** button to save the changes:
 
 ![](/img/upload/ItemMasterp19-2025-13-16.png)
 
-
-- Se actualizará la tabla  con un mensaje de color verde indicando el item que se actualizo, como se muestra en la siguiente imagen.
+- The table will be updated with a green message indicating the item that was updated, as shown in the following image.
 
 ![](/img/upload/ItemMasterp20-2025-13-16.png)
 
-## Eliminar Item Master
+***
 
-- Click en el botón 🗑 para eliminar el producto:
+## Delete an Item Master
+
+- Click the 🗑 button to delete the product:
 
 ![](/img/upload/ItemMasterp21-2025-13-16.png)
 
-- Se desplegará un mensaje de confirmación antes de eliminar, para eliminar haz clic **OK**.
+- A confirmation message will appear before deleting. To delete, click **OK**.
 
 ![](/img/upload/ItemMasterp22-2025-13-16.png)
 
-
-- Se actualizará la  tabla automáticamente, eliminando el ítem desplegando un mensaje de color verder indicando que la operacion ha sido exitosamente, como se muestra en la siguiente imagen: 
+- The table will update automatically, deleting the item and displaying a green message indicating that the operation was successful, as shown in the following image:
 
 ![](/img/upload/ItemMasterp23-2025-13-16.png)

@@ -3,14 +3,14 @@ sidebar_position: 3
 title: Order Monitors
 ---
 
-# Order Monitors
+# Order Monitors(portal del cliente)
 
 El **módulo Order Monitor** es una sección clave dentro del sistema WMS, que permite visualizar, gestionar y supervisar el estado de las órdenes de pedido que deben ser atendidas en el almacén. Su principal función es ofrecer un control en tiempo real sobre cada fase del proceso logístico, desde la creación de la orden hasta su finalización.
 
 En esta sección, se proporcionan descripciones detalladas de los pasos necesarios para aprovechar al máximo las opciones que ofrece este módulo en el portal de clientes.
 
 
-## ¿Como acceder al modulo?
+## ¿Como acceder al modulo desde el portal del cliente?
 
 Una vez que inicies sesión en el portal del cliente, dirígete al menú lateral izquierdo y haz clic en la opción **Order Monitor**.
 
@@ -22,7 +22,7 @@ A continuación, se mostrará la vista principal del módulo, donde podrás ver 
 
 
 
-## ¿Como generar una orden?
+## ¿Como generar una orden en el portal del cliente?
 
 El portal del cliente ofrece dos formas para generar órdenes: la primera es mediante un formulario proporcionado por el sistema, donde se ingresan manualmente los datos necesarios; la segunda es a través de la carga de un archivo en formato .csv, utilizando una plantilla disponible en el portal que permite agilizar el proceso de creación de órdenes de manera masiva.
 

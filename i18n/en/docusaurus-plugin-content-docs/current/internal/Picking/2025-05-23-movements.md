@@ -1,238 +1,230 @@
 ---
 title: Movements
 ---
-# Movements(Movimientos)
 
-El módulo de Movimientos en la aplicación móvil del WMS permite realizar de forma eficiente y controlada la reubicación de artículos dentro del almacén, ya sea por caja, por pieza o mediante consolidaciones.ste módulo está diseñado para facilitar las tareas operativas del personal, permitiéndoles ejecutar movimientos de inventario con trazabilidad, validación por escaneo y control de origen/destino.
+# Picking Movements
 
-En esta sección  describe el funcionamiento general de la vista del módulo y se detallan las tres principales funcionalidades disponibles:
+The **Movements** module in the WMS mobile app allows efficient and controlled relocation of items within the warehouse, whether by box, piece, or through consolidations. This module is designed to facilitate the operational tasks of warehouse staff, enabling inventory movements with traceability, scan-based validation, and source/destination control.
 
-- **Movimiento por caja**: permite trasladar cajas completas a ubicaciones de tipo Over Storage o Picking.
+This section describes the general interface of the module and details the three main available functionalities:
 
-- **Movimiento por pieza**: facilita la reubicación de artículos individuales hacia locaciones multi-SKU.
+- **Box Movement**: Allows full boxes to be moved to Over Storage or Picking locations.
+- **Piece Movement**: Facilitates the relocation of individual items to multi-SKU locations.
+- **Consolidations**: Allows regrouping of products from picking locations into boxes or multi-SKU locations.
 
-- **Consolidaciones**: permite reagrupar productos desde ubicaciones de picking hacia cajas o locaciones multi-SKU.
+Each flow is supported by screenshots and practical recommendations to ensure the process is carried out correctly, complying with system validations and avoiding common errors like COO (Country of Origin) mismatches.
 
-Cada flujo está acompañado de capturas de pantalla y recomendaciones prácticas para garantizar que el proceso se realice de forma correcta, cumpliendo con las validaciones del sistema y evitando errores comunes como el cruce de COO.
-
-## Vista util general del módulo
+## General Module View
 
 ![](/img/upload/Movep1-2025-13-16.png)
 
-| No  | Nombre                        | Descripción                                                                                              |
-| :-- | :---------------------------- | :------------------------------------------------------------------------------------------------------- |
-| 1   | Botón de menú de movimientos  | Botón que al presionarlo se permite ver las funciones de movimientos.                                    |
-| 2   | Botón de movimiento por caja. | Botón que al presionarlo se permite mover una caja a una locación de over storage o picking.             |
-| 3   | Botón de movimiento por pieza | Botón que al presionarlo se permite mover artículos a una locación multi SKU                             |
-| 4   | Botón de consolidación        | Botón que al presionarlo se permite mover artículos de pick location hacia cajas o locaciones multi SKU. |
+| No  | Name                        | Description                                                                                              |
+| :-- | :-------------------------- | :------------------------------------------------------------------------------------------------------- |
+| 1   | Movement menu button        | Displays the movement functions when tapped.                                                             |
+| 2   | Box movement button         | Allows you to move a box to an Over Storage or Picking location.                                         |
+| 3   | Piece movement button       | Allows you to move individual items to a multi-SKU location.                                             |
+| 4   | Consolidation button        | Allows you to move items from a picking location into boxes or multi-SKU locations.                      |
 
-## Movimiento por caja.
+## Box Movement
 
-Permite realizar movimientos de Caja de una almacén  a una ubicación de Over Storage o Picking  de un cliente.
+This function allows boxes to be moved from the warehouse to a client's Over Storage or Picking location.
 
-
-- Accede al menú de la app móvil y toca la opción **"Movimientos"**.
+- Open the mobile app menu and tap on **"Movements"**.
 
 ![](/img/upload/Movep2-2025-13-16.png)
 
-- Entre las opciones que se despliega, selecciona **"Movimiento por Caja"**.
+- From the options displayed, select **"Box Movement"**.
 
 ![](/img/upload/Movep3-2025-13-16.png)
 
-- A continuación, se mostrará una vista donde deberás **escanear primero la caja**.
+- A screen will appear prompting you to **scan the box first**.
 
 ![](/img/upload/Movep4-2025-13-16.png)
 
-- **Identifica el código QR de la caja** para escanearlo; apóyate en el ejemplo de la imagen siguiente. 
+- **Locate and scan the QR code** on the box as shown in the example image below.
 
 ![](/img/upload/Movep5-2025-13-16.png)
 
 :::tip
-
-De la etiqueta mostrada, **solo debes escanear el código QR grande ubicado en el lado derecho**.
-
+Only scan the **large QR code on the right side** of the label.
 :::
 
-Una vez escaneada la caja, el sistema desplegará información relevante como el **número de PPL**, **número de recibo** y **el COO (país de origen)**.
+Once the box is scanned, the system will display relevant information such as the **PPL number**, **receipt number**, and **COO (Country of Origin)**.
 
 ![](/img/upload/Movep6-2025-13-16.png)
 
 :::tip
-Antes de escanear la ubicación, puedes seguir escaneando más cajas si es necesario.
+You can continue scanning more boxes before scanning the destination location.
 :::
 
-- **Toca "Escanear locación"** para continuar con el proceso de movimiento.
+- Tap **"Scan Location"** to continue the movement process.
 
 ![](/img/upload/Movep7-2025-13-16.png)
 
-- Al escanear la ubicación, se mostrará el **nombre de la ubicación** (ya sea de tipo Over Storage o Pick Location) y se activará el indicador que marca que ya se ha escaneado  la **locación final**.
+- Once the location is scanned, the system will show its name (either Over Storage or Pick Location), and the **final destination indicator** will activate.
 
 ![](/img/upload/Movep8-2025-13-16.png)
 
--  A continuación, **toca el botón "Movimiento Finalizado"** para completar el proceso.
+- Tap **"Movement Completed"** to finish the process.
 
 ![](/img/upload/Movep9-2025-13-16.png)
 
-- Se abrirá una pantalla de confirmación; **toca "Realizar Movimiento"** para continuar.
+- A confirmation screen will appear; tap **"Execute Movement"** to proceed.
 
 ![](/img/upload/Movep10-2025-13-16.png)
 
-- Finalmente, se mostrará un mensaje indicando que el proceso fue exitoso. **Toca "Siguiente Movimiento"** si deseas realizar otro movimiento.
+- A success message will appear. Tap **"Next Movement"** if you want to perform another.
 
 ![](/img/upload/Movep11-2025-13-16.png)
 
 :::warning
-
-En caso de realizar un movimiento de una caja  a una ubicación con COO diferentes, el sistema de arrojará un error  y no se podrá finalizar el proceso:
+If you attempt to move a box to a location with a **different COO**, the system will trigger an error and prevent the process:
 
 ![](/img/upload/Movep12-2025-13-16.png)
 
-
-O si la caja contiene COO Mixed(Mezclado) porque contiene artículos de más de un país de origen como se observa en la siguiente imagen.
+Or if the box contains **Mixed COO** (items from more than one country of origin):
 
 ![](/img/upload/Movep13-2025-13-16.png)
 :::
 
-## Movimiento por pieza.
+## Piece Movement
 
-Esta opción permite  realizar movimientos de pieza a una ubicación multi sku.
+This option allows moving individual pieces to a **multi-SKU** location.
 
-- Accede al menú de la app móvil y toca la opción **"Movimientos"**.
+- Open the app menu and tap **"Movements"**.
 
 ![](/img/upload/Movep2-2025-13-16.png)
 
-- Entre las opciones que se despliega, selecciona **"Movimiento por pieza"**.
+- Select **"Piece Movement"** from the available options.
 
 ![](/img/upload/Movep3-2025-13-16.png)
 
-
-- A continuación, se mostrará una vista donde deberás escanear primero el **PPL de la caja**.
+- A screen will appear prompting you to first scan the **PPL code from the box**.
 
 ![](/img/upload/Movep14-2025-13-16.png)
 
-- Identifica la etiqueta con el **código QR** que debe ser escaneado, como se muestra en la imagen de ejemplo.
+- Locate and scan the **QR code** from the box, as shown:
 
 ![](/img/upload/Movep5-2025-13-16.png)
 
-- Una vez escaneado el PPL, si el sistema lo reconoce, se mostrará el **nombre** y el **tipo de ubicación** donde se encuentra la caja en la sección de origen.
+- Once scanned, the system will show the **location name** and **type** where the box currently is.
 
 ![](/img/upload/Movep15-2025-13-16.png)
 
-
-- Ahora escanea cada artículo a través de su **SKU**. Al escanearlo, se desplegará información como: SKU, UPC, Descripción, Cantidad escaneada, Número de lote y COO.
+- Now scan each item using its **SKU**. The app will show details such as SKU, UPC, Description, Scanned Quantity, Lot Number, and COO.
 
 ![](/img/upload/Movep16-2025-13-16.png)
 
 ![](/img/upload/Movep17-2025-13-16.png)
 
 :::note
-La cantidad de piezas a escanear dependerá de la necesidad de moverlas a una **ubicación de tipo multi-SKU**.
+The number of pieces to scan depends on how many are being moved to a **multi-SKU** location.
 :::
 
-- Escanea la **ubicación final** para continuar con el proceso. Una vez escaneada, se mostrará el **nombre** y el **tipo de ubicación destino** al que se moverán las piezas del artículo.
+- Scan the **destination location**. Once scanned, its **name** and **type** will be displayed.
 
 ![](/img/upload/Movep18-2025-13-16.png)
 
-- Por último,  toca la opción Finalizar.
+- Tap **"Finish"** to proceed.
 
 ![](/img/upload/Movep19-2025-13-16.png)
 
-- Se mostrará un mensaje de **confirmación**. Si estás de acuerdo con el movimiento, toca el botón **"Realizar Movimiento"** para continuar.
+- A **confirmation** message will appear. If correct, tap **"Execute Movement"** to continue.
 
 ![](/img/upload/Movep20-2025-13-16.png)
 
-- Finalmente, se visualizará un mensaje indicando que el proceso fue exitoso, junto con la opción de **realizar otro movimiento**.
+- A success message will appear with the option to **perform another movement**.
 
 ![](/img/upload/Movep21-2025-13-16.png)
 
 :::warning
-En caso de realizar un movimiento de piezas  a una ubicación con COO diferentes, el sistema de arrojará un error  y no se podrá finalizar el proceso:
+If you attempt to move pieces to a location with a **different COO**, an error will occur and the process will be blocked:
 
 ![](/img/upload/Movep22-2025-13-16.png)
 :::
 
 :::danger
-### Error por mezcla de lotes al mover artículos
+### Error: Lot Mixing During Item Movement
 
-Al realizar un movimiento por caja, si se despliega el siguiente error:
+If the following error appears during box movement:
 
 <img src="/img/upload/Movep32-2025-13-16.png" width="550px"/>
 
-Esto ocurre porque algunos clientes, como Tumble, prefieren organizar su inventario en locaciones separadas por número de lote.
-Por esa razón, no se permite mezclar artículos con diferentes lotes mediante movimientos por caja desde el módulo de picking en la aplicación.
+This happens because some clients, like **Tumble**, prefer to organize inventory in locations separated by **lot number**.
 
-⚠️ Esta validación aplica únicamente en los módulos de Consolidaciones y Movimiento por pieza.
-En esos casos, el sistema sí verifica que los artículos coincidan por lote antes de permitir el movimiento.
+Therefore, items with **different lots** cannot be mixed during **box movements** in the picking module.
 
-<h2>Recomendación</h2>
+⚠️ This validation only applies to the **Consolidation** and **Piece Movement** modules.
+In those, the system checks that lot numbers match before allowing the move.
 
-Antes de realizar el escaneo de una locación destino, asegúrate de que:
+### Recommendation
 
-- La locación esté vacía
-- Todos los artículos en ella tengan el mismo lote que los que estás moviendo.
+Before scanning a destination location, make sure that:
 
-Esto evitará interrupciones en el flujo de picking o consolidación y mantendrá la integridad del inventario.
+- The location is **empty**  
+- All items in the location have the **same lot** as those you're moving  
+
+This will help prevent interruptions in the picking/consolidation flow and ensure inventory integrity.
 :::
 
+## Consolidations
 
-## Consolidaciones
+Allows item movements from **pick locations** to a **box** or **multi-SKU** location.
 
-Permite  realizar Movimientos  articulos de pick location hacia una caja o ubicaciones de tipo multi sku.
-
-- Accede al menú de la app móvil y **toca la opción "Movimientos"**.
+- Open the app menu and tap **"Movements"**.
 
 ![](/img/upload/Movep2-2025-13-16.png)
 
-- Entre las opciones que se despliega, selecciona **"Consolidaciones"**.
+- Select **"Consolidations"** from the available options.
 
 ![](/img/upload/Movep23-2025-13-16.png)
 
-- A continuación, se mostrará una vista donde deberás escanear primero el **Código QR** de la locación.
+- A view will appear prompting you to first scan the **QR code of the location**.
 
 ![](/img/upload/Movep24-2025-13-16.png)
 
 :::warning
-si Escaneas una locación que no sea de tipo pick location, el sistema no dejará continuar con el proceso.
+If you scan a location that is not of type **Pick Location**, the system will block the process.
 :::
 
-- Una vez escaneado te muestra el nombre y el tipo de locación del  origen.
+- Once scanned, the origin location name and type will be displayed.
 
 ![](/img/upload/Movep25-2025-13-16.png)
 
-- Luego escanea los SKU de los artículos que desea  mover. Al escanearlo, se desplegará información como: SKU, UPC, Descripción, Cantidad escaneada, Número de lote y COO.
+- Next, scan the SKUs of the items to be moved. You will see info like SKU, UPC, Description, Scanned Quantity, Lot Number, and COO.
 
 ![](/img/upload/Movep26-2025-13-16.png)
 
-- Ahora  toca la opción **Escanear destin**o  y después escanea una caja o una locación de tipo multi sku para continuar. 
+- Tap **"Scan Destination"**, then scan a box or a multi-SKU location.
 
 ![](/img/upload/Movep27-2025-13-16.png)
 
-- Para este ejemplo se va a escanear  una  PPL de una caja  como se muestra en la siguiente imagen.
+- For this example, a box PPL will be scanned:
 
 ![](/img/upload/Movep5-2025-13-16.png)
 
-- Una vez escaneado la caja, se muestra la locación de la caja como su nombre y tipo  como destino.
+- Once scanned, the box location's name and type will be shown as the **destination**.
 
 ![](/img/upload/Movep28-2025-13-16.png)
 
-- Luego toca en **Movimiento Finalizado** para continuar.
+- Tap **"Movement Completed"** to proceed.
 
 ![](/img/upload/Movep29-2025-13-16.png)
 
-- Se mostrará un mensaje de **confirmación**. Si estás de acuerdo con el movimiento, toca el botón **"Realizar Movimiento"** para continuar.
+- A **confirmation** message will appear. Tap **"Execute Movement"** if everything is correct.
 
 ![](/img/upload/Movep30-2025-13-16.png)
 
-- Finalmente, se visualizará un mensaje indicando que el proceso fue exitoso, junto con la opción de **realizar otro movimiento**.
+- A success message will appear, with the option to **perform another movement**.
 
 ![](/img/upload/Movep31-2025-13-16.png)
 
 :::danger
- Si se presenta el siguiente error:
- <img src="/img/upload/Movep32-2025-13-16.png" width="550px"/>
+If the following error appears:
 
-Consulta el apartado [Error por mezcla de lotes al mover artículos](#error-por-mezcla-de-lotes-al-mover-artículos) para conocer las causas y condiciones que pueden generarlo.
+<img src="/img/upload/Movep32-2025-13-16.png" width="550px"/>
 
-Este error suele estar relacionado con restricciones configuradas por la compañía sobre el manejo de lotes en los movimientos de inventario.
+Refer to the section [Error: Lot Mixing During Item Movement](#error-lot-mixing-during-item-movement) to understand the cause and conditions that may trigger it.
 
+This error is usually related to company-specific restrictions on **lot handling** during inventory movements.
 :::

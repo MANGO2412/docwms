@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: Introduccion
+title: Introduccion sobre Receipt
 ---
 
-# Introduccion
+# Introduccion sobre Receipt
 
 La sección **Receipt** es una parte fundamental del sistema WMS, ya que concentra todo el proceso de recepción de paquetes enviados por los clientes hacia el almacén. En esta sección se encuentran los módulos clave que permiten gestionar cada etapa del recibo, desde la notificación previa hasta la validación final de los artículos.
 

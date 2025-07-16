@@ -3,6 +3,7 @@ title: Configuraciones de compañia
 ---
 # Configuraciones de la compañia
 
+En este apartado se detallan las opciones de configuración disponibles para los clientes registrados en el WMS. Estas configuraciones permiten definir el comportamiento del sistema en los flujos de cumplimiento (como las operaciones de picking y packing), así como habilitar o deshabilitar validaciones específicas para movimientos de inventario o procesos del picker, entre otros ajustes clave.
 
 <details >
   <summary>Configuración del perfil</summary>

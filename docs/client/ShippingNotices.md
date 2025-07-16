@@ -3,7 +3,7 @@ sidebar_position: 4
 title: Shipping Notices
 ---
 
-# Shipping Notice
+# Shipping Notice (Portal del cliente)
 
 Este módulo te permite gestionar tus **ASN (Advanced Shipping Notices)** de manera eficiente. El portal del cliente proporciona esta herramienta para que puedas notificar con anticipación a los almacenes de **G Global** sobre los paquetes que serán recibidos.
 
@@ -19,7 +19,7 @@ Si deseas aprender cómo gestionar correctamente tus ASN desde el portal, contin
 
 ![](/img/upload/SNCp1-2025-13-16.png)
 
-## ¿Cómo generar un ASN?
+## ¿Cómo generar un ASN en el portal del cliente?
 
 Para generar un ASN (Advanced Shipping Notice) desde el portal, sigue los siguientes pasos:
 
@@ -51,7 +51,7 @@ Para generar un ASN (Advanced Shipping Notice) desde el portal, sigue los siguie
 
   ![](/img/upload/SNCp4-2025-13-16.png)
 
-## ¿Qué información se muestra en la tabla?
+## ¿Qué datos de tu ASN se muestran en Shipping Notice?
 
 Cada vez que registras un ASN (Advanced Shipping Notice) en el portal, este se visualiza en una tabla que desglosa la siguiente información:
 
@@ -84,7 +84,7 @@ Cada vez que registras un ASN (Advanced Shipping Notice) en el portal, este se v
 ![](/img/upload/SNCp6-2025-13-16.png)
 
 
-## ¿Cómo agregar información de tus paquetes?
+## ¿Cómo agregar información de tus paquetes en un ASN desde el portal?
 
 Una vez que has creado un ASN, el siguiente paso es registrar los paquetes que lo componen. A continuación, se describen los pasos para realizar este proceso:
 
@@ -132,7 +132,7 @@ Haz clic en el ícono correspondiente según la acción que desees realizar.
 :::
 
 :::info 
-### Carga masiva de paquetes mediante archivo CSV
+### ¿Cómo registrar tus paquetes en una ASN usando un archivo .csv?
 
 El portal también ofrece una alternativa para **agregar paquetes de forma masiva** utilizando un archivo **CSV**.
 

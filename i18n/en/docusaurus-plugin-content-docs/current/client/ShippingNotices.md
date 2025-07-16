@@ -3,7 +3,7 @@ sidebar_position: 4
 title: Shipping Notices
 ---
 
-# Shipping Notice
+# Shipping Notice (Customer Portal)
 
 This module allows you to efficiently manage your **ASNs (Advanced Shipping Notices)**. The customer portal provides this tool so you can notify **G Global** warehouses in advance about incoming packages.
 
@@ -19,7 +19,7 @@ If you'd like to learn how to manage your ASNs correctly through the portal, kee
 
 ![](/img/upload/SNCp1-2025-13-16.png)
 
-## How to create an ASN?
+## How to create an ASN from Customer portal?
 
 To create an ASN (Advanced Shipping Notice) from the portal, follow these steps:
 
@@ -51,7 +51,8 @@ To create an ASN (Advanced Shipping Notice) from the portal, follow these steps:
 
   ![](/img/upload/SNCp4-2025-13-16.png)
 
-## What information is shown in the table?
+
+## What data from your ASN is shown  in Shipping notice?
 
 Each time you register an ASN in the portal, it will appear in a table showing the following information:
 
@@ -83,7 +84,7 @@ Each time you register an ASN in the portal, it will appear in a table showing t
 
 ![](/img/upload/SNCp6-2025-13-16.png)
 
-## How to add package information?
+## How to add information of your packages in an ASN from the  customer portal?
 
 Once an ASN is created, the next step is to register the packages it includes. Follow these steps:
 
@@ -131,7 +132,7 @@ Click the appropriate icon depending on the action you want to take.
 :::
 
 :::info 
-### Bulk Package Upload via CSV File
+### How to register your packages  in an ASN using a .csv file?
 
 The portal also provides an option to **add packages in bulk** by uploading a **CSV file**.
 

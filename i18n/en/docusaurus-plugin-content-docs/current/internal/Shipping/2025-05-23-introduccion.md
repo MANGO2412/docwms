@@ -1,14 +1,14 @@
 ---
 sidebar_position: 1
-title: Introduccion
+title: Introduction to Shipping
 ---
-# Introduccion
 
-La sección de **Shipping** representa la última fase dentro del sistema WMS. En esta etapa se preparan los paquetes, agrupados en pallets, que provienen de las órdenes de pedido generadas en el módulo **Order Monitor**, con el objetivo de ser despachados y entregados a los clientes.
+# Introduction to Shipping
 
-Los módulos que intervienen en este flujo son los siguientes:
+The **Shipping** section represents the final stage within the WMS system. At this stage, packages grouped into pallets are prepared based on the purchase orders generated in the **Order Monitor** module, with the purpose of being dispatched and delivered to clients.
 
-- **Bin**: Este módulo permite gestionar los bins, que son agrupaciones de paquetes a los que se les ha asignado un número de guía (tracking number). También se muestra información relacionada, como el tipo de bin (pallet o caja), la regla de importación asignada,entre otros datos relevantes.
+The modules involved in this workflow are:
 
-- **Shipping**: En este módulo se generan las órdenes de envío. Permite asociar dichas órdenes con los bins procesados previamente, asignar el transportista correspondiente y consultar el estado actual de cada orden.
+- **Bin**: This module allows the management of bins, which are groupings of packages assigned a tracking number. It also displays related information such as the bin type (pallet or box), the assigned import rule, and other relevant data.
 
+- **Shipping**: In this module, shipping orders are generated. It allows associating these orders with the previously processed bins, assigning the corresponding carrier, and checking the current status of each order.

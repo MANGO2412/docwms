@@ -1,7 +1,7 @@
 ---
-title: Movements
+title: Movimientos
 ---
-# Movements(Movimientos)
+# Movimientos Picking
 
 El módulo de Movimientos en la aplicación móvil del WMS permite realizar de forma eficiente y controlada la reubicación de artículos dentro del almacén, ya sea por caja, por pieza o mediante consolidaciones.ste módulo está diseñado para facilitar las tareas operativas del personal, permitiéndoles ejecutar movimientos de inventario con trazabilidad, validación por escaneo y control de origen/destino.
 
