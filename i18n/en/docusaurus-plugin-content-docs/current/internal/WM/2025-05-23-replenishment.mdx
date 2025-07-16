@@ -1,62 +1,55 @@
 ---
 title: Replenishment
 ---
-# Módulo de replenishment
+# Replenishment Module
 
-El módulo de replenishment sirve para abastecer el stock de locaciones con artículos que hagan falta.
-Este módulo crea una orden de replenishment, la cual puede ser posteriormente procesada en el propio de replenishment, en el cual se tendrán que insertar datos como el contenedor donde se encuentran los artículos, los artículos y la locación donde se hará el replenishment.
-En este módulo también se pueden borrar y atender las órdenes de replenishment abiertas.
-
+The replenishment module is used to restock locations with items that are needed.
+This module creates a replenishment order, which can later be processed in the replenishment module itself, where data such as the container where the items are located, the items, and the location where the replenishment will be done must be entered.
+In this module, you can also delete and process open replenishment orders.
 
 <hr/>
 
-
-## Vista útil general del módulo
+## General Overview of the Module
 
 ![](/img/upload/screenshot-2025-06-05-100808.png)
 
-| No  | Nombre                                      | Descripción                                                              |
-| --- | ------------------------------------------- | ------------------------------------------------------------------------ |
-| 1   | Cuadro de total de órdenes de replenishment | Este cuadro muestra el total de órdenes de replenishment                 |
-| 2   | Botón de importar CSV                       | Este botón sirve para importar replenishment como CSV                    |
-| 3   | Botón para crear replenishment              | Este botón sirve para iniciar el proceso de crear un nuevo replenishment |
-
+| No  | Name                                      | Description                                                              |
+| --- | ----------------------------------------- | ------------------------------------------------------------------------ |
+| 1   | Total replenishment orders box            | This box shows the total number of replenishment orders                  |
+| 2   | Import CSV button                         | This button is used to import replenishment as CSV                       |
+| 3   | Create replenishment button               | This button is used to start the process of creating a new replenishment |
 
 <hr/>
 
+## Module Details
 
-## Detalles del módulo
-
-Las órdenes de replenishment cuentas con varios los estados o status los cuales reflejan el progreso actual de esa orden dichos estados se listan a continuación:
-
+Replenishment orders have several statuses that reflect the current progress of that order. These statuses are listed below:
 
 <ol>
-  <li><mark style={{backgroundColor: 'blue', color: 'white'}}>(On Queue)</mark> - Este estado representa que la orden está en fila.</li>
-  <li><mark style={{backgroundColor: 'yellow'}}>(In Progress)</mark> - Este estado representa que la orden está en progreso.</li>
-  <li><mark style={{backgroundColor: 'green'}}>(Completed)</mark> - Este estado representa que la orden ha sido completada.</li>
-  <li><mark style={{backgroundColor: 'red', color: 'white'}}>(Cancelled)</mark> - Este estado representa que la orden ha sido cancelada.</li>
+  <li><mark style={{backgroundColor: 'blue', color: 'white'}}>(On Queue)</mark> - This status means the order is in queue.</li>
+  <li><mark style={{backgroundColor: 'yellow'}}>(In Progress)</mark> - This status means the order is in progress.</li>
+  <li><mark style={{backgroundColor: 'green'}}>(Completed)</mark> - This status means the order has been completed.</li>
+  <li><mark style={{backgroundColor: 'red', color: 'white'}}>(Cancelled)</mark> - This status means the order has been cancelled.</li>
 </ol>
 
-
 <hr/>
-
 
 <table>
     <tr>
-        <th><h3>Contexto</h3></th>
+        <th><h3>Context</h3></th>
     </tr>
 
     <tr>
         <td>
-            Lo primero que se agrega al usar replenishment es el container que es la caja donde se almacenan uno o varios artículos. y un container suele lucir de la siguiente manera.
+            The first thing added when using replenishment is the container, which is the box where one or several items are stored. A container typically looks like this:
 
             ![logo](/img/upload/screenshot-2025-06-24-122218.png)
 
-            Los **artículos** suelen venir en diferentes presentaciones pero una de las comunes son cajas más pequeñas.
+            **Items** usually come in different presentations, but one of the most common is smaller boxes.
 
             ![](/img/upload/screenshot-2025-05-20-100053.png)
 
-            La **ubicación** o **locación** es donde se pueden almacenar artículos para su uso en el proceso. Dicha locación es un espacio en un rack del almacén y se representa con una **etiqueta** con un **QR** la cual está colocada en dicho rack.
+            The **location** is where items can be stored for use in the process. This location is a space on a warehouse rack and is represented by a **label** with a **QR code**, which is placed on that rack.
 
             ![](/img/upload/screenshot-2025-06-05-120545.png)
 
@@ -66,370 +59,344 @@ Las órdenes de replenishment cuentas con varios los estados o status los cuales
     
 </table>
 
-
-### Crear replenishment
-
+### Create Replenishment
 
 <table>
     <tr>
-        <th><b>Pasos</b></th>
+        <th><b>Steps</b></th>
     </tr>
 
     <tr>
         <td>
-            Selecciona el <b>3</b> de la interfaz principal para iniciar con el proceso de crear un nuevo replenishment. y aparecerá una interfaz en la cual se creará la orden.
+            Select <b>3</b> from the main interface to start the process of creating a new replenishment. An interface will appear where the order will be created.
             
              ![](/img/upload/Screenshot-2025-06-05-101708.png)
 
-             En esta **interfaz** se presenta dos formas de crear un Replenishment al seleccionar el campo de **type**, como la más **común** seleccionaremos **Manual** por lo tanto planning queda **vacío** por default.
+             In this **interface**, there are two ways to create a Replenishment when selecting the **type** field. As the most **common** option, we will select **Manual**, so planning remains **empty** by default.
 
              ![](/img/upload/Screenshot-2025-06-05-102011.png)
 
-             Después click en **ADD** y entonces la **orden** de replenishment estará **creada**. Lo cual se verá representado de la siguiente forma.
+             Then click **ADD**, and the replenishment **order** will be **created**. This will be represented as follows:
             
             ![](/img/upload/Screenshot-2025-06-05-102231.png)
 
-            Aquí se puede observar cómo se **creó** la **orden** y se **enlistó**. Estando creada la orden ya está lista para ser procesada.
-
-
+            Here you can see how the **order** was **created** and **listed**. Once created, the order is ready to be processed.
         </td>
     </tr>
 </table>
 
 <hr/>
 
-
-### Procesar orden de replenishment
+### Process Replenishment Order
 
 :::note
-Recientemente fue agregado configuracion al uso de COO si buscas una configuracion con COO ve a **[Configuraciones del cliente](./2025-05-23-Configuraciones_de_compañia.md)**.
+Recently, COO configuration was added. If you're looking for a configuration with COO, go to **[Customer Settings](./2025-05-23-Configuraciones_de_compañia.md)**.
 
-Si buscas replenishment con COO ve a [Replenishment con COO](#procesar-orden-de-replenishment-con-coo)    
+If you're looking for replenishment with COO, go to [Replenishment with COO](#process-replenishment-order-with-coo)    
 :::
 
 <table>
     <tr>
-        <th><b>Pasos</b></th>
+        <th><b>Steps</b></th>
     </tr>
 
     <tr>
         <td>
-
-            Lo primero será dar **doble click** a una **orden** recién **creada** de replenishment y por lo tanto su estado sea (OnQueue).
+            The first step is to **double-click** a newly **created** replenishment order with a status of **OnQueue**.
 
             ![](/img/upload/Screenshot-2025-06-05-102231.png)
 
-            Después se desplegará la página donde se procesa la orden. 
+            Then the order processing page will open. 
 
             ![](/img/upload/Screenshot-2025-07-04-115612.png)
 
-            Primero se debe de crear una **pending task** o **tarea** para indicar el artículo que se va a mover. **Click** en Pending **tasks.** Se encuentra en la esquina superior izquierda como primer botón.
+            First, you need to create a **pending task** to indicate the item to be moved. **Click** on Pending **tasks**, located in the top-left corner as the first button.
 
             ![](/img/upload/Screenshot-2025-07-04-115914.png)
 
-            Al hacer **click** aparecerá un **formulario** en cual se **indicará** el **artículo** a mover la **cantidad** y la **zona**. La **zona** donde se encuentra el artículo, se ingresa solo cuando sea solicitada explícitamente, de lo contrario se puede dejar vacía.
+            Upon clicking, a **form** will appear where you will **specify** the **item** to move, the **quantity**, and the **zone**. The **zone** where the item is located should only be entered if explicitly requested; otherwise, it can be left blank.
             
             ![](/img/upload/Screenshot-2025-06-05-113023.png)
 
-            Al ingresar **SKU** del artículo **asegúrate** de **seleccionar** el sku desde la **lista** de resultados, de lo **contrario no** se **podrá** realizar la operación.
+            When entering the **SKU** of the item, **make sure** to **select** the SKU from the **results list**; otherwise, the operation **cannot** be performed.
             
             ![](/img/upload/Screenshot-2025-06-05-125002.png)
 
-            Una vez terminada la task click en **assign tasks** (asignar tarea).
+            Once the task is completed, click **assign tasks**.
             
             ![](/img/upload/Screenshot-2025-06-05-113101.png)
 
-            Esta task será reflejada en la tabla en la parte inferior.
+            This task will be reflected in the table at the bottom.
             
             ![](/img/upload/Screenshot-2025-06-05-113243.png)
             
-            Cada vez que creas o asignas una task este tipo de movimiento se ve reflejado en el historial de la orden de replenishment, dicho **historial** se encuentra **ubicado** en la **parte inferior** de la interfaz de procesamiento de la orden.
+            Every time you create or assign a task, this type of movement is reflected in the replenishment order history, which is **located** at the **bottom** of the order processing interface.
             
             ![](/img/upload/Screenshot-2025-06-05-115920.png)
 
-            Una vez hecho esto, selecciona el **tipo de movimiento.** Sea **SKU** para registrar articulos o **Box** para mover un container, al ser un botón se da click sobre el botón. El que muestra es el tipo de movimiento. Este botón se ubica en la tabla de arriba en la celda de **Movement Type.**
+            Once this is done, select the **movement type**, either **SKU** to register items or **Box** to move a container. This is done by clicking the button in the **Movement Type** cell in the table above.
             
             ![](/img/upload/Screenshot-2025-07-04-120041.png)
 
-            En este caso seleccionemos **SKU**, si seleccionaste **Box** puedes saltarte el paso de escanear los artículos del replenishment por sku.
+            In this case, let's select **SKU**. If you selected **Box**, you can skip the step of scanning replenishment items by SKU.
 
-            Como primer paso se **escanea** la **PPL** o **Contenedor** donde se ubican los artículos que se necesitan para el replenishment. Al hacer esto se verá reflejado en la barra de progreso con un círculo relleno y con una palomita.
+            The first step is to **scan** the **PPL** or **Container** where the items needed for replenishment are located. Upon doing this, it will be reflected in the progress bar with a filled circle and a checkmark.
             
             ![](/img/upload/Screenshot-2025-06-05-114351.png)
 
-            También se observa en la parte superior de la pantalla un mensaje de éxito
+            A success message will also appear at the top of the screen.
             
             ![](/img/upload/Screenshot-2025-06-05-114433.png)
 
-            Posteriormente se **escanea** el **QR** de los **artículos** los cuales se **moverán** de **locación**. Si tienes 4 artículos a mover tienes que escanear los 4 artículos.
+            Next, **scan** the **QR** codes of the **items** that will be moved from the **location**. If you have 4 items to move, you must scan all 4 items.
 
-            Una vez escaneados se notará el progreso cuando el registro de la tabla cambia a verde, asegurate de que hayan sido escaneado la misma cantidad de artículos a mover descrita en la orden. Esto puede comprobarse en las columnas de **Quantity to be replenished** (Cantidad a ser reabastecida) y en la columna de **Scanned Quantity** (Cantidad escaneada).
+            Once scanned, the progress will be noted when the table record turns green. Ensure that the same number of items to be moved as described in the order have been scanned. This can be checked in the **Quantity to be replenished** and **Scanned Quantity** columns.
             
             ![](/img/upload/Screenshot-2025-06-05-115027.png)
 
-            Una vez escaneados todos los artículos se tiene que dar click en el menú que se encuentra en la parte inferior derecha de la pantalla el cual es un círculo azul. Este círculo azul tiene 3 opciones de las cuales la última es una flecha la cual dice **Next** (siguiente) dar click ahí para ir al siguiente paso.
+            Once all items have been scanned, click the menu in the bottom-right corner of the screen, which is a blue circle. This blue circle has 3 options, the last of which is an arrow labeled **Next**—click this to proceed to the next step.
             
             ![](/img/upload/Screenshot-2025-06-05-115605.png)
 
-            Una vez hecho esto el **progreso** se verá **reflejado** en la **barra de progreso** marcando que ya han sido **escaneados** los **artículos** y **procediendo** al siguiente paso de la **ubicación** de los artículos.
+            Once this is done, the **progress** will be **reflected** in the **progress bar**, indicating that the **items** have been **scanned** and proceeding to the next step of **item location**.
             
             ![](/img/upload/Screenshot-2025-06-05-120021.png)
 
-            Ahora escanea la **locación** de los artículos para completar este paso. Entonces aparecerá un anuncio de **orden exitoso** en la parte superior de la pantalla.
+            Now scan the **location** of the items to complete this step. A **successful order** notification will appear at the top of the screen.
 
-            Ahora para **concluir** una **orden** de replenishment se tiene que dar **click** en el **botón** de **order completed** (Orden completada).
+            To **complete** a replenishment **order**, click the **order completed** button.
             
             ![](/img/upload/Screenshot-2025-06-05-121020.png)
 
-            Al hacer esto la orden cambia de estatus a **Completed** (completada), debido a que la orden será inmodificable.
+            Upon doing this, the order status changes to **Completed**, making the order unmodifiable.
             
             ![](/img/upload/Screenshot-2025-06-05-121324.png)
 
-            Este estatus también es **reflejado** en la **tabla** de **ordenes** de **replenishment**.
+            This status is also **reflected** in the **replenishment orders** table.
             
             ![](/img/upload/Screenshot-2025-06-05-121530.png)
-            
         </td>
     </tr>
 </table>
 
 <hr/>
 
-### Procesar orden de replenishment con COO
+### Process Replenishment Order with COO
 
 :::note
-    Recientemente fue agregado configuracion al uso de COO si buscas una configuracion con COO ve a **[Configuracion del cliente](./2025-05-23-Configuraciones_de_compañia.md)**.
-
+    COO configuration was recently added. If you're looking for a configuration with COO, go to **[Customer Settings](./2025-05-23-Configuraciones_de_compañia.md)**.
 :::
 
 ::::info[Extra Info]
-    Para usar replenishment con COO se tiene que entender lo siguiente acerca de como COO impacta en replenishment.
+    To use replenishment with COO, you need to understand how COO impacts replenishment.
 
-    El COO en replenishment agrega lo siguiente:
+    COO in replenishment adds the following:
 
     ![](/img/upload/Screenshot-2025-07-04-124249.png)
 
     <table >
     <tr>
         <th>**No**</th>
-        <th>**Nombre**</th>
-        <th>**Descripcion**</th>
+        <th>**Name**</th>
+        <th>**Description**</th>
     </tr>
     <tr>
         <th>**1**</th>
-        <th>Prioridad de origen por pais</th>
-        <th>Este recuadro indica si la prioridad por COO esta activada para la compania y por lo tanto repercute en todos los replenishment y otros procesos dependientes.</th>
+        <th>Origin priority by country</th>
+        <th>This box indicates whether COO priority is enabled for the company and therefore affects all replenishment and other dependent processes.</th>
     </tr>
     <tr>
         <th>**2**</th>
-        <th>Paises configurados</th>
-        <th>Si COO esta activado, tiene una lista de paises en orden de preoridad la cual es enumerada, de 1 a n.
-        Teniendo como 1 la maxima preoridad, lo cual hace que los articulos con COO en el 1 sean usados primero.</th>
+        <th>Configured countries</th>
+        <th>If COO is enabled, there is a list of countries in order of priority, numbered from 1 to n, with 1 being the highest priority. This means items with COO in position 1 will be used first.</th>
     </tr>
     <tr>
         <th>**3**</th>
-        <th>Un solo pais por operacion</th>
-        <th>Este apartado si la configuracion es activada significa que solo se manejara un COO por orden de replenishmente, lo que significa que solo abra un COO a la vez en las pick locations.</th>
+        <th>Single country per operation</th>
+        <th>If this configuration is enabled, it means only one COO will be handled per replenishment order, meaning only one COO will be present in pick locations at a time.</th>
     </tr>
     <tr>
         <th>**4**</th>
-        <th>Resumen de configuracion</th>
-        <th>En el cual se pueden observar las configuracion de una forma mas simple de todos los cuadros anteriores.</th>
+        <th>Configuration summary</th>
+        <th>This shows a simplified view of all the configurations mentioned above.</th>
     </tr>
 </table>
 
-**Ejemplo**
+**Example**
 
-Eg. Rumble inc. requiere priorizar CN - China: Es necesario el proceso de
-replenishment la priorización de las tareas de reabasto por país de origen, la
-funcionalidad debe ser configurada. 
+Eg. Rumble Inc. requires prioritizing CN - China: The replenishment process must prioritize restocking tasks by country of origin, and this functionality must be configured. 
 
-Solo se aplica el reabasto en caso de que el
-material de China se agote, entonces se pueden reabastecer las locaciones de
-picking con material de Tailandia.
+Restocking will only apply if materials from China are depleted; then, picking locations can be restocked with materials from Thailand.
 
 :::warning
-    Para agregar articulos de un COO diferente a una picking location debes seguir las reglas de **Cambio de COO**
-    la mas comun es:  estar totalmente vacia la location a utilizar para hacer el cambio.
+    To add items of a different COO to a picking location, you must follow the **COO Change** rules. The most common one is: the location must be completely empty to make the change.
 
-    Para mas informacion sobre estas reglas **Link pendiente**
+    For more information about these rules, **Link pending**.
 :::
 
-Cuando se **escanen** los **articulos** para replenishment se tiene que tener en cuenta las **nuevas reglas de COO**
+When **scanning** **items** for replenishment, the **new COO rules** must be considered.
 
-Estas configuraciones se pueden **observar** a la hora de hacer un **replenishment** dando click en el siguiente **boton**.
+These configurations can be **viewed** when performing **replenishment** by clicking the following **button**.
 
 ![COO configuration](/img/upload/Screenshot-2025-07-04-133920.png)
-
 ::::
 
 <table >
     <tr>
-        <th><b>Pasos</b></th>
+        <th><b>Steps</b></th>
     </tr>
 
     <tr>
         <td>
-
-            Lo primero será dar **doble click** a una **orden** recién **creada** de replenishment y por lo tanto su estado sea (OnQueue).
+            The first step is to **double-click** a newly **created** replenishment order with a status of **OnQueue**.
 
             ![](/img/upload/Screenshot-2025-06-05-102231.png)
 
-            Después se desplegará la página donde se procesa la orden. 
+            Then the order processing page will open. 
 
             ![](/img/upload/Screenshot-2025-07-04-115612.png)
 
-            Primero se debe de crear una **pending task** o **tarea** para indicar el artículo que se va a mover. **Click** en Pending **tasks.** Se encuentra en la esquina superior izquierda como primer botón.
+            First, create a **pending task** to indicate the item to be moved. **Click** on Pending **tasks**, located in the top-left corner as the first button.
 
             ![](/img/upload/Screenshot-2025-07-04-115914.png)
 
-            Al hacer **click** aparecerá un **formulario** en cual se **indicará** el **artículo** a mover la **cantidad** y la **zona**. La **zona** donde se encuentra el artículo, se ingresa solo cuando sea solicitada explícitamente, de lo contrario se puede dejar vacía.
+            Upon clicking, a **form** will appear where you will **specify** the **item** to move, the **quantity**, and the **zone**. The **zone** should only be entered if explicitly requested.
             
             ![](/img/upload/Screenshot-2025-06-05-113023.png)
 
-            Al ingresar **SKU** del artículo **asegúrate** de **seleccionar** el sku desde la **lista** de resultados, de lo **contrario no** se **podrá** realizar la operación.
+            When entering the **SKU**, **ensure** you **select** it from the **results list**; otherwise, the operation **cannot** be performed.
             
             ![](/img/upload/Screenshot-2025-06-05-125002.png)
 
-            Una vez terminada la task click en **assign tasks** (asignar tarea).
+            Once the task is completed, click **assign tasks**.
             
             ![](/img/upload/Screenshot-2025-06-05-113101.png)
 
-            Esta task será reflejada en la tabla en la parte inferior.
+            This task will be reflected in the table at the bottom.
             
             ![](/img/upload/Screenshot-2025-06-05-113243.png)
             
-            Cada vez que creas o asignas una task este tipo de movimiento se ve reflejado en el historial de la orden de replenishment, dicho **historial** se encuentra **ubicado** en la **parte inferior** de la interfaz de procesamiento de la orden.
+            Each task creation or assignment is reflected in the order history at the **bottom** of the interface.
             
             ![](/img/upload/Screenshot-2025-06-05-115920.png)
 
-            Una vez hecho esto, selecciona el **tipo de movimiento.** Sea **SKU** para registrar articulos o **Box** para mover un container, al ser un botón se da click sobre el botón. El que muestra es el tipo de movimiento. Este botón se ubica en la tabla de arriba en la celda de **Movement Type.**
+            Next, select the **movement type** (**SKU** for items or **Box** for containers) by clicking the button in the **Movement Type** cell.
             
             ![](/img/upload/Screenshot-2025-07-04-120041.png)
 
-            En este caso seleccionemos **SKU**, si seleccionaste **Box** puedes saltarte el paso de escanear los artículos del replenishment por sku.
+            Let's select **SKU** (if you select **Box**, skip the item scanning step).
 
-            Como primer paso se **escanea** la **PPL** o **Contenedor** donde se ubican los artículos que se necesitan para el replenishment. Al hacer esto se verá reflejado en la barra de progreso con un círculo relleno y con una palomita.
+            First, **scan** the **PPL** or **Container** holding the items. This will be reflected in the progress bar.
             
             ![](/img/upload/Screenshot-2025-06-05-114351.png)
 
-            También se observa en la parte superior de la pantalla un mensaje de éxito
+            A success message will appear.
             
             ![](/img/upload/Screenshot-2025-06-05-114433.png)
 
-            Posteriormente se **escanea** el **QR** de los **artículos** los cuales se **moverán** de **locación**. Si tienes 4 artículos a mover tienes que escanear los 4 artículos.
-
-            Una vez escaneados se notará el progreso cuando el registro de la tabla cambia a verde, asegurate de que hayan sido escaneado la misma cantidad de artículos a mover descrita en la orden. Esto puede comprobarse en las columnas de **Quantity to be replenished** (Cantidad a ser reabastecida) y en la columna de **Scanned Quantity** (Cantidad escaneada).
+            Then, **scan** the **QR** codes of the **items** to be moved. Ensure the **Scanned Quantity** matches the **Quantity to be replenished**.
             
             ![](/img/upload/Screenshot-2025-06-05-115027.png)
 
-            Una vez escaneados todos los artículos se tiene que dar click en el menú que se encuentra en la parte inferior derecha de la pantalla el cual es un círculo azul. Este círculo azul tiene 3 opciones de las cuales la última es una flecha la cual dice **Next** (siguiente) dar click ahí para ir al siguiente paso.
+            Click the blue circle menu in the bottom-right corner and select **Next**.
             
             ![](/img/upload/Screenshot-2025-06-05-115605.png)
 
-            Una vez hecho esto el **progreso** se verá **reflejado** en la **barra de progreso** marcando que ya han sido **escaneados** los **artículos** y **procediendo** al siguiente paso de la **ubicación** de los artículos.
+            The progress bar will update, showing the next step: **location scanning**.
             
             ![](/img/upload/Screenshot-2025-06-05-120021.png)
 
-            Ahora escanea la **locación** de los artículos para completar este paso. Entonces aparecerá un anuncio de **orden exitoso** en la parte superior de la pantalla.
+            Scan the **location** to complete this step. A success message will appear.
 
-            Ahora para **concluir** una **orden** de replenishment se tiene que dar **click** en el **botón** de **order completed** (Orden completada).
+            Finally, click **order completed** to finish.
             
             ![](/img/upload/Screenshot-2025-06-05-121020.png)
 
-            Al hacer esto la orden cambia de estatus a **Completed** (completada), debido a que la orden será inmodificable.
+            The status will change to **Completed**, making the order unmodifiable.
             
             ![](/img/upload/Screenshot-2025-06-05-121324.png)
 
-            Este estatus también es **reflejado** en la **tabla** de **ordenes** de **replenishment**.
+            This status is also reflected in the orders table.
             
             ![](/img/upload/Screenshot-2025-06-05-121530.png)
-            
         </td>
     </tr>
 </table>
 
 <hr/>
 
-
-### Cancelar replenishment
+### Cancel Replenishment
 
 <table>
     <tr>
-        <th><b>Pasos</b></th>
+        <th><b>Steps</b></th>
     </tr>
 
     <tr>
         <td>
-            Lo primero es seleccionar una orden de replenishment la cual su estatus no sea **cancelado** ni **completado.** Los cuales son órdenes con estatus de **EnQueue** o **InProgress.**
+            First, select a replenishment order whose status is neither **Cancelled** nor **Completed** (i.e., orders with **OnQueue** or **InProgress** status).
 
-            Se entra a la **sección** de **proceso** de una orden con **doble click**
+            Enter the order **processing section** by **double-clicking**.
 
             ![](/img/upload/Screenshot-2025-06-05-121812.png)
 
-            Dentro de esta sección se puede observar en la parte superior izquierda el botón de **Cancel order** (Cancelar orden), **Da click** en este botón **si estás seguro de cancelar** la orden ya que se cancelara de un solo movimiento.
+            Inside this section, you will see the **Cancel order** button in the top-left corner. **Click** this button **if you are sure you want to cancel** the order, as it will be cancelled immediately.
 
             ![](/img/upload/Screenshot-2025-06-05-121950.png)
 
-            El estatus de la orden cambia inmediatamente a Cancelled (Cancelado).
+            The order status will immediately change to **Cancelled**.
 
             ![](/img/upload/Screenshot-2025-06-05-122311.png)
 
-            También se ve reflejado en la tabla de las órdenes de replenishment.
+            This will also be reflected in the replenishment orders table.
 
             ![](/img/upload/Screenshot-2025-06-05-122406.png)
-
         </td>
     </tr>
 </table>
 
+<hr/>
+
+## Tips and Tricks for This Module
+
+If this happens, try reloading the page by pressing **F5** or the reload button in your browser.
+
+If the problem persists, reload using the key combination **CTRL** + **R**. This will reset the site's cache. **Warning**: if you have unsent form data, it **may be lost**.
 
 <hr/>
 
+## Frequent Issues
 
-## Tips y trucos de este módulo
+### Items to Move Are Not Detected
 
-Si esto pasa intenta recargar la pagina presionando **F5** o el signo de recargar en tu navegador.
+When this happens, it is usually because the module flow was not followed: Assign the replenishment type (SKU or BOX) via the **button** in the **Movement Type** cell in the order processing table. To switch between **SKU** and **Box**, simply **click** the **button**.
 
-Si el problema persiste recarga utilizando la combinación de teclas **CTRL** + **R** esto reiniciará la caché del sitio, **cuidado** si dejas un formulario con datos sin enviar la información **podría borrarse.**
+![Replenishment table](/img/upload/screenshot-2025-06-05-103956.png "Movement Type")
 
-
-<hr/>
-
-## Problemas frecuentes
-
-### No detecta los ítems a mover
-
-Cuando pasa esto normalmente es porque no se siguió el flujo del módulo el cual es: Asignar el tipo de replenishment el cual es por SKU o por BOX (Container) y este es asignado mediante un **botón** en la tabla del procesamiento de la orden se encuentra en el campo **tipo de movimiento** (Movement Type) , para cambiar de **sku** a **box** solo se necesita hacer un **click** sobre el **botón**.
-
-![Replenishment table](/img/upload/screenshot-2025-06-05-103956.png "Tipo de movimiento")
-
-**Box** es por si se quieren mover contenedores a esa ubicación.
+**Box** is used if you want to move containers to that location.
 
 ![](/img/upload/screenshot-2025-06-05-104005.png)
 
-Mientras que **Sku** es si se quieren mover los **items (artículos)** directamente a la ubicación.
+**SKU** is used if you want to move **items** directly to the location.
 
-### No detecta un ítem o artículo cuando lo inserto
+### An Item Is Not Detected When Scanned
 
-Si esto pasa puede ser por las siguientes razones:
+This may happen for the following reasons:
 
-1. **No** has **escaneado** el contenedor de **origen** como **primer** paso
-2. Estas **ingresando** un **sku** o código **incorrecto** de artículo, por favor **verifica** que el **número** esté correcto.
-3. El **artículo** que ingresas ya tenga **stock completo** o ya **no existe**.
-
+1. You **have not scanned** the **source container** as the **first step**.
+2. You are entering an **incorrect SKU** or item code. Please **verify** the number is correct.
+3. The **item** you are entering already has **full stock** or **no longer exists**.
 
 <hr/>
 
+## Frequently Asked Questions
 
-## Preguntas frecuentes
+### Can I Delete Replenishment Orders from the Orders Table?
 
-### Puedo borrar las órdenes de replenishment desde la tabla de ordenes?
+No, orders cannot be deleted, but they can be **cancelled**. To cancel an order, enter the order and click the **Cancel order** button in the top-left corner.
 
-La respuesta es no, las órdenes no se pueden borrar pero si se pueden **cancelar.** Para cancelar una orden se tiene que entrar a la orden y en la parte superior izquierda se encuentra un botón el cual dice **Cancelar orden.**
+### How Can I Cancel a Replenishment Order?
 
-### Como puedo cancelar una orden de replenishment
-
-Para cancelar una orden se tiene que entrar a la orden y en la parte superior izquierda se encuentra un botón el cual dice **Cancelar orden.**
+To cancel an order, enter the order and click the **Cancel order** button in the top-left corner.
 
 ![](/img/upload/screenshot-2025-06-05-105728.png)
