@@ -90,6 +90,7 @@ const config = {
       indexName: 'wmsnetlify',
       contextualSearch: false,
       searchParameters:{},
+      
 
     }
     }),
