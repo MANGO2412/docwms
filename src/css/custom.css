@@ -19,7 +19,10 @@
   --ifm-code-font-size: 95%;
   --ifm-footer-background-color: #1B1B1B;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-background-color:rgba(255, 255, 255, 0.5);
+  --ifm-navbar-background-color-sidebar:#fff;
 }
+
 
 
 
@@ -35,7 +38,19 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf; */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-navbar-background-color:rgba(54, 51, 51, 0.5);
+  --ifm-navbar-background-color-sidebar:#1B1B1B;
 }
+
+
+
+.navbar{
+    backdrop-filter: blur(20px);   
+}
+.navbar-sidebar{
+    height:1400px;
+    background-color: var(--ifm-navbar-background-color-sidebar);
+} 
 
 /* css component TiltedCard*/
 .creative-cards{
@@ -182,6 +197,97 @@
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+}
+
+/* card validate */
+.height-100 {
+    height: 100vh
+}
+/* 
+container height-100 d-flex justify-content-center align-items-center */
+
+.cont{
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      width: 100%;
+      padding-right: var(--bs-gutter-x, 0.75rem);  /* 12px por defecto */
+      padding-left: var(--bs-gutter-x, 0.75rem);
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.inputContener{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: row;
+    /* d-flex flex-row justify-content-center mt-2 */
+}
+
+.card-validate{
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    border: none;
+    height: 300px;
+    box-shadow: 0px 5px 20px 0px #d2dae3;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card-validate h6 {
+    color: red;
+    font-size: 20px
+}
+
+.inputs input {
+    width: 40px;
+    height: 40px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+.card-validate-2 {
+    background-color: #fff;
+    padding: 10px;
+    width: 350px;
+    height: 100px;
+    bottom: -50px;
+    left: 20px;
+    position: absolute;
+    border-radius: 5px
+}
+
+.card-validate-2 .content {
+    margin-top: 50px
+}
+
+.card-validate-2 .content a {
+    color: red
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid red
+}
+
+.validate {
+    border-radius: 20px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid red;
+    width: 140px
 }
 
 

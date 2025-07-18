@@ -19,7 +19,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle"><Translate id='main.header.h1'> ¿Como te podemos ayudar?</Translate> </p>
+        <p className="hero__subtitle"><Translate id='main.header.h1'> ¿Como te puedo ayudar?</Translate> </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
