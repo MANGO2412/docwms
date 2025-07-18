@@ -5,75 +5,73 @@ title: Picking
 import Admonition from '@theme/Admonition';
 
 
-## Módulo de Picking
+## Picking Module
 
-### Vista general del módulo
+### Module Overview
 
 ![](/img/upload/Screenshot-2025-05-23-094117.png)
 
-| No | Nombre            | Descripción                                                   |
-|----|-------------------|---------------------------------------------------------------|
-| 1  | Botón de Picking  | Al tocar este botón se accede al apartado de picking.         |
+| No | Name          | Description                                                    |
+|----|---------------|----------------------------------------------------------------|
+| 1  | Picking Button | Tapping this button accesses the picking section.             |
 
+---
 
-
-## ¿Como atender las ordenes de pedido a traves del modulo Picking?
+## How to Fulfill Orders via the Picking Module
 
 <table>
-    <tr>
-        <th><h3>🧾 Contexto </h3></th>
-    </tr>
-    <tr>
-        <td>
-           Los **totes** o carritos contienen **trays** (charolas), que a su vez almacenan los artículos que deben ser empacados.
+  <tr>
+    <th><h3>🧾 Context</h3></th>
+  </tr>
+  <tr>
+    <td>
+      **Totes** or carts contain **trays**, which in turn store the items to be packed.
 
-          ![](/img/upload/Screenshot-2025-06-26-132818.png)
+      ![](/img/upload/Screenshot-2025-06-26-132818.png)
 
-           Las **trays** son unidades individuales que contienen artículos. Cada tray tiene un código que debe ser escaneado para iniciar el proceso en el módulo **Validator**.
+      **Trays** are individual units that contain items. Each tray has a code that must be scanned to start the process in the **Validator** module.
 
-           ![](/img/upload/Screenshot-2025-06-03-114352.png)
-        </td>
-    </tr>
+      ![](/img/upload/Screenshot-2025-06-03-114352.png)
+    </td>
+  </tr>
 </table>
 
 <table>
-    <tr>
-        <th><h3>✅ Pasos</h3></th>
-    </tr>
+  <tr>
+    <th><h3>✅ Steps</h3></th>
+  </tr>
 
-    <tr>
-        <td>
-            1.Toca el botón **Picking (1)** e **escanea un tote** utilizando el escáner Zebra para comenzar a trabajar con órdenes.
-            2.**Escanea las trays** para asignarlas al tote que se utilizará en el proceso de picking.
+  <tr>
+    <td>
+      1. Tap the **Picking button (1)** and **scan a tote** using the Zebra scanner to begin working with orders.
+      2. **Scan the trays** to assign them to the tote that will be used in the picking process.
 
-            ![](/img/upload/Screenshot-2025-06-27-113905.png)
+      ![](/img/upload/Screenshot-2025-06-27-113905.png)
 
-            3. A continuación, el sistema solicitará **escanear la ubicación** donde se encuentran los artículos. El código de la locación aparecerá en letras **negras** con la leyenda "**MULTI**".
+      3. Next, the system will ask you to **scan the location** where the items are located. The location code will appear in **black** letters with the "**MULTI**" legend.
 
-            ![](/img/upload/Screenshot-2025-06-27-113917.png)
+      ![](/img/upload/Screenshot-2025-06-27-113917.png)
 
-            4. Se mostrará una **interfaz** con el artículo y la cantidad que debe tomarse de la locación.Para proceder, **escanea los artículos** uno por uno.
+      4. An **interface** will be displayed showing the item and the quantity to be picked from the location. To proceed, **scan the items** one by one.
 
-            ![](/img/upload/Screenshot-2025-06-27-113431.png)
+      ![](/img/upload/Screenshot-2025-06-27-113431.png)
 
+      <Admonition type="info" icon="🛠" title="Display Configuration in Picker App">
+        Depending on client needs, the view shown above may be modified by specific configurations defined in the **[Company Settings](../WM/2025-05-23-Configuraciones_de_compañia)** section.
+        From that section, it's possible to enable or disable different elements that determine what information will be visible in the picker application.
+        These options are usually adapted to the particular requirements of each client — for example, companies like Tumble — and allow control over details such as whether the country of origin (COO), lot number, UPC, description, or product image are displayed, among others, as shown in the following image.
+        <img src="/img/upload/Pickingp1-2025-13-16.png" width="300px"/>
 
-            <Admonition type="info" icon="🛠" title="Configuración de Visualización en Picker App">
-                Dependiendo de las necesidades del cliente, la vista mostrada anteriormente puede verse modificada por configuraciones específicas definidas en el apartado  **[Configuraciones de compañia](../WM/2025-05-23-Configuraciones_de_compañia)**.
-                Desde esa sección, es posible habilitar o deshabilitar distintos elementos que determinan qué información será visible en la aplicación del picker.
-                Estas opciones suelen adaptarse a requerimientos particulares de cada cliente —por ejemplo, compañías como Tumble— y permiten controlar detalles como si se muestran el país de origen (COO), el número de lote, el UPC, la descripción o la imagen del producto, entre otros como se observa en la siguiente imagen.
-                <img src="/img/upload/Pickingp1-2025-13-16.png" width="300px"/>
+        Additionally, if the client has COO and/or lot number display enabled, the application will show this information only if it exists in the item data.
+      </Admonition>
 
-                Ademas si el cliente  tiene habilitada la visualización de COO y/o número de lote, la aplicación mostrará esa información solo si existe en los datos del artículo
-            </Admonition>
+      5. Once **all items** in the order have been scanned, **scan the tray again** where they will be temporarily stored.
 
-            5. Una vez escaneados **todos los artículos** de la orden, **escanea nuevamente la tray** donde se almacenarán temporalmente.
+      ![](/img/upload/Screenshot-2025-06-27-113536.png)
 
-            ![](/img/upload/Screenshot-2025-06-27-113536.png)
+      6. Finally, the order will be marked as **completed**. The trays with the items must be **delivered to the packing area**.
 
-            6. Finalmente, la orden se marcará como **completada**. Las trays con los artículos deben ser **entregadas al área de packing**.
-
-            ![](/img/upload/Screenshot-2025-06-27-113629.png)
-        </td>
-    </tr>
+      ![](/img/upload/Screenshot-2025-06-27-113629.png)
+    </td>
+  </tr>
 </table>
-

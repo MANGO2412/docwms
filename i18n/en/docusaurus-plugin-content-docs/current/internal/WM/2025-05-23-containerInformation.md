@@ -2,38 +2,39 @@
 title: Container information
 ---
 
-
 # Container information
 
-Este módulo sirve para conocer la información básica del contenido de un container, se obtendrán datos de los artículos dentro del contenedor (Número, Descripción, cantidad, disponible, location) al escanear su PPl.
+This module is used to obtain basic information about the contents of a container. It retrieves data on the items inside the container (Number, Description, Quantity, Available, Location) by scanning its PPL.
 
+---
 
-## Vista util general del módulo
+## General Module Overview
 
 ![](/img/upload/ContainInfop1-2025-13-16.png)
 
+| No  | Name          | Description                                                                                                                              |
+| :-- | :------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Scanner       | This scanner element receives data from QR codes scanned by a physical laser scanner.                                                    |
+| 2   | Data Table    | This table displays basic container information.                                                                                       |
 
-| No  | Nombre         | Descripción                                                                                      |
-| :-- | :------------- | :----------------------------------------------------------------------------------------------- |
-| 1   | Escáner        | Este elemento scanner recibe los datos de los códigos QR escaneados por un escáner láser físico. |
-| 2   | Tabla de datos | Esta tabla refleja la información básica de un contenedor                                        |
+---
 
-## Contexto
+## Context
 
-Lo primero que se agrega al usar replenishment es el **container** que es la **caja** donde se almacenan uno o varios artículos. y un c**ontainer suele lucir de la siguiente manera.
+The first thing added when using replenishment is the **container**, which is the **box** where one or more items are stored. A **container usually looks like this:**
 
 ![](/img/upload/ContainInfop2-2025-13-16.png)
 
-
-Este es el escáner láser que comúnmente se utiliza en módulos los cuales se requiere escanear códigos QR.
+This is the laser scanner commonly used in modules that require scanning QR codes.
 
 ![](/img/upload/ContainInfop3-2025-13-16.png)
 
+---
 
-## Obtener información de un contenedor
+## Get Container Information
 
-- Click en **Scanner input** de la **interfaz general** y escanear con un **escáner** láser físico conectado a la computadora. Escanear una **PPL** perteneciente a un **container existente** en el sistema.
+* Click on **Scanner input** in the **general interface** and scan with a physical laser **scanner** connected to the computer. Scan a **PPL** belonging to an **existing container** in the system.
 
 ![](/img/upload/ContainInfop4-2025-13-16.png)
 
-- De esta manera se obtienen los datos de los artículos del contenedor.
+* This is how you obtain the data for the items within the container.
