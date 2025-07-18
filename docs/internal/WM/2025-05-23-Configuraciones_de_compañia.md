@@ -5,18 +5,38 @@ title: Configuraciones de compañia
 
 En este apartado se detallan las opciones de configuración disponibles para los clientes registrados en el WMS. Estas configuraciones permiten definir el comportamiento del sistema en los flujos de cumplimiento (como las operaciones de picking y packing), así como habilitar o deshabilitar validaciones específicas para movimientos de inventario o procesos del picker, entre otros ajustes clave.
 
-<details >
-  <summary>Configuración del perfil</summary>
-</details>
+
+## Configuración del Tema
+
+En esta sección se define el tema de colores y el logotipo del cliente, elementos esenciales para el diseño final del portal web. Esta configuración puede personalizarse en caso de que el cliente lo requiera, permitiendo adaptar la apariencia del portal a su identidad visual.
+
+🔍 **¿Cómo acceder?**
+
+1. Ingresa al portal web de WMS.  
+2. Asegúrate de tener acceso al módulo **Companies**.  
+3. Dentro del módulo, selecciona un cliente haciendo doble clic sobre su registro en la tabla.  
+4. Haz clic en la pestaña **Theme** para desplegar las opciones disponibles.
+
+![](/img/upload/Clientsp12-2025-13-16.png)
+
+A continuación, se describen las opciones que puedes modificar en este apartado:
+
+- **Logo del cliente**:  
+  En la parte superior puedes asignar o cambiar el logotipo del cliente. El sistema solicita al menos dos imágenes para completar esta configuración.
+
+  ![](/img/upload/Clientsp13-2025-13-16.png)
+
+- **Paleta de colores**:  
+  Posteriormente, debes definir una paleta de colores. Esta opción permite adaptar el diseño visual del portal al estilo gráfico del cliente.  
+  Se requiere configurar los colores **primario** y **secundario**, tanto para el tema claro como para el tema oscuro.  
+  La selección de colores se realiza mediante un **color picker**, el cual permite arrastrar dentro de un esquema visual y obtener en tiempo real el valor hexadecimal correspondiente.
+
+  ![](/img/upload/Clientsp14-2025-13-16.png)
 
 
-<details >
-  <summary>Configuración del Tema</summary>
-</details>
 
-<details >
 
-  <summary>Configuración del Inventario</summary>
+## Configuración del Inventario
 
   En esta sección podrás establecer configuraciones clave para el comportamiento del inventario, específicamente relacionadas con el manejo de **múltiples SKUs por ubicación**, **reglas de cambio de país de origen (COO, por sus siglas en inglés)** y **prioridades de reabastecimiento(Replenishment)**.
 
@@ -77,10 +97,11 @@ Permite establecer un orden de prioridad para el reabastecimiento de inventario 
     Si se activa esta opción, cada ubicación de picking podrá contener productos de un solo COO a la vez, evitando combinaciones no permitidas que puedan afectar la trazabilidad o cumplimiento.
 
     ![](/img/upload/Clientsp6-2025-13-16.png)
-</details>
 
-<details >
-  <summary>Configuración del Picker</summary>
+
+
+
+## Configuración del Picker
 
   En este apartado permite personalizar la visibilidad y el comportamiento de la aplicación móvil **Picker App** para un cliente específico. Aquí puedes definir que información mostrar al picker, qué tipos de totes se pueden asignar, qué validciones aplicar y el porcentaje de muestreo AQL(Acceptable Quality Limit).
 
@@ -136,7 +157,7 @@ Este control deslizante permite configurar el porcentaje de artículos que deben
 :::note
 Por ejemplo, si se define un valor del 50%, el sistema solicitará validar la mitad de los artículos escaneados por el picker.
 :::
-</details>
+
 
 
 

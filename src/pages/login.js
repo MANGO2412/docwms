@@ -1,27 +1,58 @@
 //link del template: https://codepen.io/Mohuth/pen/QWgrPvp
+import { useHistory } from '@docusaurus/router';
 
-import clsx from 'clsx';
+import {useState,useEffect} from 'react'
 
 export default function login(){
+    const [value,setValue]=useState('')
+    const [colorMode,setColorMode]=useState('light');
+    const history = useHistory();
+
+    useEffect(()=>{
+        setColorMode(document.documentElement.getAttribute('data-theme'))
+    },[])
+
+    const toggleFilledClass=(field)=>{
+        if(field.value){
+         field.classList.add("filled")
+        }else{
+         field.classList.remove("filled")
+        }
+    }
+
+    const inputKey=(e)=>{
+     const {target,keyCode}=e;
+     if(keyCode===8){
+      target.value='';
+      if(target.previousElementSibling){
+       target.previousElementSibling.focus();
+     }
+    }
+
+    if (target.value && target.nextElementSibling && keyCode != 8) {
+        target.nextElementSibling.focus();
+    }
+
+    toggleFilledClass(target)    
+    }
+
     return(
-      <div class="cont">
-        <div class="position-relative">
-            <div class="card-validate">
-                <h6>Sorry, you don't have access this content <br></br>  type the code  to have access</h6>
-                <div> <span>Only g-global team know the code</span> </div>
-                <div id="otp" class="inputs inputContener">
-                    <input class="m-2 text-center form-control rounded" type="text" id="first" maxlength="1" />
-                    <input class="m-2 text-center form-control rounded" type="text" id="second" maxlength="1" />
-                    <input class="m-2 text-center form-control rounded" type="text" id="third" maxlength="1" />
-                    <input class="m-2 text-center form-control rounded" type="text" id="fourth" maxlength="1" />
-                    <input class="m-2 text-center form-control rounded" type="text" id="fifth" maxlength="1" />
-                    <input class="m-2 text-center form-control rounded" type="text" id="sixth" maxlength="1" />
-                </div>
-                <div class="mt-4"> 
-                    <button id="validateBtn" class="btn btn-danger px-4 validate">Validate</button> 
-                </div>
+      <section className="opt-page">
+        <div className={colorMode=="light"?"container":"container container-dark"}>
+            <h1 style={{color:"red"}} >Sorry you don't have access this content, enter a code to access this content </h1>
+            <h2 className='title'>Enter your code</h2>
+            <form id='otp-form'>
+                <input type='text' className={colorMode=="light"?"otp-input":"otp-input otp-input-dark"} maxLength={1}  onKeyDown={inputKey}/>
+                <input type='text' className={colorMode=="light"?"otp-input":"otp-input otp-input-dark"} maxLength={1}  onKeyDown={inputKey}/>
+                <input type='text' className={colorMode=="light"?"otp-input":"otp-input otp-input-dark"} maxLength={1}  onKeyDown={inputKey}/>
+                <input type='text' className={colorMode=="light"?"otp-input":"otp-input otp-input-dark"} maxLength={1}  onKeyDown={inputKey}/>
+                <input type='text' className={colorMode=="light"?"otp-input":"otp-input otp-input-dark"} maxLength={1}  onKeyDown={inputKey}/>
+            </form>
+            <div style={{display:'flex', flexDirection:'column', marginTop:'30px'}}>
+                <button className='btn'>Verify Code</button>
+                <button  className="btn back-btn" onClick={()=>history.push('./docs/intro')}>Back </button>
             </div>
         </div>
-     </div>
+      </section>
     )
 }

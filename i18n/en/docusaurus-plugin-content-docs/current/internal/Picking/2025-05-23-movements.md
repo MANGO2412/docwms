@@ -14,7 +14,7 @@ This section describes the general interface of the module and details the three
 
 Each flow is supported by screenshots and practical recommendations to ensure the process is carried out correctly, complying with system validations and avoiding common errors like COO (Country of Origin) mismatches.
 
-## General Module View
+## Movemnets Module View
 
 ![](/img/upload/Movep1-2025-13-16.png)
 

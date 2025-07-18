@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: Introduction to Receipt
+title: Introduction
 ---
 
-# Introduction to  Receipt.
+# Introduction.
 
 The **Receipt** section is a fundamental part of the WMS system, as it encompasses the entire process of receiving packages sent by clients to the warehouse. This section contains the key modules that manage each stage of the receiving process, from pre-notification to the final validation of items.
 

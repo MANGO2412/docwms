@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
-title: Introduccion sobre Shipping
+title: Introducción
 ---
-# Introduccion sobre Shipping
+# Introducción.
 
 La sección de **Shipping** representa la última fase dentro del sistema WMS. En esta etapa se preparan los paquetes, agrupados en pallets, que provienen de las órdenes de pedido generadas en el módulo **Order Monitor**, con el objetivo de ser despachados y entregados a los clientes.
 

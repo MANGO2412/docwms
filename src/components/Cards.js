@@ -29,7 +29,7 @@ export function BasicCard({title,description,link}){
         <p>{description}</p>
       </div>
       <div class="card-link">
-          <a href={link} ><span><Translate id='simpleCard.btn'>Aprender Mas</Translate> </span></a>
+          <a href={link} ><span><Translate id='simpleCard.btn'>Aprende  Más</Translate> </span></a>
       </div>
    </div>
    )

@@ -15,7 +15,7 @@ En esta sección  describe el funcionamiento general de la vista del módulo y s
 
 Cada flujo está acompañado de capturas de pantalla y recomendaciones prácticas para garantizar que el proceso se realice de forma correcta, cumpliendo con las validaciones del sistema y evitando errores comunes como el cruce de COO.
 
-## Vista util general del módulo
+## Vista util general del módulo  de Movimientos
 
 ![](/img/upload/Movep1-2025-13-16.png)
 

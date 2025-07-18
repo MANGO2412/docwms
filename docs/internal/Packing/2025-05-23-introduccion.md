@@ -1,4 +1,7 @@
 ---
-title: Introduccion
+title: Introducción
 ---
-Esta una prueba de amor
+
+# Introducción
+
+Contenido no disponible

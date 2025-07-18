@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: Introduction to Shipping
+title: Introduction
 ---
 
-# Introduction to Shipping
+# Introduction
 
 The **Shipping** section represents the final stage within the WMS system. At this stage, packages grouped into pallets are prepared based on the purchase orders generated in the **Order Monitor** module, with the purpose of being dispatched and delivered to clients.
 
