@@ -10,10 +10,11 @@ media_folder: "static/img/upload" # Media files will be stored in the repo under
 public_folder: "/img/upload" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-- name: "docs_en"
-  label: "Documentation (English)"
-  folder: "i18n/en/docusaurus-plugin-content-docs/current"
+- name: "docs_en_client"
+  label: "📁 Client (EN)"
+  folder: "i18n/en/docusaurus-plugin-content-docs/current/client"
   create: true
+  format: "frontmatter"
   fields:
      - { label: "Title", name: "title", widget: "string" }
      - { label: "Body", name: "body", widget: "markdown" }
@@ -25,125 +26,206 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
-- name: Client
-  label: "Portal cliente"
-  folder: docs/client/
-  identifier_field: title
-  widget: "list"
+- name: "docs_en_internal"
+  label: "📁 Internal (EN)"
+  folder: "i18n/en/docusaurus-plugin-content-docs/current/internal"
   create: true
+  format: "frontmatter"
   fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-      fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
         - { name: name, label: Name, widget: string }
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
-- name: general
-  label: "Recursos generales"
-  folder: docs/internal/
-  identifier_field: title
-  widget: "list"
+- name: "docs_en_internal_receipt"
+  label: "📁 Internal (EN) / Receipt"
+  folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Receipt"
   create: true
+  format: "frontmatter"
   fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-      fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
         - { name: name, label: Name, widget: string }
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
-- name: Receipt
-  label: "Receipt-Internal"
-  folder: docs/internal/Receipt
-  identifier_field: title
-  widget: "list"
+- name: "docs_en_internal_packing"
+  label: "📁 Internal (EN) / Packing"
+  folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Packing"
   create: true
+  format: "frontmatter"
   fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-      fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
         - { name: name, label: Name, widget: string }
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
-- name: Packing
-  label: "Packing-Internal"
-  folder: docs/internal//Packing
-  identifier_field: title
-  widget: "list"
+- name: "docs_en_internal_picking"
+  label: "📁 Internal (EN) / Picking"
+  folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Picking"
   create: true
+  format: "frontmatter"
   fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-      fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
         - { name: name, label: Name, widget: string }
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
-
-- name: Picking
-  label: "Picking-Internal"
-  folder: docs/internal//Picking
-  identifier_field: title
-  widget: "list"
+- name: "docs_en_internal_shipping"
+  label: "📁 Internal (EN) / Shipping"
+  folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Shipping"
   create: true
+  format: "frontmatter"
   fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-      fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
         - { name: name, label: Name, widget: string }
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
 
-- name: Shipping
-  label: "Shipping-Internal"
-  folder: docs/internal/Shipping
-  identifier_field: title
-  widget: "list"
-  create: true
-  fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-      fields:
-        - { name: name, label: Name, widget: string }
-        - { name: title, label: Title, widget: string }
-        - { name: url, label: URL, widget: string }
-        - { name: imageUrl, label: ImageURL, widget: string }
+# - name: Client
+#   label: "Portal cliente"
+#   folder: docs/client/
+#   identifier_field: title
+#   widget: "list"
+#   create: true
+#   fields:
+#     - { name: title, label: Title, widget: string }
+#     - { name: body, label: Body, widget: markdown }
+#     - label: "Tags"
+#       name: "tags"
+#       widget: "list"
+#       fields:
+#         - { name: name, label: Name, widget: string }
+#         - { name: title, label: Title, widget: string }
+#         - { name: url, label: URL, widget: string }
+#         - { name: imageUrl, label: ImageURL, widget: string }
+# - name: general
+#   label: "Recursos generales"
+#   folder: docs/internal/
+#   identifier_field: title
+#   widget: "list"
+#   create: true
+#   fields:
+#     - { name: title, label: Title, widget: string }
+#     - { name: body, label: Body, widget: markdown }
+#     - label: "Tags"
+#       name: "tags"
+#       widget: "list"
+#       fields:
+#         - { name: name, label: Name, widget: string }
+#         - { name: title, label: Title, widget: string }
+#         - { name: url, label: URL, widget: string }
+#         - { name: imageUrl, label: ImageURL, widget: string }
+# - name: Receipt
+#   label: "Receipt-Internal"
+#   folder: docs/internal/Receipt
+#   identifier_field: title
+#   widget: "list"
+#   create: true
+#   fields:
+#     - { name: title, label: Title, widget: string }
+#     - { name: body, label: Body, widget: markdown }
+#     - label: "Tags"
+#       name: "tags"
+#       widget: "list"
+#       fields:
+#         - { name: name, label: Name, widget: string }
+#         - { name: title, label: Title, widget: string }
+#         - { name: url, label: URL, widget: string }
+#         - { name: imageUrl, label: ImageURL, widget: string }
+# - name: Packing
+#   label: "Packing-Internal"
+#   folder: docs/internal//Packing
+#   identifier_field: title
+#   widget: "list"
+#   create: true
+#   fields:
+#     - { name: title, label: Title, widget: string }
+#     - { name: body, label: Body, widget: markdown }
+#     - label: "Tags"
+#       name: "tags"
+#       widget: "list"
+#       fields:
+#         - { name: name, label: Name, widget: string }
+#         - { name: title, label: Title, widget: string }
+#         - { name: url, label: URL, widget: string }
+#         - { name: imageUrl, label: ImageURL, widget: string }
 
-- name: WM
-  label: "Gestion de Almacen"
-  folder: docs/internal/WM
-  identifier_field: title
-  widget: "list"
-  create: true
-  fields:
-    - { name: title, label: Title, widget: string }
-    - { name: body, label: Body, widget: markdown }
-    - label: "Tags"
-      name: "tags"
-      widget: "list"
-      fields:
-        - { name: name, label: Name, widget: string }
-        - { name: title, label: Title, widget: string }
-        - { name: url, label: URL, widget: string }
-        - { name: imageUrl, label: ImageURL, widget: string }
+# - name: Picking
+#   label: "Picking-Internal"
+#   folder: docs/internal//Picking
+#   identifier_field: title
+#   widget: "list"
+#   create: true
+#   fields:
+#     - { name: title, label: Title, widget: string }
+#     - { name: body, label: Body, widget: markdown }
+#     - label: "Tags"
+#       name: "tags"
+#       widget: "list"
+#       fields:
+#         - { name: name, label: Name, widget: string }
+#         - { name: title, label: Title, widget: string }
+#         - { name: url, label: URL, widget: string }
+#         - { name: imageUrl, label: ImageURL, widget: string }
+
+# - name: Shipping
+#   label: "Shipping-Internal"
+#   folder: docs/internal/Shipping
+#   identifier_field: title
+#   widget: "list"
+#   create: true
+#   fields:
+#     - { name: title, label: Title, widget: string }
+#     - { name: body, label: Body, widget: markdown }
+#     - label: "Tags"
+#       name: "tags"
+#       widget: "list"
+#       fields:
+#         - { name: name, label: Name, widget: string }
+#         - { name: title, label: Title, widget: string }
+#         - { name: url, label: URL, widget: string }
+#         - { name: imageUrl, label: ImageURL, widget: string }
+
+# - name: WM
+#   label: "Gestion de Almacen"
+#   folder: docs/internal/WM
+#   identifier_field: title
+#   widget: "list"
+#   create: true
+#   fields:
+#     - { name: title, label: Title, widget: string }
+#     - { name: body, label: Body, widget: markdown }
+#     - label: "Tags"
+#       name: "tags"
+#       widget: "list"
+#       fields:
+#         - { name: name, label: Name, widget: string }
+#         - { name: title, label: Title, widget: string }
+#         - { name: url, label: URL, widget: string }
+#         - { name: imageUrl, label: ImageURL, widget: string }
