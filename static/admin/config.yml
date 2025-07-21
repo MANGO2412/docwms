@@ -26,6 +26,7 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
+
 - name: "docs_en_internal"
   label: "📁 Internal (EN)"
   folder: "i18n/en/docusaurus-plugin-content-docs/current/internal"
@@ -42,6 +43,7 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
+
 - name: "docs_en_internal_receipt"
   label: "📁 Internal (EN) / Receipt"
   folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Receipt"
@@ -58,6 +60,7 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
+
 - name: "docs_en_internal_packing"
   label: "📁 Internal (EN) / Packing"
   folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Packing"
@@ -74,6 +77,7 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
+
 - name: "docs_en_internal_picking"
   label: "📁 Internal (EN) / Picking"
   folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Picking"
@@ -90,6 +94,7 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
+
 - name: "docs_en_internal_shipping"
   label: "📁 Internal (EN) / Shipping"
   folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/Shipping"
@@ -106,6 +111,146 @@ collections:
         - { name: title, label: Title, widget: string }
         - { name: url, label: URL, widget: string }
         - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_en_internal_wm"
+  label: "📁 Internal (EN) / WM"
+  folder: "i18n/en/docusaurus-plugin-content-docs/current/internal/WM"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_es_client"
+  label: "📁 Client (ES)"
+  folder: "docs/client"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_es_internal"
+  label: "📁 Internal (ES)"
+  folder: "docs/internal"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_es_internal_receipt"
+  label: "📁 Internal (ES) / Receipt"
+  folder: "docs/internal/Receipt"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_es_internal_picking"
+  label: "📁 Internal (ES) / Picking"
+  folder: "docs/internal/Picking"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_es_internal_packing"
+  label: "📁 Internal (ES) / Packing"
+  folder: "docs/internal/Packing"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_es_internal_shipping"
+  label: "📁 Internal (ES) / Shipping"
+  folder: "docs/internal/Shipping"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+- name: "docs_es_internal_wm"
+  label: "📁 Internal (ES) / WM"
+  folder: "docs/internal/WM"
+  create: true
+  format: "frontmatter"
+  fields:
+     - { label: "Title", name: "title", widget: "string" }
+     - { label: "Body", name: "body", widget: "markdown" }
+     - label: "Tags"
+       name: "tags"
+       widget: "list"
+       fields:
+        - { name: name, label: Name, widget: string }
+        - { name: title, label: Title, widget: string }
+        - { name: url, label: URL, widget: string }
+        - { name: imageUrl, label: ImageURL, widget: string }
+
+
+
+
 
 # - name: Client
 #   label: "Portal cliente"
