@@ -2,96 +2,96 @@
 title: Routing Guides
 ---
 
-Este módulo sirve para establecer las dimensiones requeridas para el paquete según el tipo de campania pero principalmente para proveer indicaciones de como se de empacar el producto o tratar a la hora de empacar.
+This module serves to establish required package dimensions according to campaign type, but primarily to provide instructions on how to pack products or handle them during packaging.
 
-## Vista util del modulo
+## Module Useful View
 
 ![](/img/upload/Screenshot-2025-06-10-105358.png)
 
 <table>
     <tr>
         <th>**No**</th>
-        <th>**Nombre**</th>
-        <th>**Descripcion**</th>
+        <th>**Name**</th>
+        <th>**Description**</th>
     </tr>
     <tr>
         <th>**1**</th>
-        <th>Botón para crear una nueva guia</th>
-        <th>Este botón  habilita un formulario para crear una nueva guia</th>
+        <th>Create New Guide Button</th>
+        <th>This button enables a form to create a new guide</th>
     </tr>
     <tr>
         <th>**2**</th>
-        <th>Total de guías</th>
-        <th>En este zona se hace el conteo del total de guías que ha hecho la empresa</th>
+        <th>Total Guides</th>
+        <th>This area shows the total count of guides created by the company</th>
     </tr>
     <tr>
         <th>**3**</th>
-        <th>Botón de editar</th>
-        <th>Este botón habilita de nuevo el formulario para modificar información del registro.</th>
+        <th>Edit Button</th>
+        <th>This button re-enables the form to modify record information</th>
     </tr>
     <tr>
         <th>**4**</th>
-        <th>Botón de borrar guia</th>
-        <th>Este botón borra una guia en específico</th>
+        <th>Delete Guide Button</th>
+        <th>This button deletes a specific guide</th>
     </tr>
 </table>
 
-### Crear una guia
+### Create a Guide
 
 <table>
     <tr>
-        <th><h3>Pasos</h3></th>
+        <th><h3>Steps</h3></th>
     </tr>
     <tr>
         <td>
-           **Click** en el **1** de la **interfaz general** y se **abrirá** un **formulario.** En este formulario ingresa los datos como: n**ombre de la guía** y su **descripción**. Ignora el campo de Url.
+           **Click** on **1** in the **general interface** to **open** a **form**. In this form enter data such as: **guide name** and **description**. Ignore the URL field.
 
-           Si es necesario una **dimensión** específica para los **paquetes** puedes **establecerla** por ejemplo: 10x10x10.
+           If specific **package dimensions** are required, you can **set them** (e.g., 10x10x10).
 
            ![](/img/upload/Screenshot-2025-06-10-110208.png)
 
-           Como siguiente paso da click en el botón azul que dice **ADD RULE** significa añadir regla. En esta se añadirán las **reglas** las cuales constan de **3 factores**: 1\.**Dato** en el cual se asigna la regla, 2\. El **operador** que indica cómo buscar la palabra clave, 3\. la **palabra clave**. **También** se pueden **borrar** las reglas de esta guía
+           Next, click the blue button labeled **ADD RULE** to add rules. Rules consist of **3 factors**: 1\. **Field** where the rule is applied, 2\. The **operator** indicating how to search for the keyword, 3\. The **keyword**. Rules can also be **deleted**.
 
            ![](/img/upload/Screenshot-2025-06-10-110755.png)
 
-           Para entender cómo funcionan las reglas tenemos el siguiente ejemplo: hay una empresa llamada Hitachi la cual está trabajando con G-Global pero quiere especial atención en el embalaje de sus laptops para garantizar la calidad a sus clientes, por lo tanto quiere proporcionar instrucciones de cómo embalar al personal de packaging a la hora de utilizar el SLAM y necesita que este embalaje sea para cierto campana de productos en particular donde tiene sus computadoras. Vamos a resolver este problema.
+           To understand how rules work, consider this example: A company called Hitachi is working with G-Global but wants special attention given to laptop packaging to ensure customer satisfaction. They need to provide packaging instructions to staff when using SLAM, specifically for certain product campaigns containing their computers. Here's how to solve this:
 
-           Primero agregamos el nombre de la guía y su descripción como se enseñó anteriormente y si es necesario las dimensiones de la caja o contenedor.
+           First add the guide name and description as shown earlier, plus any required box/container dimensions.
 
-           Posteriormente damos click al primer campo de **field** y veremos las opciones:
+           Then click the first **field** dropdown to see options:
 
            ![](/img/upload/Screenshot-2025-06-10-111918.png)
 
-           En este caso el cliente quiere que en cierta campaña se apliquen estas guías por lo tanto se da click en **Campaign** o campaña.
+           Since the client wants these guides applied to specific campaigns, select **Campaign**.
 
-           Siguiente es **operador** para buscar la **palabra clave** que **acciona** el uso de esta **guía**. En este caso se selecciona **contains** por que el nombre de la campana es **LaptopHitachiEmbalaje** es decir el nombre de la campania contiene la palabra clave**.**
+           Next is the **operator** for searching the **keyword** that **triggers** this **guide**. Select **contains** because the campaign name is **LaptopHitachiEmbalaje** (the campaign name contains the keyword).
 
            ![](/img/upload/Screenshot-2025-06-10-112138.png)
 
-           Por último la **palabra clave** en este caso lo que **indica** que debe **contener** el nombre de la **campania** para **ejecutar** esta guía. En este caso la palabra es **HitachiEmbalaje**.
+           Finally, enter the **keyword** that must be **contained** in the **campaign name** to **execute** this guide. In this case: **HitachiEmbalaje**.
 
            ![](/img/upload/Screenshot-2025-06-10-112511.png)
 
-           Una vez hecho esto ya esta una regla para una campaña pero si se quiere que esto pase en **más campanas** se debe hacer **una para cada una**, o si es para según un tipo de artículo se puede usar el **SKU** como indicador.  
-           **Si hay un error en una regla** se puede **borrar** con el signo de **papelera** en el extremo derecho de la regla.
+           This creates one rule for a campaign. To apply to **more campaigns**, create **additional rules**, or use **SKU** as the indicator for specific products.  
+           **To delete a rule**, use the **trash can icon** on the right.
 
-           Como último paso se debe **agregar** la **guía** de **embalaje** la cual debe de ser un archivo **.pdf**, **la guía solo es admitida en formato PDF.**
+           The final step is to **add** the **packaging guide** (must be a **PDF file** - **only PDF format is accepted**).
 
-           La guía se inserta de la siguiente manera.
+           Add the guide as follows:
 
            ![](/img/upload/Screenshot-2025-06-10-113155.png)
 
-           Click en **SELECT FILE** y entonces se **abrirá una carpeta** en la cual solo se observan archivos **.pdf** ya que son los **únicos** que se **admiten** para **guardar** como guía.
+           Click **SELECT FILE** to **open a folder** showing only **.pdf files** (the **only accepted format**).
 
            ![](/img/upload/Screenshot-2025-06-10-113755.png)
 
-           En este caso se **selecciona** el **manual** de usuario para embalaje. se da **click** y en **open** o abrir. O en su defecto doble click.
+           Select the packaging manual, then click **open** (or double-click).
 
-           **Cuando** el **archivo** haya sido **seleccionado** se verá de la siguiente manera
+           When the **file is selected**, it will appear like this:
 
            ![](/img/upload/Screenshot-2025-06-10-114108.png)
 
-           Hecho esto se ha terminado ahora para finalizar **click** en **finish** y se habrá **creado** la **nueva** guia.
+           Finally, click **finish** to **create** the **new** guide.
 
            ![](/img/upload/Screenshot-2025-06-10-114243.png)
 
@@ -99,37 +99,37 @@ Este módulo sirve para establecer las dimensiones requeridas para el paquete se
     </tr>
 </table>
 
-### Editar una guia
+### Edit a Guide
 
 <table>
     <tr>
-        <th><h3>Pasos</h3></th>
+        <th><h3>Steps</h3></th>
     </tr>
     <tr>
         <td>
-           **Click** en el **3** de la **interfaz general** y se **abrirá** un **formulario** de la guía para editar.
+           **Click** on **3** in the **general interface** to **open** the guide's **edit form**.
 
            ![](/img/upload/Screenshot-2025-06-30-100420.png)
 
-           Para editar una guía es el **mismo procedimiento** para **crear** una **guía**, asi que despues de esto puedes ver el tutorial de editar.
+           Editing a guide follows the **same process** as **creating** one, so refer to that tutorial.
 
         </td>
     </tr>
 </table>
 
-### Eliminar una guia
+### Delete a Guide
 
 <table>
     <tr>
-        <th><h3>Pasos</h3></th>
+        <th><h3>Steps</h3></th>
     </tr>
     <tr>
         <td>
-           **Click** en el **4** de la **interfaz general** para borrar una guia. Después aparece un recuadro en el cual se **confirmara** la **eliminación** dando **click** en **OK**.
+           **Click** on **4** in the **general interface** to delete a guide. A confirmation box will appear - click **OK** to **confirm deletion**.
 
            ![](/img/upload/Screenshot-2025-06-10-115722.png)
 
-           Después de esto se eliminará la guía, se puede apreciar a continuación que ya no se encuentra en la tabla esta guia eliminada.
+           The guide will then be removed (note its absence from the table):
 
            ![](/img/upload/Screenshot-2025-06-10-115838.png)
         </td>

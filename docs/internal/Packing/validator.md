@@ -2,18 +2,18 @@
 title: Validator
 ---
 
-## Modulo de validator
+## Módulo de Validator
 
-Este modulo es para validar el origen de procedencia de un articulo el cual se va a empaquetar
+Este módulo sirve para validar el origen de procedencia de un artículo que se va a empaquetar.
 
-### Vista util del modulo
+### Vista útil del módulo
 ![](/img/upload/Screenshot-2025-06-03-101136.png)
 
-|No|Nombre|Descripcion|
-|--|------|-----------|
-|1 |Boton de validator|Botón que al presionarlo se abre el panel de validator el cual sirve para validar origen de los articulos|
+| No | Nombre | Descripción |
+|----|--------|-------------|
+| 1  | Botón de Validator | Botón que al presionarlo abre el panel de Validator, el cual sirve para validar el origen de los artículos |
 
-### Validar articulos
+### Validar artículos
 
 <table>
     <tr>
@@ -22,11 +22,11 @@ Este modulo es para validar el origen de procedencia de un articulo el cual se v
 
     <tr>
         <td>
-            Los totes o carritos, son donde se tienen las trays o charolas donde se almacenan los artículos a empaquetar.
+            Los totes o carritos son los contenedores donde se colocan las trays o charolas que almacenan los artículos a empaquetar.
 
             ![logo](/img/upload/Screenshot-2025-06-26-132818.png)
 
-            Las trays o charolas son donde se almacenan los artículos y tienen el código que se escanea para empezar con el módulo de **validator**
+            Las trays o charolas son los recipientes donde se almacenan los artículos y contienen el código que se escanea para iniciar con el módulo de **Validator**.
 
             ![](/img/upload/Screenshot-2025-05-20-091914.png)
 
@@ -41,35 +41,33 @@ Este modulo es para validar el origen de procedencia de un articulo el cual se v
 
     <tr>
         <td>
-            Selecciona el **1** para utilizar la herramienta de **Validator**
+            Selecciona el **1** para utilizar la herramienta de **Validator**.
 
-            Escanea el **código QR** de la **charola** o **tray.** Entonces aparece la informacion del tray y el contenido
+            Escanea el **código QR** de la **charola** o **tray**. Aparecerá la información del tray y su contenido.
 
             ![logo](/img/upload/Screenshot-2025-06-03-114538.png)
 
-            Escanea el código **QR** o **barras** del producto. Posteriormente se abrirá una ventana de origen de fabricación.
+            Escanea el código **QR** o de **barras** del producto. Posteriormente se abrirá una ventana de origen de fabricación.
 
             ![](/img/upload/Screenshot-2025-06-03-121047.png)
 
-            Click en **seleccione país de origen** y se abrirá un panel desplegable con los orígenes de este artículo selecciona el correcto.
+            Haz clic en **Seleccione país de origen** y se desplegará un panel con los orígenes disponibles para este artículo. Selecciona el correcto.
 
             ![](/img/upload/Screenshot-2025-06-03-121353.png)
 
-            Finalmente click en **continuar**
+            Finalmente, haz clic en **Continuar**.
 
             ![](/img/upload/Screenshot-2025-06-03-121459.png)
 
-            Saldrá una **notificación** en la **esquina inferior derecha** de la pantalla indicando el **final de la validación.**
+            Aparecerá una **notificación** en la **esquina inferior derecha** de la pantalla indicando el **final de la validación**.
 
             ![](/img/upload/Screenshot-2025-06-03-104533.png)
 
-            Posteriormente se **imprimirán** las **etiquetas de contenido** y de **listado de los paquetes**.
+            Posteriormente se **imprimirán** las **etiquetas de contenido** y el **listado de los paquetes**.
 
             ![](/img/upload/Screenshot-2025-06-03-121837.png)
 
             ![](/img/upload/Screenshot-2025-06-03-121907.png)
-
-            
 
         </td>
     </tr>
