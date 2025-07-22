@@ -3,7 +3,7 @@ sidebar_position: 4
 title: Inventory
 ---
 
-# Inevtory(Portal cliente)
+# Inventory(Portal cliente)
 
 El módulo de Inventario del portal de clientes de G-WMS te permite visualizar en tiempo real la distribución y disponibilidad del stock de cada artículo almacenado en los distintos almacenes gestionados por G Global.
 
