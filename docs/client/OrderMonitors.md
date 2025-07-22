@@ -166,6 +166,186 @@ Después, actualiza la página para refrescar la tabla y visualizar las nuevas �
 ![](/img/upload/OMCp25-2025-13-16.png)
 
 
-## Aplicando filtros
+## Cambiar entre pedidos y eventos: Uso de pestañas
+
+Este módulo cuenta con una funcionalidad de **pestañas** que permite visualizar la información disponible de manera organizada. Además de mostrar las **órdenes de pedido generadas**, también es posible consultar los **eventos de fulfillment** asociados a cada orden.
+
+Por defecto, al ingresar al módulo se muestran los **eventos de fulfillment**. Si deseas ver las órdenes de pedido, puedes hacer clic en la pestaña correspondiente, tal como se ilustra en las siguientes imágenes.
+
+
+<figure>
+  <img src="/img/upload/OMCp26-2025-13-16.png" alt="Pantalla de inicio del módulo" />
+  <figcaption>Imagen 1: Vista de las pestañas disponibles.</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/upload/OMCp27-2025-13-16.png" alt="Pantalla de inicio del módulo" />
+  <figcaption>Imagen 2: Información mostrada al seleccionar la pestaña "Orders".</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/upload/OMCp28-2025-13-16.png" alt="Pantalla de inicio del módulo" />
+  <figcaption>Imagen 3: Información mostrada al seleccionar la pestaña "Events".</figcaption>
+</figure>
+
+
+## Aplicando filtros en Orders Monitor
+
+El módulo **Orders Monitor** cuenta con diversas opciones de filtrado que te permiten buscar órdenes de pedido o eventos de fulfillment que cumplan con ciertos criterios específicos dentro del sistema.
+
+Para aplicar los filtros, primero debes ubicar el panel de opciones de filtrado en la interfaz del módulo correspondiente. Este panel se encuentra en la parte inferior de la tabla donde se muestra la información de las órdenes de pedido o eventos de fulfillment.
+
+
+El panel de filtrado mostrará diferentes opciones dependiendo del tipo de información que se esté visualizando en la tabla (órdenes de pedido o eventos de fulfillment).
+
+<figure>
+  <img src="/img/upload/OMCp34-2025-13-16.png" alt="Pantalla de inicio del módulo" />
+  <figcaption>Imagen 4: Opciones de filtrado para ordenes de pedido.</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/upload/OMCp35-2025-13-16.png" alt="Pantalla de inicio del módulo" />
+  <figcaption>Imagen 5: Opciones de filtrado para eventos fulfillment.</figcaption>
+</figure>
+
+
+
+### Opciones de filtrado para órdenes de pedido
+
+- **Preset Filters**: Esta opción es un campo desplegable que permite filtrar las órdenes de pedido pendientes en un lapso de tiempo determinado: 24, 48 o 72 horas.
+
+![](/img/upload/OMCp29-2025-13-16.png)
+
+
+- **Order Number**: Permite buscar órdenes de pedido por su número identificador.
+
+![](/img/upload/OMCp30-2025-13-16.png)
+
+- **Status**: Campo desplegable que permite filtrar las órdenes por su estatus.
+
+![](/img/upload/OMCp31-2025-13-16.png)
+
+- **Campaign**: Permite filtrar órdenes de pedido según el nombre de la campaña.
+
+![](/img/upload/OMCp32-2025-13-16.png)
+
+- **Received At**: Campos de fecha donde puedes indicar un rango (inicio y fin) para filtrar las órdenes según la fecha de recepción.
+
+![](/img/upload/OMCp33-2025-13-16.png)
+
+
+### Opciones de filtrado para eventos fulfillment.
+
+- **Preset filters** : Esta opción es un campo desplegable que permite filtrar los eventos fulfillment  pendientes en un lapso de tiempo determinado: 24, 48 o 72 horas.
+
+![](/img/upload/OMCp29-2025-13-16.png)
+
+- **Order Number**: Permite buscar eventos de fulfilment  por su número identificador.
+
+![](/img/upload/OMCp36-2025-13-16.png)
+
+
+- **Status**: Campo desplegable que permite filtrar los eventos por su estatus.
+
+![](/img/upload/OMCp37-2025-13-16.png)
+
+- **Carrier** : Campo desplegable que permite filtrar  por servicios de transporte de los eventos fulfillment.
+
+![](/img/upload/OMCp40-2025-13-16.png)
+
+- **Received At**: Campos de fecha donde puedes indicar un rango (inicio y fin) para filtrar los eventos según la fecha de recepción.
+
+![](/img/upload/OMCp33-2025-13-16.png)
+
+
+- **Shipped at**: Campos de fecha donde puedes indicar un rango (inicio y fin) para filtrar los eventos según la fecha de envio.
+
+![](/img/upload/OMCp39-2025-13-16.png)
+
+:::info
+En caso de querer limpiar los filtros del panel de opciones, se habilita la opción **Clean Filters**. Al hacer clic en ella, se eliminan automáticamente todos los filtros aplicados y se muestra nuevamente toda la información sin ningún tipo de filtrado.
+
+![](/img/upload/OMCp41-2025-13-16.png)
+:::
+
+## ¿Como visualizar el detalle de una Orden de pedido o evento fulfillment?
+
+Si haces clic en la fila de una orden o evento dentro de la tabla donde se desglosa la información, el sistema te redireccionará automáticamente a una vista detallada que muestra información relevante de la orden junto con sus eventos de fulfillment correspondientes
+
+![](/img/upload/OMCp42-2025-13-16.png)
+
+
+## Acciones de la orden
+
+Al acceder al detalle de una orden, se habilitan varias opciones esenciales para su gestión. Estas se encuentran ubicadas en la parte superior derecha de la vista, agrupadas en un menú desplegable al hacer clic en el ícono de **tres puntos** (⋮), como se muestra en la siguiente imagen:
+
+![](/img/upload/OMCp43-2025-13-16.png)
+
+A continuación, se describe la funcionalidad de cada una de las siguientes opciones:
+
+### Editar dirección de envío
+
+Para editar la dirección de envío de una orden, sigue estos pasos:
+
+- Haz clic en el ícono de **tres puntos** y selecciona la opción **Edit shipping address**.
+
+![](/img/upload/OMCp45-2025-13-16.png)
+
+- Se mostrará una ventana emergente donde podrás modificar la información relacionada con la dirección de envío.
+
+![](/img/upload/OMCp44-2025-13-16.png)
+
+- Haz clic en **ACEPTAR** para guardar los cambios, o en **CANCELAR** si decides no continuar con la edición.
+
+### Editar dirección de facturación
+
+Si deseas editar la dirección de facturación de la orden, sigue estos pasos:
+
+- Haz clic en el ícono de **tres puntos** y selecciona la opción **Edit billing address**.
+
+![](/img/upload/OMCp45-2025-13-16.png)
+
+- Se mostrará una ventana emergente con un formulario donde podrás modificar la información relacionada con la dirección de facturación.
+
+![](/img/upload/OMCp46-2025-13-16.png)
+
+- Haz clic en **ACEPTAR** para guardar los cambios, o en **CANCELAR** si decides no continuar con la edición.
+
+### Cancelar orden
+
+Para cancelar una orden, sigue estos pasos:
+
+- Haz clic en el ícono de **tres puntos** y selecciona la opción **Cancel order**.
+
+![](/img/upload/OMCp45-2025-13-16.png)
+
+- Se mostrará una ventana emergente donde deberás ingresar una breve descripción indicando los motivos de la cancelación.
+
+![](/img/upload/OMCp47-2025-13-16.png)
+
+- Haz clic en la opción **CONFIRM** para confirmar la cancelación de la orden.
+
+![](/img/upload/OMCp48-2025-13-16.png)
+
+## Acción por evento
+
+Al acceder al detalle de una orden, en el apartado **Fulfillment Events**, se habilitan varias opciones esenciales para la gestión de los eventos. Estas se encuentran ubicadas en la parte inferior derecha de la sección de eventos, agrupadas en un menú desplegable al hacer clic en el ícono de **tres puntos** (⋮), como se muestra en la siguiente imagen:
+
+![](/img/upload/OMCp49-2025-13-16.png)
+
+A continuación, se describe la funcionalidad de cada opción disponible en el panel:
+
+- **Marcar como prioridad**: Permite establecer el evento como prioritario en el sistema para que sea atendido lo más pronto posible.
+
+- **Fecha de inicio de proceso**: Permite definir la fecha en la que debe iniciar el procesamiento del evento. Al hacer clic, se habilita un formulario para ingresar la fecha correspondiente.
+
+- **Agregar artículos**: Permite añadir más artículos al evento. Al seleccionarla, se abre un formulario en el que deberás ingresar el SKU del artículo y la cantidad deseada.
+
+- **Ver más información del evento**: Muestra información detallada del evento.
+
+- **Historial del evento**: Permite visualizar las acciones realizadas sobre el evento, incluyendo la fecha y el responsable de cada acción.
+
+- **Editar opciones de envío**: Permite modificar el servicio y el método de transporte asignado, así como configurar la facturación a terceros si aplica.
+
 
 
