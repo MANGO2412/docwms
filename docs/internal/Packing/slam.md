@@ -4,7 +4,10 @@ title: SLAM
 
 ## Módulo de SLAM
 
-Este módulo es para empezar el empaquetado de los artículos.
+Este módulo es para gestionar la validacion de los paquetes u ordenes, dicha verficacion conlleva los articulos
+ seleccionados para la orden, la cantidad de los articulos, el tipo de empaquetado y el origin de los articulos
+  de la orden. empezar el empaquetado de los artículos el cual puede conllevar pesar, y etiquetar el paquete en el que se encuentran los articulos
+  segun las instrucciones proporcionadas.
 
 ### Vista útil del módulo
 ![](/img/upload/Screenshot-2025-06-03-122324.png)
@@ -24,7 +27,7 @@ Este módulo es para empezar el empaquetado de los artículos.
     <tr>
         <td>
            Colocar fotos de los paquetes con la etiqueta de contenido y el listado
-            {/* ![](/img/upload/Screenshot-2025-06-03-122324.png) */}
+            
 
 
         </td>
@@ -38,7 +41,7 @@ Este módulo es para empezar el empaquetado de los artículos.
 
     <tr>
         <td>
-            Selecciona el **1** para utilizar la herramienta de **SLAM**
+            Selecciona el **1** (boton de slam en el menu) para utilizar la herramienta de **SLAM**
 
             Escanea el **código QR** o **código de barras** de la etiqueta de contenido del paquete. Se mostrará información del paquete en la interfaz.
 
