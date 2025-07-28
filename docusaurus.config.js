@@ -97,7 +97,7 @@ const config = {
       { name: "keywords", content: "docs, guide, WMS-DOCS" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "WMS-DOCS" },
-      { name: "twitter:description", content: "Learn how to use My Project effectively." },
+      { name: "twitter:description", content: "Learn how to use WMS effectively." },
       { name: "twitter:image", content: "https://wmsdocs.netlify.app/img/preview.png" },
       { property: "og:title", content: "WMS-DOCS" },
       { property: "og:description", content: "Learn how to use WMS  effectively." },
