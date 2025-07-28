@@ -9,6 +9,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
 
@@ -42,6 +43,7 @@ export default function Home() {
       <main>
         <HomepageFeatures />
       </main>
+
     </Layout>
   );
 }

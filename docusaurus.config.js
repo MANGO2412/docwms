@@ -30,6 +30,8 @@ const config = {
     ],
   ],
 
+   plugins: ["./src/plugins/tailwind-config.js"],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
