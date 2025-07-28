@@ -33,7 +33,7 @@ Este módulo permite generar y gestionar las órdenes de recibo correspondientes
 
 ![](/img/upload/receiveOrdersp3-2025-13-16.png)
 
-* Si el proceso es exitoso, se desglosa un mensaje  de color verde indicando con el numero de recibo que se asigno a ese recibo virtual.
+* Si el proceso es exitoso, se desglosa un mensaje  de color verde indicando con el numero de recibo que se asigno a ese recibo .
 
 ![](/img/upload/receiveOrdersp4-2025-13-16.png)
 
