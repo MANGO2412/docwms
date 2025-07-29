@@ -72,3 +72,30 @@ Este módulo sirve para validar el origen de procedencia de un artículo que se 
         </td>
     </tr>
 </table>
+
+### Autorizacion de lotes no esperados
+
+<table>
+    <tr>
+        <th><h3>Pasos</h3></th>
+    </tr>
+
+    <tr>
+        <td>
+           Cuando se valida una orden con un lote no esperado aparecera la siguiente ventana
+           ![](/img/upload/Screenshot-2025-07-29-093117.png)
+
+            Esta ventana solicita un codigo de autrizacion del supervisor, para obtener el codigo tienes que pedir a tu supervisor que verifique el caso y en el caso de que proceda el lote, sera proporcionado el codigo de autorizacion o de seguridad.
+
+            ![](/img/upload/Screenshot-2025-07-29-093455.png)
+        
+            Al obtener el **codigo** se debe de **ingresar** manualmente a la caja de **texto**
+
+            ![](/img/upload/Screenshot-2025-07-29-094300.png)
+            Posteriormente dar **click** en el boton azul de **confirmar**
+
+            y como ultimo paso se pedira que se escane de nuevo el lote no esperado
+
+        </td>
+    </tr>
+</table>

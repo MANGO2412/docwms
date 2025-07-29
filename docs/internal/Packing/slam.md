@@ -18,7 +18,7 @@ Este módulo es para gestionar la validacion de los paquetes u ordenes, dicha ve
 | 1  | Botón de SLAM | Botón que al presionarlo se abre el panel de SLAM con el cual se escanea la etiqueta de contenido del paquete y se registra el embalaje de los artículos. |
 
 
-### Escanear una ubicación
+### Empaquetar orden
 <table>
     <tr>
         <th><h3>Contexto</h3></th>
