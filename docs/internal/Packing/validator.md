@@ -99,3 +99,21 @@ Este módulo sirve para validar el origen de procedencia de un artículo que se 
         </td>
     </tr>
 </table>
+
+### Validacion de lote activada
+
+<table>
+    <tr>
+        <th><h3>Pasos</h3></th>
+    </tr>
+
+    <tr>
+        <td>
+           Cuando esta activa la opcion de lot validation y se tiene un numero de lote personalizado que contiene COO aparecera
+           una ventana en la cual se ingresara el numero de lote que en este caso sera algo asi: PO-1234-CN.
+
+           Escanea el numero de lote proporcionado.
+           ![](/img/upload/Screenshot-2025-07-29-095344.png)
+        </td>
+    </tr>
+</table>
